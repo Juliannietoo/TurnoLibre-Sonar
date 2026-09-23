@@ -1,15 +1,15 @@
 # Team Charter
 
-Propuesta inicial (18 acuerdos, máximo 20). Los valores entre corchetes hay que confirmarlos en equipo. Se refinará durante el curso.
+Versión 1.0 (23/09/2026): 18 acuerdos (máximo 20). Se refinará durante el curso en las retrospectivas.
 
 ## Comunicación
-1. Canal síncrono: **[Discord/Teams]**. Canal asíncrono: **[WhatsApp/Telegram]** para avisos y GitHub Issues para trabajo técnico.
+1. Canal síncrono: **Discord** (reuniones en línea y dailies). Canal asíncrono: **WhatsApp** para avisos y GitHub Issues para trabajo técnico.
 2. Cada miembro revisa los canales al menos una vez al día y responde en un máximo de 24 h (mensajes urgentes: 4 h).
 3. Los temas técnicos se discuten en GitHub (issues/PR), no en chats privados.
 
 ## Reuniones
-4. Planning, review y retrospectiva en la sesión semanal de clase (**[día y hora]**), con acta en la Wiki.
-5. Daily de 10 minutos, **[3 veces por semana]**, para ver avances, bloqueos y siguientes pasos.
+4. Planning, review y retrospectiva en la sesión semanal presencial (**miércoles de 17:30 a 19:30**), con acta en la Wiki.
+5. Daily de 15 minutos como máximo, **2 veces por semana (viernes y lunes) por Discord**, para ver avances, bloqueos y siguientes pasos. El miércoles la sustituye la sesión semanal.
 6. Toda reunión tiene agenda previa y acta con decisiones y acciones (responsable y fecha).
 
 ## Horarios y disponibilidad
@@ -28,7 +28,7 @@ Propuesta inicial (18 acuerdos, máximo 20). Los valores entre corchetes hay que
 
 ## Calidad y flujo de trabajo
 15. Ningún cambio se integra sin revisión de al menos otro miembro y sin cumplir la Definition of Done.
-16. Límite de trabajo en curso (WIP): máximo **[2]** tareas en progreso por persona.
+16. Límite de trabajo en curso (WIP): máximo **2** tareas en progreso por persona; no se empieza una nueva hasta terminar o bloquear una de ellas.
 17. Todo el trabajo se registra en la herramienta de seguimiento (GitHub/Jira) y se mantiene actualizado.
 
 ## Señales de alerta y actuación

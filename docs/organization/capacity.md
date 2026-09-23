@@ -15,7 +15,7 @@ Periodo de ejecución: **6 semanas** (6 sprints de 1 semana, de miércoles a mar
 | Concepto | Por persona y semana | Equipo y semana | Total 6 semanas |
 |---|---|---|---|
 | Capacidad bruta | 5 h | 20 h | **120 h** |
-| Eventos Scrum: planning (0,5 h) + review (0,25 h) + retrospectiva (0,25 h) + 3 dailies de 10 min (0,5 h) | 1,5 h | 6 h | 36 h |
+| Eventos Scrum: planning (0,5 h) + review (0,25 h) + retrospectiva (0,25 h) + 2 dailies de 15 min (0,5 h) | 1,5 h | 6 h | 36 h |
 | Capacidad neta | 3,5 h | 14 h | 84 h |
 | Colchón del 10 % sobre la neta (ausencias, imprevistos, curva de aprendizaje) | 0,35 h | 1,4 h | 8,4 h |
 | **Capacidad disponible para el backlog** | **3,15 h** | **12,6 h** | **≈ 75 h** |
@@ -23,7 +23,7 @@ Periodo de ejecución: **6 semanas** (6 sprints de 1 semana, de miércoles a mar
 Por release (2 sprints): **≈ 25 h** para trabajo del backlog.
 
 ## Supuestos
-- Las 5 h/semana incluyen todos los eventos Scrum; el refinamiento del backlog se hace dentro de la planning.
+- Las 5 h/semana incluyen todos los eventos Scrum; el refinamiento del backlog se hace dentro de la planning. De la sesión semanal del miércoles (17:30–19:30) solo se cuenta el tiempo dedicado a planning, review y retrospectiva (1 h).
 - La dedicación es homogénea: los cuatro miembros dedican las mismas horas todas las semanas.
 - Las ausencias comunicadas según el team charter se descuentan de la semana afectada y se replanifica el sprint.
 

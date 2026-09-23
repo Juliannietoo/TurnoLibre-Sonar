@@ -9,6 +9,7 @@ Aplicación web para el intercambio de turnos entre trabajadores de una organiza
 | `.specify/memory/constitution.md` | Principios no negociables del proyecto |
 | `specs/product/mission.md` | Razón de ser del producto |
 | `specs/product/goals.md` | Objetivos, métricas, alcance, exclusiones, supuestos y restricciones |
+| `specs/product/business-rules.md` | Reglas de negocio de los intercambios de turno |
 | `docs/organization/company.md` | Ficha de la empresa y del equipo |
 | `docs/organization/team-charter.md` | Acuerdos de trabajo del equipo |
 | `docs/organization/capacity.md` | Capacidad del equipo para las 6 semanas |
