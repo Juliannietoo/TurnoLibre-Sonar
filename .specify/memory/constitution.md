@@ -1,6 +1,6 @@
 # TurnoLibre — Constitución del proyecto
 
-Versión 1.0 · Fecha: **[COMPLETAR]**
+Versión 1.0 · Fecha: 23/09/2026
 
 ## Core Principles
 
@@ -41,4 +41,4 @@ Antes de aprobar una especificación, un plan o una implementación se comprueba
 ### Historial de versiones
 | Versión | Fecha | Cambio | Aprobado por |
 |---|---|---|---|
-| 1.0 | **[COMPLETAR]** | Versión inicial | Equipo |
+| 1.0 | 23/09/2026 | Versión inicial | Equipo |

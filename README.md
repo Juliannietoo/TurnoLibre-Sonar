@@ -11,7 +11,15 @@ Aplicación web para el intercambio de turnos entre trabajadores de una organiza
 | `specs/product/goals.md` | Objetivos, métricas, alcance, exclusiones, supuestos y restricciones |
 | `docs/organization/company.md` | Ficha de la empresa y del equipo |
 | `docs/organization/team-charter.md` | Acuerdos de trabajo del equipo |
+| `docs/organization/capacity.md` | Capacidad del equipo para las 6 semanas |
 
 ## Equipo
 
-**[COMPLETAR]** nombre, rol y usuario de GitHub de cada miembro.
+Empresa: **MedSwap** (ficticia).
+
+| Miembro (GitHub) | Rol principal |
+|---|---|
+| [Lucansado](https://github.com/Lucansado) | Product Owner |
+| [PaulaJCruz](https://github.com/PaulaJCruz) | Scrum Master |
+| [MarvelinoGG](https://github.com/MarvelinoGG) | Tech Lead |
+| [Juliannietoo](https://github.com/Juliannietoo) | DevOps / QA |

@@ -37,12 +37,12 @@
 - **A-01:** las reglas de negocio (descanso mínimo, máximo de horas, cobertura mínima) son las definidas por el equipo y están recogidas en la especificación. **[COMPLETAR valores]**
 - **A-02:** hay un único centro y un único responsable de planificación por servicio.
 - **A-03:** los usuarios disponen de un navegador moderno.
-- **A-04:** el equipo dispone de la capacidad calculada en `docs/organization/` durante las 6 semanas. **[COMPLETAR]**
+- **A-04:** cada miembro dedica 5 h/semana durante las 6 semanas: 120 h brutas y ≈ 75 h disponibles para el backlog (cálculo en `docs/organization/capacity.md`).
 
 ## Restricciones
 - Prohibido usar datos personales, laborales o sanitarios reales.
-- Ejecución de **6 semanas**, en **3 releases de 2 semanas**, con sprints de **1 semana que comienzan en miércoles**.
-- Equipo de **4 personas** y presupuesto derivado del coste por rol. **[COMPLETAR]**
+- Ejecución de **6 semanas** (del 23/09/2026 al 03/11/2026), en **3 releases de 2 semanas**, con sprints de **1 semana que comienzan en miércoles**.
+- Equipo de **4 personas** a 5 h/semana cada una; presupuesto derivado del coste por rol. **[COMPLETAR coste]**
 - Uso de las tecnologías y convenciones aprobadas por la asignatura (se definirán más adelante).
 
 ## Trazabilidad
