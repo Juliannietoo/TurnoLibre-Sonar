@@ -21,7 +21,7 @@ Todos los miembros participan en el desarrollo con independencia de su rol. La c
 ## Justificación de la asignación de roles
 | Miembro | Motivo |
 |---|---|
-| Lucansado (PO) | **[COMPLETAR por Lucansado: una línea]** |
+| Lucansado (PO) | Asumo el rol de Product Owner para representar las necesidades del hospital ficticio y priorizar con el equipo el valor, alcance y criterios de aceptación de TurnoLibre. |
 | PaulaJCruz (SM) | **[COMPLETAR por PaulaJCruz: una línea]** |
 | MarvelinoGG (TL) | **[COMPLETAR por MarvelinoGG: una línea]** |
 | Juliannietoo (DevOps/QA) | **[COMPLETAR por Juliannietoo: una línea]** |

@@ -1,21 +1,23 @@
 # TurnoLibre — Objetivos
 
+Revisión propuesta el 24/09/2026: las precisiones de G01, G02 y M01–M05 quedan pendientes de revisión del equipo y decisión formal del Product Owner.
+
 ## Objetivos
 | ID | Objetivo | Resultado esperado |
 |---|---|---|
-| G01 | Autonomía del empleado | El empleado completa un intercambio de turno de principio a fin sin ayuda externa. |
-| G02 | Cumplimiento de reglas | Ningún cambio que incumpla las reglas de descanso, horas o cobertura llega a aprobarse. |
+| G01 | Autonomía del empleado | Los dos empleados completan sin ayuda los pasos que les corresponden hasta dejar la solicitud pendiente de aprobación. |
+| G02 | Cumplimiento de reglas | Ningún cambio que incumpla cualquiera de las reglas RN-01 a RN-06 llega a aprobarse. |
 | G03 | Control ágil del responsable | El responsable resuelve solicitudes con la información y validaciones ya disponibles. |
 | G04 | Incremento revisable | Un tercero puede instalar, ejecutar y evaluar cada release de forma estable. |
 
 ## Indicadores de éxito
 | ID | Objetivo | Meta |
 |---|---|---|
-| M01 | G01 | Al menos 4 de 5 participantes de prueba completan un intercambio en menos de 5 minutos y sin ayuda. |
-| M02 | G02 | El 100 % de los casos de prueba que violan una regla son rechazados o marcados por el sistema (suite de casos de regla). |
-| M03 | G03 | El responsable resuelve una solicitud en menos de 1 minuto en pruebas con 3 solicitudes de muestra. |
-| M04 | G04 | Una persona que no ha implementado el producto sigue el guion de instalación y evaluación sin intervenciones no documentadas. |
-| M05 | Todos | No hay defectos bloqueantes abiertos al cierre de cada release. |
+| M01 | G01 | Al menos 4 de 5 participantes de prueba publican, proponen y aceptan un intercambio válido con dos cuentas ficticias hasta el estado «pendiente de aprobación» en menos de 5 minutos, sin ayuda. El tiempo no incluye la decisión del responsable. |
+| M02 | G02 | El 100 % de la suite de casos de RN-01 a RN-06 se resuelve correctamente en el servidor: los casos inválidos quedan bloqueados antes de aprobar y los válidos pueden aprobarse. Incluye casos límite. |
+| M03 | G03 | En 3 solicitudes de muestra, el responsable decide cada una en menos de 1 minuto desde que abre el detalle hasta que registra la decisión. |
+| M04 | G04 | Una persona ajena a la implementación instala y evalúa cada release desde un entorno limpio siguiendo solo el guion documentado, sin intervenciones no documentadas. |
+| M05 | Todos | No hay defectos bloqueantes abiertos al cierre de cada release. Es bloqueante un fallo que impide el flujo principal, la instalación o el bloqueo de un intercambio inválido. |
 
 > Metas propuestas: el equipo puede ajustarlas, pero deben seguir siendo medibles.
 
@@ -34,7 +36,7 @@
 - **EX-05:** aplicación móvil nativa.
 
 ## Supuestos
-- **A-01:** las reglas de negocio de los intercambios son las definidas por el equipo en [`business-rules.md`](business-rules.md): descanso mínimo de 12 h entre turnos, máximo de 40 h por semana, intercambio solo entre empleados de la misma categoría y servicio, cobertura mínima por turno y solicitud con 48 h de antelación.
+- **A-01:** las reglas de negocio de los intercambios son las definidas por el equipo en [`business-rules.md`](business-rules.md): descanso mínimo de 12 h entre turnos, máximo interno de 40 h por semana natural, intercambio solo entre empleados de la misma categoría y servicio, cobertura mínima por turno, solicitud con 48 h de antelación y turnos sin solapamientos ni doble asignación por fecha de inicio.
 - **A-02:** hay un único centro y un único responsable de planificación por servicio.
 - **A-03:** los usuarios disponen de un navegador moderno.
 - **A-04:** cada miembro dedica 5 h/semana durante las 6 semanas: 120 h brutas y ≈ 75 h disponibles para el backlog (cálculo en `docs/organization/capacity.md`).

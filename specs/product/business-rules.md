@@ -1,8 +1,8 @@
 # TurnoLibre — Reglas de negocio
 
-Versión 0.1 · 23/09/2026 · Propuesta pendiente de validación por el Product Owner.
+Versión 0.2 · 24/09/2026 · Revisión de la propuesta para validación por el Product Owner.
 
-Reglas que el sistema comprueba **en el servidor** antes de que un intercambio pueda aprobarse (constitución, principio 4). Son reglas **ficticias**, definidas por el equipo e **inspiradas** en la normativa laboral española, simplificadas para el proyecto.
+Reglas que el sistema comprueba **en el servidor** antes de que un intercambio pueda aprobarse (constitución, principio 4). Son reglas **ficticias**, definidas por el equipo e **inspiradas** en la normativa laboral española, simplificadas para el proyecto. No describen por sí solas el régimen laboral de un hospital real: el [art. 34.1 del Estatuto de los Trabajadores](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430) expresa las 40 h semanales como promedio en cómputo anual; aquí RN-02 fija deliberadamente un máximo estricto en cada semana natural.
 
 ## Turnos del Hospital Comarcal Vega Alta (ficticio)
 | Turno | Horario | Duración |
@@ -15,11 +15,18 @@ Reglas que el sistema comprueba **en el servidor** antes de que un intercambio p
 | ID | Regla | Valor | Referencia |
 |---|---|---|---|
 | RN-01 | Descanso mínimo entre el fin de un turno y el inicio del siguiente del mismo empleado | **12 h** | Estatuto de los Trabajadores, art. 34.3 |
-| RN-02 | Horas máximas por empleado en una semana natural (lunes a domingo) | **40 h** | Jornada máxima ordinaria, ET art. 34.1 (simplificada a cómputo semanal) |
+| RN-02 | Horas máximas por empleado en una semana natural (lunes a domingo) | **40 h** | Límite interno ficticio, más estricto que el promedio anual del ET art. 34.1 |
 | RN-03 | Solo pueden intercambiar turno dos empleados de la **misma categoría profesional y el mismo servicio** | — | Garantiza que la cobertura por perfil no cambia |
-| RN-04 | Tras el intercambio, cada turno de cada servicio mantiene su **cobertura mínima** | Mañana 3 · Tarde 3 · Noche 2 empleados | Valores ficticios de la organización |
+| RN-04 | Tras el intercambio, cada turno de cada servicio mantiene su **cobertura mínima** | Mañana 3 · Tarde 3 · Noche 2 empleados por servicio | Valores ficticios de la organización |
 | RN-05 | Antelación mínima de la solicitud respecto al primero de los turnos afectados | **48 h** | Da tiempo al responsable para resolver |
-| RN-06 | Un empleado no puede tener dos turnos que se solapen, ni dos turnos el mismo día | — | Coherencia del calendario |
+| RN-06 | Un empleado no puede tener dos turnos que se solapen, ni dos turnos con la misma fecha de inicio | — | Coherencia del calendario |
+
+## Criterios de aplicación
+- Se comprueba el cuadrante resultante **de ambos empleados**, incluidos los turnos anteriores y posteriores a los intercambiados. La validación se repite antes de la aprobación del responsable, por si el cuadrante ha cambiado.
+- RN-02 suma horas efectivamente trabajadas dentro de cada semana natural. Un turno de noche que cruza el domingo se reparte entre ambas semanas. Se comprueban todas las semanas afectadas para los dos empleados.
+- RN-04 se calcula por servicio, fecha y franja; el conjunto de datos de demostración debe partir de un cuadrante que cumpla 3/3/2. Esto supone 434 h de cobertura semanales por servicio y un mínimo teórico de 11 empleados si ninguno supera 40 h. En un intercambio uno a uno dentro del mismo servicio y categoría, la cobertura debe permanecer igual; la comprobación protege también frente a datos inconsistentes.
+- RN-05 se mide al registrar la solicitud respecto al inicio más temprano de los dos turnos. La aceptación y la aprobación deben ocurrir antes de ese inicio; las solicitudes caducadas no pueden aprobarse.
+- RN-06 asigna a la noche la fecha en que empieza (22:00), aunque termine al día siguiente. Esta regla se aplica además de RN-01.
 
 ## Casos de ejemplo
 | Caso | Resultado | Motivo |
