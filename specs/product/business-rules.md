@@ -1,6 +1,6 @@
 # TurnoLibre — Reglas de negocio
 
-Versión 0.2 · 24/09/2026 · Revisión de la propuesta para validación por el Product Owner.
+Versión 0.2 · 24/09/2026 · Validada por Lucansado (Product Owner) el 28/09/2026 tras la revisión de PaulaJCruz ([PR #1](https://github.com/UniExtremadura/TurnoLibre_GC02/pull/1)).
 
 Reglas que el sistema comprueba **en el servidor** antes de que un intercambio pueda aprobarse (constitución, principio 4). Son reglas **ficticias**, definidas por el equipo e **inspiradas** en la normativa laboral española, simplificadas para el proyecto. No describen por sí solas el régimen laboral de un hospital real: el [art. 34.1 del Estatuto de los Trabajadores](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430) expresa las 40 h semanales como promedio en cómputo anual; aquí RN-02 fija deliberadamente un máximo estricto en cada semana natural.
 

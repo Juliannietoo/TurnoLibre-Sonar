@@ -1,6 +1,6 @@
 # TurnoLibre — Objetivos
 
-Revisión propuesta el 24/09/2026: las precisiones de G01, G02 y M01–M05 quedan pendientes de revisión del equipo y decisión formal del Product Owner.
+Precisiones de G01, G02 y M01–M05 propuestas el 24/09/2026 y validadas por Lucansado (Product Owner) el 28/09/2026 tras la revisión de PaulaJCruz ([PR #1](https://github.com/UniExtremadura/TurnoLibre_GC02/pull/1)).
 
 ## Objetivos
 | ID | Objetivo | Resultado esperado |
