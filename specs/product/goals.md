@@ -44,7 +44,7 @@ Precisiones de G01, G02 y M01–M05 propuestas el 24/09/2026 y validadas por Luc
 ## Restricciones
 - Prohibido usar datos personales, laborales o sanitarios reales.
 - Ejecución de **6 semanas** (del 23/09/2026 al 03/11/2026), en **3 releases de 2 semanas**, con sprints de **1 semana que comienzan en miércoles**.
-- Equipo de **4 personas** a 5 h/semana cada una; coste directo de personal estimado en **3.780 €** (cálculo en `docs/organization/company.md`).
+- Equipo de **4 personas** a 5 h/semana cada una; coste directo de personal de **2.677,50 €** y precio al cliente de **4.935,59 € IVA incluido** (cálculo en `docs/organization/company.md`).
 - Uso de las tecnologías y convenciones aprobadas por la asignatura (se definirán más adelante).
 
 ## Trazabilidad

@@ -11,10 +11,10 @@
 ## Equipo
 | Miembro (GitHub) | Rol principal | Horas/semana | Coste/hora empresa |
 |---|---|---|---|
-| [Lucansado](https://github.com/Lucansado) | Product Owner | 5 | 31,50 € |
-| [PaulaJCruz](https://github.com/PaulaJCruz) | Scrum Master | 5 | 30,00 € |
-| [MarvelinoGG](https://github.com/MarvelinoGG) | Tech Lead | 5 | 36,00 € |
-| [Juliannietoo](https://github.com/Juliannietoo) | DevOps / QA | 5 | 28,50 € |
+| [Lucansado](https://github.com/Lucansado) | Product Owner | 5 | 22,50 € |
+| [PaulaJCruz](https://github.com/PaulaJCruz) | Scrum Master | 5 | 21,00 € |
+| [MarvelinoGG](https://github.com/MarvelinoGG) | Tech Lead | 5 | 25,50 € |
+| [Juliannietoo](https://github.com/Juliannietoo) | DevOps / QA | 5 | 20,25 € |
 
 Todos los miembros participan en el desarrollo con independencia de su rol. La capacidad del equipo se calcula en [capacity.md](capacity.md).
 
@@ -27,31 +27,48 @@ Todos los miembros participan en el desarrollo con independencia de su rol. La c
 | Juliannietoo (DevOps/QA) | Mi objetivo como DevOps/QA es gestionar la calidad, pruebas y entornos del proyecto, asegurando el cumplimiento de los requisitos no funcionales, el despliegue y su correcta operación. |
 
 ## Justificación de costes por rol
-Propuesta 23/09/2026, pendiente de aprobar por el equipo.
+Aprobado por el equipo el 30/09/2026: perfil *júnior*, salarios de referencia de *Glassdoor*.
+
+*Por qué júnior:* MedSwap es una empresa de reciente creación formada por titulados sin experiencia profesional previa; un salario de nivel medio no sería creíble para este equipo.
 
 *Método:* coste/hora empresa = salario bruto anual × 1,32 ÷ 1.760 h.
-- *Salario bruto anual:* referencia orientativa de un perfil de nivel medio en España. *[COMPLETAR: citar la fuente consultada (InfoJobs, Glassdoor, informe salarial del sector…) y su fecha; ajustar las cifras si difieren]*.
+- *Salario bruto anual:* salario medio de un perfil júnior en España según Glassdoor. *[COMPLETAR: enlace a cada consulta de Glassdoor y fecha de consulta; si el valor publicado difiere, sustituir la cifra de la tabla y recalcular]*.
 - *× 1,32:* cotizaciones a la Seguridad Social a cargo de la empresa (≈ 32 %: contingencias comunes, desempleo, FOGASA, formación profesional, MEI y accidentes de trabajo).
 - *1.760 h/año:* 40 h/semana × 44 semanas efectivas (descontando vacaciones y festivos).
 
-| Rol | Salario bruto anual | Coste empresa anual (× 1,32) | Coste/hora |
-|---|---|---|---|
-| Product Owner | 42.000 € | 55.440 € | *31,50 €* |
-| Scrum Master | 40.000 € | 52.800 € | *30,00 €* |
-| Tech Lead | 48.000 € | 63.360 € | *36,00 €* |
-| DevOps / QA | 38.000 € | 50.160 € | *28,50 €* |
+| Rol | Puesto consultado en Glassdoor | Salario bruto anual | Coste empresa anual (× 1,32) | Coste/hora |
+|---|---|---|---|---|
+| Product Owner | Product Owner júnior | 30.000 € | 39.600 € | *22,50 €* |
+| Scrum Master | Scrum Master júnior | 28.000 € | 36.960 € | *21,00 €* |
+| Tech Lead | Desarrollador/a de software (perfil técnico con mayor responsabilidad) | 34.000 € | 44.880 € | *25,50 €* |
+| DevOps / QA | QA / DevOps júnior | 27.000 € | 35.640 € | *20,25 €* |
 
-*Por qué este orden:* el Tech Lead es el perfil con más experiencia técnica y responsabilidad sobre la arquitectura; Product Owner y Scrum Master tienen tarifas similares por su papel de gestión; DevOps/QA se sitúa entre DevOps (más alto) y QA (más bajo).
+*Por qué este orden:* el Tech Lead asume la responsabilidad técnica y de arquitectura, por lo que tiene la tarifa más alta; Product Owner y Scrum Master tienen tarifas similares por su papel de gestión; DevOps/QA se sitúa en la media entre DevOps (más alto) y QA (más bajo).
 
-## Coste directo de personal estimado
-Cada miembro dedica 5 h/semana × 6 semanas = *30 h*.
+## Coste directo de personal
+Cada miembro dedica 5 h/semana × 6 semanas = *30 h*. Se pagan las 120 h completas, no solo la capacidad efectiva: las reuniones y la coordinación también son trabajo remunerado.
 
 | Rol | Horas | Coste/hora | Coste |
 |---|---|---|---|
-| Product Owner | 30 | 31,50 € | 945 € |
-| Scrum Master | 30 | 30,00 € | 900 € |
-| Tech Lead | 30 | 36,00 € | 1.080 € |
-| DevOps / QA | 30 | 28,50 € | 855 € |
-| *Total* | *120* | | *3.780 €* |
+| Product Owner | 30 | 22,50 € | 675,00 € |
+| Scrum Master | 30 | 21,00 € | 630,00 € |
+| Tech Lead | 30 | 25,50 € | 765,00 € |
+| DevOps / QA | 30 | 20,25 € | 607,50 € |
+| *Total* | *120* | | *2.677,50 €* |
 
-Es solo el coste directo de personal. En H4 se completará con costes indirectos (equipos, licencias, infraestructura), contingencia y, si procede, margen para obtener el precio al cliente.
+## Coste total y precio al cliente
+Estructura aprobada el 30/09/2026. Se revisará en H4 con la planificación final.
+
+| Concepto | Criterio | Importe |
+|---|---|---|
+| Personal directo | 120 h × coste/hora de cada rol | 2.677,50 € |
+| Equipos | 4 portátiles de 1.000 € amortizados en 4 años; parte proporcional de 6 semanas | 115,38 € |
+| Software e infraestructura | GitHub y Jira en plan gratuito; servidor de demostración ≈ 20 €/mes durante 1,5 meses | 30,00 € |
+| Gastos generales | 15 % del personal directo: oficina, suministros, internet, gestoría | 401,63 € |
+| *Coste del proyecto* | | *3.224,51 €* |
+| Reserva para imprevistos | 10 % del coste, justificada por los riesgos RT-01 a RT-03 ([`technical-risks.md`](../risks/technical-risks.md)) | 322,45 € |
+| *Coste con reserva* | | *3.546,96 €* |
+| Margen de beneficio | 15 % | 532,04 € |
+| *Precio al cliente (sin IVA)* | | *4.079,00 €* |
+| IVA | 21 % | 856,59 € |
+| *Precio al cliente (IVA incluido)* | | *4.935,59 €* |
