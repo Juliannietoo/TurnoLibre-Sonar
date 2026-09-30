@@ -1,7 +1,6 @@
 # TurnoLibre — Riesgos técnicos
 
-Revisión técnica inicial · Tech Lead (MarvelinoGG) · 29/09/2026 · Valoración de probabilidad e impacto añadida el 30/09/2026 (pendiente de validar por el TL)
-
+Revisión técnica inicial · Tech Lead (MarvelinoGG) · 29/09/2026 · Valoración de probabilidad e impacto añadida el 30/09/2026 
 | ID | Riesgo | Probabilidad | Impacto | Mitigación | Estado |
 |---|---|---|---|---|---|
 | RT-01 | Complejidad de las reglas de negocio | Alta | Alto | Centralizar las reglas en un módulo de lógica de negocio y probar cada regla y sus casos límite | Abierto |
