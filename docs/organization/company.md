@@ -22,7 +22,7 @@ Todos los miembros participan en el desarrollo con independencia de su rol. La c
 | Miembro | Motivo |
 |---|---|
 | Lucansado (PO) | Asumo el rol de Product Owner para representar las necesidades del hospital ficticio y priorizar con el equipo el valor, alcance y criterios de aceptación de TurnoLibre. |
-| PaulaJCruz (SM) | **[COMPLETAR por PaulaJCruz: una línea]** |
+| PaulaJCruz (SM) | Me encargo de organizar el trabajo del equipo y de que el proceso Scrum funcione: preparo las reuniones, hago el seguimiento de los pendientes y registro las decisiones en la Wiki. |
 | MarvelinoGG (TL) | **[COMPLETAR por MarvelinoGG: una línea]** |
 | Juliannietoo (DevOps/QA) | Mi objetivo como DevOps/QA es gestionar la calidad, pruebas y entornos del proyecto, asegurando el cumplimiento de los requisitos no funcionales, el despliegue y su correcta operación. |
 
