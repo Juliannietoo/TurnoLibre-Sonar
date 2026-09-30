@@ -24,7 +24,7 @@ Todos los miembros participan en el desarrollo con independencia de su rol. La c
 | Lucansado (PO) | Asumo el rol de Product Owner para representar las necesidades del hospital ficticio y priorizar con el equipo el valor, alcance y criterios de aceptación de TurnoLibre. |
 | PaulaJCruz (SM) | **[COMPLETAR por PaulaJCruz: una línea]** |
 | MarvelinoGG (TL) | **[COMPLETAR por MarvelinoGG: una línea]** |
-| Juliannietoo (DevOps/QA) | **[COMPLETAR por Juliannietoo: una línea]** |
+| Juliannietoo (DevOps/QA) | Mi objetivo como DevOps/QA es gestionar la calidad, pruebas y entornos del proyecto, asegurando el cumplimiento de los requisitos no funcionales, el despliegue y su correcta operación. |
 
 ## Justificación de costes por rol
 Propuesta 23/09/2026, pendiente de aprobar por el equipo.
