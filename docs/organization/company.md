@@ -9,7 +9,7 @@
 | Contexto | Empresa ficticia; cliente ficticio: Hospital Comarcal Vega Alta. Producto: TurnoLibre. |
 
 ## Equipo
-| Miembro (GitHub) | Rol principal | Horas/semana | Coste/hora empresa |
+| Miembro (GitHub) | Rol principal | Horas/semana | Coste/hora aprobado el 30/09 |
 |---|---|---|---|
 | [Lucansado](https://github.com/Lucansado) | Product Owner | 5 | 22,50 € |
 | [PaulaJCruz](https://github.com/PaulaJCruz) | Scrum Master | 5 | 21,00 € |
@@ -27,25 +27,27 @@ Todos los miembros participan en el desarrollo con independencia de su rol. La c
 | Juliannietoo (DevOps/QA) | Mi objetivo como DevOps/QA es gestionar la calidad, pruebas y entornos del proyecto, asegurando el cumplimiento de los requisitos no funcionales, el despliegue y su correcta operación. |
 
 ## Justificación de costes por rol
-Aprobado por el equipo el 30/09/2026: perfil *júnior*, salarios de referencia de *Glassdoor*.
+El presupuesto aprobado el 30/09/2026 utiliza perfiles *júnior* y estimaciones salariales iniciales. El 01/10/2026 se ha contrastado el salario del PO; los otros tres salarios siguen pendientes de verificación por sus responsables.
 
 *Por qué júnior:* MedSwap es una empresa de reciente creación formada por titulados sin experiencia profesional previa; un salario de nivel medio no sería creíble para este equipo.
 
 *Método:* coste/hora empresa = salario bruto anual × 1,32 ÷ 1.760 h.
-- *Salario bruto anual:* salario medio de un perfil júnior en España según Glassdoor. *[COMPLETAR: enlace a cada consulta de Glassdoor y fecha de consulta; si el valor publicado difiere, sustituir la cifra de la tabla y recalcular]*.
-- *× 1,32:* cotizaciones a la Seguridad Social a cargo de la empresa (≈ 32 %: contingencias comunes, desempleo, FOGASA, formación profesional, MEI y accidentes de trabajo).
+- *Salario bruto anual:* referencia verificada para PO y estimaciones iniciales para los demás roles, según la tabla siguiente.
+- *× 1,32:* hipótesis presupuestaria de un 32 % de cargas empresariales; no es un dato de Glassdoor.
 - *1.760 h/año:* 40 h/semana × 44 semanas efectivas (descontando vacaciones y festivos).
 
-| Rol | Puesto consultado en Glassdoor | Salario bruto anual | Coste empresa anual (× 1,32) | Coste/hora |
+| Rol | Perfil de referencia | Salario bruto anual | Coste empresa anual (× 1,32) | Coste/hora |
 |---|---|---|---|---|
-| Product Owner | Product Owner júnior | 30.000 € | 39.600 € | *22,50 €* |
+| Product Owner | Junior Product Owner en España; verificado | 26.000 € | 34.320 € | *19,50 €* |
 | Scrum Master | Scrum Master júnior | 28.000 € | 36.960 € | *21,00 €* |
 | Tech Lead | Desarrollador/a de software (perfil técnico con mayor responsabilidad) | 34.000 € | 44.880 € | *25,50 €* |
 | DevOps / QA | QA / DevOps júnior | 27.000 € | 35.640 € | *20,25 €* |
 
-*Por qué este orden:* el Tech Lead asume la responsabilidad técnica y de arquitectura, por lo que tiene la tarifa más alta; Product Owner y Scrum Master tienen tarifas similares por su papel de gestión; DevOps/QA se sitúa en la media entre DevOps (más alto) y QA (más bajo).
+**Fuente PO:** [Glassdoor: Junior Product Owner en España](https://www.glassdoor.es/Sueldos/junior-product-owner-sueldo-SRCH_KO0,20.htm), consultado el **01/10/2026**. Sueldo base promedio publicado: **26.000 €/año**, con rango de 19.000–30.000 €. La muestra pública es de tres sueldos comunicados en 2021–2022; se utiliza como referencia orientativa. Los importes de SM, TL y QA/DevOps son estimaciones, pendientes de enlace y fecha de consulta.
 
-## Coste directo de personal
+**Revisión pendiente por SM:** el PO pasa de 30.000 a 26.000 €/año; con el método acordado, de 22,50 a 19,50 €/h y de 675 a 585 € por 30 h (−90 € de coste directo). Las tablas de presupuesto siguientes conservan la base aprobada del 30/09 hasta que SM recalcule el total y se registre su aprobación.
+
+## Coste directo de personal — presupuesto aprobado el 30/09
 Cada miembro dedica 5 h/semana × 6 semanas = *30 h*. Se pagan las 120 h completas, no solo la capacidad efectiva: las reuniones y la coordinación también son trabajo remunerado.
 
 | Rol | Horas | Coste/hora | Coste |
@@ -57,7 +59,7 @@ Cada miembro dedica 5 h/semana × 6 semanas = *30 h*. Se pagan las 120 h complet
 | *Total* | *120* | | *2.677,50 €* |
 
 ## Coste total y precio al cliente
-Estructura aprobada el 30/09/2026. Se revisará en H4 con la planificación final.
+Presupuesto aprobado el 30/09/2026, pendiente de incorporar la revisión salarial del PO y las verificaciones de los demás roles. Se revisará también en H4 con la planificación final.
 
 | Concepto | Criterio | Importe |
 |---|---|---|
