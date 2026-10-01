@@ -1,6 +1,6 @@
 # TurnoLibre — Objetivos
 
-Precisiones de G01, G02 y M01–M05 propuestas el 24/09/2026 y validadas por Lucansado (Product Owner) el 28/09/2026 tras la revisión de PaulaJCruz ([PR #1](https://github.com/UniExtremadura/TurnoLibre_GC02/pull/1)).
+Precisiones de G01, G02 y M01–M05 propuestas el 24/09/2026 y validadas por el Product Owner el 28/09/2026 tras la revisión de PaulaJCruz ([PR #1](https://github.com/UniExtremadura/TurnoLibre_GC02/pull/1)). M01 revisada por decisión del PO el 01/10/2026: muestra de tres participantes para reducir el esfuerzo de evaluación; se exige que los tres completen el flujo.
 
 ## Objetivos
 | ID | Objetivo | Resultado esperado |
@@ -13,7 +13,7 @@ Precisiones de G01, G02 y M01–M05 propuestas el 24/09/2026 y validadas por Luc
 ## Indicadores de éxito
 | ID | Objetivo | Meta |
 |---|---|---|
-| M01 | G01 | Al menos 4 de 5 participantes de prueba publican, proponen y aceptan un intercambio válido con dos cuentas ficticias hasta el estado «pendiente de aprobación» en menos de 5 minutos, sin ayuda. El tiempo no incluye la decisión del responsable. |
+| M01 | G01 | Los 3 participantes de prueba publican, proponen y aceptan un intercambio válido con dos cuentas ficticias hasta el estado «pendiente de aprobación» en menos de 5 minutos cada uno, sin ayuda (3 de 3). El tiempo no incluye la decisión del responsable. |
 | M02 | G02 | El 100 % de la suite de casos de RN-01 a RN-06 se resuelve correctamente en el servidor: los casos inválidos quedan bloqueados antes de aprobar y los válidos pueden aprobarse. Incluye casos límite. |
 | M03 | G03 | En 3 solicitudes de muestra, el responsable decide cada una en menos de 1 minuto desde que abre el detalle hasta que registra la decisión. |
 | M04 | G04 | Una persona ajena a la implementación instala y evalúa cada release desde un entorno limpio siguiendo solo el guion documentado, sin intervenciones no documentadas. |
@@ -26,7 +26,7 @@ Precisiones de G01, G02 y M01–M05 propuestas el 24/09/2026 y validadas por Luc
 - **S-02:** aprobación o rechazo por el responsable, con validación automática de reglas.
 - **S-03:** calendario de turnos y consulta del estado e historial de solicitudes.
 - **S-04:** conjunto controlado de empleados, turnos y solicitudes completamente ficticios.
-- **S-05:** gestión mínima de datos de demostración (alta de turnos y empleados) imprescindible para probar el producto.
+- **S-05:** preparación mínima de empleados y turnos ficticios mediante carga inicial y restablecimiento de datos. La pantalla de alta y modificación de turnos queda como mejora opcional (decisión del PO del 01/10/2026).
 
 ## Exclusiones
 - **EX-01:** nóminas, fichaje, control horario y vacaciones.
