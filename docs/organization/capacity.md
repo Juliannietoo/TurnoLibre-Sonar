@@ -2,30 +2,39 @@
 
 Periodo de ejecución: **6 semanas** (6 sprints de 1 semana, de miércoles a martes), del **23/09/2026** al **03/11/2026**, en 3 releases de 2 semanas.
 
-## Datos de partida
-| Miembro | Rol | Horas/semana |
-|---|---|---|
-| Lucansado | Product Owner | 5 |
-| PaulaJCruz | Scrum Master | 5 |
-| MarvelinoGG | Tech Lead | 5 |
-| Juliannietoo | DevOps / QA | 5 |
-| **Equipo** | | **20** |
+## Revisión individual del 01/10/2026
 
-## Cálculo
-| Concepto | Por persona y semana | Equipo y semana | Total 6 semanas |
-|---|---|---|---|
-| Capacidad bruta | 5 h | 20 h | **120 h** |
-| Eventos Scrum: planning (0,5 h) + review (0,25 h) + retrospectiva (0,25 h) + 2 dailies de 15 min (0,5 h) | 1,5 h | 6 h | 36 h |
-| Capacidad neta | 3,5 h | 14 h | 84 h |
-| Colchón del 10 % sobre la neta (ausencias, imprevistos, curva de aprendizaje) | 0,35 h | 1,4 h | 8,4 h |
-| **Capacidad disponible para el backlog** | **3,15 h** | **12,6 h** | **≈ 75 h** |
+El PO ha confirmado su reparto semanal y la recuperación de la hora del festivo 12/10. Quedan pendientes sus ausencias conocidas y la revisión individual de los otros tres roles. La capacidad total del equipo para H2 todavía no está cerrada.
 
-Por release (2 sprints): **≈ 25 h** para trabajo del backlog.
+| Rol | Nominal semanal | Reuniones | Coordinación del rol | Margen sobre la neta | Efectiva antes de ausencias | Estado |
+|---|---|---|---|---|---|---|
+| Product Owner | 5 h | 1,5 h | 0,5 h | 20 % | 2,4 h | Reparto confirmado; ausencias pendientes |
+| Scrum Master | 5 h (hipótesis H1) | Pendiente | Pendiente | Pendiente | Pendiente | Revisión individual por SM |
+| Tech Lead | 5 h (hipótesis H1) | Pendiente | Pendiente | Pendiente | Pendiente | Revisión individual por TL |
+| DevOps / QA | 5 h (hipótesis H1) | Pendiente | Pendiente | Pendiente | Pendiente | Revisión individual por QA |
 
-## Supuestos
-- Las 5 h/semana incluyen todos los eventos Scrum; el refinamiento del backlog se hace dentro de la planning. De la sesión semanal del miércoles (17:30–19:30) solo se cuenta el tiempo dedicado a planning, review y retrospectiva (1 h).
-- La dedicación es homogénea: los cuatro miembros dedican las mismas horas todas las semanas.
-- Las ausencias comunicadas según el team charter se descuentan de la semana afectada y se replanifica el sprint.
+## Capacidad del PO
 
-## Uso
-La capacidad disponible (≈ 12,6 h por sprint) es el límite de esfuerzo estimado que se puede comprometer en cada sprint. Se revisará con la velocidad real tras los primeros sprints.
+Semanal: **5 − 1,5 − 0,5 = 3 h netas**. Reserva: **3 × 20 % = 0,6 h**. Capacidad efectiva base: **2,4 h por sprint**.
+
+El margen del 20 % responde a la carga de otras actividades y ha sido confirmado por el PO; no se aplica automáticamente a los demás roles. Las 1,5 h de reuniones incluyen una hora de planning/review/retrospectiva y dos dailies de 15 minutos. La media hora de coordinación individual del PO se descuenta aparte.
+
+| Sprint | Periodo | Nominal base | Reuniones | Coordinación | Reserva base | Efectiva base | Ausencias |
+|---|---|---|---|---|---|---|---|
+| IT-001 | 23/09–29/09 | 5 h | 1,5 h | 0,5 h | 0,6 h | 2,4 h | Pendientes de declarar |
+| IT-002 | 30/09–06/10 | 5 h | 1,5 h | 0,5 h | 0,6 h | 2,4 h | Pendientes de declarar |
+| IT-003 | 07/10–13/10 | 5 h | 1,5 h | 0,5 h | 0,6 h | 2,4 h | Pendientes; recuperación de la hora del 12/10 prevista el 13/10 |
+| IT-004 | 14/10–20/10 | 5 h | 1,5 h | 0,5 h | 0,6 h | 2,4 h | Pendientes de declarar |
+| IT-005 | 21/10–27/10 | 5 h | 1,5 h | 0,5 h | 0,6 h | 2,4 h | Pendientes de declarar |
+| IT-006 | 28/10–03/11 | 5 h | 1,5 h | 0,5 h | 0,6 h | 2,4 h | Pendientes de declarar |
+| **Total base** | **6 semanas** | **30 h** | **9 h** | **3 h** | **3,6 h** | **14,4 h** | **Pendientes de descontar** |
+
+El bloque de una hora del lunes 12/10 se traslada al martes 13/10, de 13:30 a 14:30, dentro de IT-003. La hora de las dailies y cualquier cambio de reunión se acuerdan con el equipo. Esta tabla expresa disponibilidad planificada, no horas ya realizadas.
+
+## Cálculo definitivo y uso
+
+Por persona y sprint: `efectiva = max(0, nominal − ausencias − reuniones − coordinación) × (1 − margen individual)`.
+
+Las ausencias se aplican a la semana afectada; si obligan a cancelar o mover una reunión, se recalcula el tiempo de eventos para evitar descontar las mismas horas dos veces. Después se suman las capacidades efectivas de todos los miembros para contrastarlas con las horas-persona consensuadas del backlog. Cada margen debe justificarse individualmente.
+
+Como referencia histórica, H1 suponía 120 h nominales para el equipo y 75,6 h efectivas (aproximadas a 75 h), descontando 1,5 h de reuniones y un 10 % común, sin coordinación individual. Ese cálculo se sustituirá por los datos personales confirmados; no es la capacidad definitiva para H2.

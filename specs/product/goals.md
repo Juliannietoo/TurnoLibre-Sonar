@@ -39,7 +39,7 @@ Precisiones de G01, G02 y M01–M05 propuestas el 24/09/2026 y validadas por el 
 - **A-01:** las reglas de negocio de los intercambios son las definidas por el equipo en [`business-rules.md`](business-rules.md): descanso mínimo de 12 h entre turnos, máximo interno de 40 h por semana natural, intercambio solo entre empleados de la misma categoría y servicio, cobertura mínima por turno, solicitud con 48 h de antelación y turnos sin solapamientos ni doble asignación por fecha de inicio.
 - **A-02:** hay un único centro y un único responsable de planificación por servicio.
 - **A-03:** los usuarios disponen de un navegador moderno.
-- **A-04:** cada miembro dedica 5 h/semana durante las 6 semanas: 120 h brutas y ≈ 75 h disponibles para el backlog (cálculo en `docs/organization/capacity.md`).
+- **A-04:** la hipótesis de partida es 5 h/semana por miembro durante 6 semanas (120 h nominales). La capacidad efectiva se calcula individualmente en [capacidad del equipo](../../docs/organization/capacity.md); el PO ha confirmado su reparto y los otros roles siguen pendientes. El cálculo homogéneo de H1 no constituye la capacidad definitiva de H2.
 
 ## Restricciones
 - Prohibido usar datos personales, laborales o sanitarios reales.
