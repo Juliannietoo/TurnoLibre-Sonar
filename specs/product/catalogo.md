@@ -164,11 +164,12 @@ US-011, US-016, US-019 y US-020 se incorporan solo si cabe su esfuerzo después 
 4. **Prueba con tres participantes:** sustituir M01 por tres participantes que completen el flujo en menos de cinco minutos cada uno y sin ayuda (3 de 3). El tiempo excluye la aprobación del responsable. Se mantiene M03: tres decisiones del responsable, cada una en menos de un minuto. US-024 se incluye en IT-006.
 5. **Datos de demostración:** datos ficticios precargados y restablecibles (US-003) como solución inicial. La pantalla de alta y modificación de turnos (US-004) queda como mejora opcional (Could), sujeta a capacidad disponible.
 6. **Calendario:** la consulta del calendario propio (US-005) es imprescindible. Consultar turnos de compañeros que aún no se han publicado (US-006) es opcional, porque US-008 ya permite encontrar ofertas de intercambio.
+7. **Cambio de hora:** aplicar el criterio de horas efectivamente trabajadas de RN-02. Horarios, fechas y semanas usan Europe/Madrid; descanso, jornada y antelación se calculan con tiempo realmente transcurrido. Una noche con retraso de una hora dura 11 h y con adelanto, 9 h. El TL decide la implementación, sin cambiar este criterio funcional.
 
 
 ## 6. Pendientes para cerrar la planificación
 
 - Estimaciones individuales en horas-persona, consenso del Planning Poker y capacidad efectiva por persona y sprint.
-- Revisión del TL de dependencias, tecnologías y división de historias con incertidumbre alta; precisión del cómputo de horas en el cambio horario.
+- Revisión del TL de dependencias, tecnologías y división de historias con incertidumbre alta; implementación del cómputo temporal definido en las reglas.
 - Revisión de QA de criterios y asignación de IDs NFR y umbrales pendientes. Las reglas se prueban en el servidor, incluidos casos límite.
 - Registrar con el equipo la actualización de M01 a tres participantes y sincronizar los artefactos compartidos cuando se autorice su publicación.

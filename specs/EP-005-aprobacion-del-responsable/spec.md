@@ -41,7 +41,7 @@ El responsable resuelve cada solicitud con las reglas ya comprobadas en menos de
 
 - **Necesidad:** decisión final con trazabilidad de quién aprobó qué y cuándo.
 - **Objetivo:** G03 · M03 y G02 (revalidación antes de aprobar)
-- **Prioridad:** Must — *valor:* cierra el flujo completo; *riesgo:* alto (RT-02, concurrencia); *dependencias:* predecesora del historial y del guion de instalación.
+- **Prioridad:** Must — *valor:* cierra el flujo completo; *riesgo:* alto (RT-02, concurrencia); *dependencias:* predecesora de las vistas ampliadas de estado e historial y de la prueba del flujo completo.
 - **Estimación:** pendiente de Planning Poker (h-p)
 - **Incertidumbre:** Alta
 - **Predecesoras:** US-017 (funcional), US-012 (funcional), US-013 (funcional), US-014 (funcional), US-015 (funcional)
@@ -66,6 +66,7 @@ El responsable resuelve cada solicitud con las reglas ya comprobadas en menos de
 
 **Casos límite**
 - Dos solicitudes aceptadas afectan al mismo empleado; al aprobar la primera, la segunda deja de cumplir RN-01: la segunda no puede aprobarse.
+- Si ambas se aprueban simultáneamente, el resultado también debe cumplir todas las reglas: no pueden confirmarse dos decisiones que juntas dejen un cuadrante inválido.
 - El responsable abre una solicitud y, mientras decide, un empleado la cancela: se rechaza la aprobación y no se modifica el cuadrante (si se incorpora US-011).
 - Rechazo con motivo vacío o solo espacios: no se permite.
 

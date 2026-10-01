@@ -84,12 +84,13 @@ Ningún intercambio que incumpla una regla puede aprobarse, y el empleado entien
 
 **Casos límite**
 - Exactamente 40 h (válido).
+- Semana con retraso de una hora: 30 h de otros turnos más una noche de 11 h dentro de esa semana suman 41 h y se rechazan; 29 h más esa noche suman 40 h y cumplen RN-02.
 - Noche del domingo: 2 h cuentan en la semana del domingo y 8 h en la siguiente.
 - Intercambio entre turnos de semanas distintas: se revisan las dos semanas.
 
 **Supuestos**
 - Solo cuentan horas de turno; no hay horas extra ni guardias.
-- Los ejemplos de noches de 10 h corresponden a noches ordinarias. El cómputo en el cambio de hora requiere precisión del TL sobre horas efectivas y zona horaria antes de dar esta historia por preparada para desarrollo.
+- Los ejemplos de noches de 10 h corresponden a noches ordinarias. Se suman horas realmente transcurridas, repartidas por semanas locales de Europe/Madrid: una noche con retraso de una hora aporta 11 h y con adelanto, 9 h. El TL concreta su implementación.
 - NFR: Cálculo determinista con los mismos turnos y fechas; validación en servidor.
 
 ---

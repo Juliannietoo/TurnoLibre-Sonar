@@ -11,6 +11,8 @@ Reglas que el sistema comprueba **en el servidor** antes de que un intercambio p
 | Tarde (T) | 15:00 – 22:00 | 7 h |
 | Noche (N) | 22:00 – 08:00 (del día siguiente) | 10 h |
 
+Los horarios y las semanas naturales se interpretan en la zona **Europe/Madrid**. Las duraciones de la tabla corresponden a días sin cambio de hora. RN-01, RN-02 y RN-05 usan tiempo realmente transcurrido: una noche con retraso de una hora dura 11 h y con adelanto dura 9 h. RN-06 utiliza la fecha local de inicio. Precisión del PO para H2, 01/10/2026.
+
 ## Reglas
 | ID | Regla | Valor | Referencia |
 |---|---|---|---|
@@ -24,7 +26,7 @@ Reglas que el sistema comprueba **en el servidor** antes de que un intercambio p
 ## Criterios de aplicación
 - Se comprueba el cuadrante resultante **de ambos empleados**, incluidos los turnos anteriores y posteriores a los intercambiados. La validación se repite antes de la aprobación del responsable, por si el cuadrante ha cambiado.
 - RN-02 suma horas efectivamente trabajadas dentro de cada semana natural. Un turno de noche que cruza el domingo se reparte entre ambas semanas. Se comprueban todas las semanas afectadas para los dos empleados.
-- RN-04 se calcula por servicio, fecha y franja; el conjunto de datos de demostración debe partir de un cuadrante que cumpla 3/3/2. Esto supone 434 h de cobertura semanales por servicio y un mínimo teórico de 11 empleados si ninguno supera 40 h. En un intercambio uno a uno dentro del mismo servicio y categoría, la cobertura debe permanecer igual; la comprobación protege también frente a datos inconsistentes.
+- RN-04 se calcula por servicio, fecha y franja; el conjunto de datos de demostración debe partir de un cuadrante que cumpla 3/3/2. En una semana sin cambio de hora supone 434 h de cobertura por servicio (436 h con retraso de una hora y 432 h con adelanto) y un mínimo teórico de 11 empleados si ninguno supera 40 h. En un intercambio uno a uno dentro del mismo servicio y categoría, la cobertura debe permanecer igual; la comprobación protege también frente a datos inconsistentes.
 - RN-05 se mide al registrar la solicitud respecto al inicio más temprano de los dos turnos. La aceptación y la aprobación deben ocurrir antes de ese inicio; las solicitudes caducadas no pueden aprobarse.
 - RN-06 asigna a la noche la fecha en que empieza (22:00), aunque termine al día siguiente. Esta regla se aplica además de RN-01.
 
