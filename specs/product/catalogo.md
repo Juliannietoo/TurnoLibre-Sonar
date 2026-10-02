@@ -1,7 +1,7 @@
 # TurnoLibre — Catálogo de requisitos V0 (borrador)
 
-Línea base: **requisitos-v0-borrador** · Revisión del 01/10/2026 · Decisiones de alcance recogidas en el apartado 5; pendientes las estimaciones y la revisión del equipo.
-Cada épica enlaza su ficha de historias. Se conservan 24 historias; las decisiones del PO constan al final. Las estimaciones y la aceptación técnica del equipo siguen pendientes.
+Línea base: **requisitos-v0-borrador** · Revisión del 02/10/2026 · Decisiones de alcance en el apartado 5 y estimación individual del PO confirmada; pendientes el consenso y la revisión del equipo.
+Cada épica enlaza su ficha de historias. Se conservan 24 historias; las decisiones del PO constan al final. El consenso de estimaciones y la aceptación técnica del equipo siguen pendientes.
 
 ## 1. Épicas
 
@@ -19,32 +19,34 @@ Cada épica enlaza su ficha de historias. Se conservan 24 historias; las decisio
 
 Muestra detallada (necesidad, objetivo, criterios, reglas, restricciones, NFR, ejemplos, casos límite, dependencias y supuestos): **US-002, US-009, US-012, US-013, US-014, US-018** (6).
 
-| ID | Historia | Épica | MoSCoW | Incertidumbre | Predecesoras | Plan |
-|---|---|---|---|---|---|---|
-| US-001 | Preparar el entorno base | EP-001 | Must | Media | —; externa: confirmación de tecnologías autorizadas | IT-001 |
-| US-002 | Iniciar sesión con rol | EP-001 | Must | Media | US-001 (técnica), US-003 (técnica) | IT-002 |
-| US-003 | Cargar los datos de demostración | EP-001 | Must | Media | US-001 (técnica) | IT-001 |
-| US-004 | Mantener los turnos del cuadrante | EP-001 | Could | Media | US-002 (funcional), US-003 (técnica), US-012 (técnica), US-013 (técnica), US-014 (técnica) | Sin compromiso; tras Must |
-| US-005 | Consultar mi calendario de turnos | EP-002 | Must | Baja | US-002 (funcional), US-003 (técnica) | IT-002 |
-| US-006 | Consultar los turnos de compañeros compatibles | EP-002 | Could | Baja | US-005 (funcional) | Sin compromiso; tras Must |
-| US-007 | Publicar un turno para cambiar | EP-003 | Must | Baja | US-005 (funcional) | IT-003 |
-| US-008 | Ver los turnos publicados compatibles | EP-003 | Must | Baja | US-007 (funcional) | IT-003 |
-| US-009 | Proponer un intercambio | EP-003 | Must | Media | US-008 (funcional), US-015 (funcional), US-003 (técnica) | IT-003 |
-| US-010 | Responder a una propuesta | EP-003 | Must | Baja | US-009 (funcional), US-015 (funcional) | IT-004 |
-| US-011 | Cancelar una publicación o propuesta | EP-003 | Should | Baja | US-007 (funcional), US-009 (funcional) | Sin compromiso; tras Must |
-| US-012 | Validar descanso mínimo y solapes | EP-004 | Must | Alta | US-009 (funcional), US-003 (técnica) | IT-004 |
-| US-013 | Validar las horas semanales | EP-004 | Must | Alta | US-009 (funcional), US-003 (técnica), US-012 (técnica) Reutilización de US-012 a revisar por TL. | IT-004 |
-| US-014 | Validar categoría, servicio y cobertura | EP-004 | Must | Media | US-009 (funcional), US-003 (técnica), US-012 (técnica) Reutilización de US-012 a revisar por TL. | IT-004 |
-| US-015 | Validar la antelación mínima | EP-004 | Must | Baja | US-003 (técnica) El formato de solicitud se acuerda con US-009, sin requerir esa historia terminada. | IT-003 |
-| US-016 | Ampliar el diagnóstico de reglas | EP-004 | Should | Baja | US-012 (funcional), US-013 (funcional), US-014 (funcional), US-015 (funcional) | Sin compromiso; tras Must |
-| US-017 | Consultar solicitudes y decisiones del servicio | EP-005 | Must | Media | US-010 (funcional), US-012 (funcional), US-013 (funcional), US-014 (funcional), US-015 (funcional) | IT-005 |
-| US-018 | Resolver una solicitud | EP-005 | Must | Alta | US-017 (funcional), US-012 (funcional), US-013 (funcional), US-014 (funcional), US-015 (funcional) | IT-005 |
-| US-019 | Consultar una vista unificada de mis solicitudes | EP-006 | Should | Baja | US-009 (funcional), US-010 (funcional), US-018 (funcional) | Sin compromiso; tras Must |
-| US-020 | Consultar una cronología ampliada de intercambios | EP-006 | Should | Baja | US-017 (funcional), US-018 (funcional) | Sin compromiso; tras Must |
-| US-021 | Recibir avisos dentro de la aplicación | EP-006 | Could | Media | US-019 (funcional) | Sin compromiso; tras Must |
-| US-022 | Filtrar el historial | EP-006 | Won't | Baja | US-020 (funcional) | Fuera de versión |
-| US-023 | Crear el guion inicial de instalación y evaluación | EP-007 | Must | Baja | US-001 (técnica), US-003 (técnica), US-002 (funcional), US-005 (funcional); externa: evaluador ajeno a la implementación | IT-002 |
-| US-024 | Prueba de usabilidad y accesibilidad básica | EP-007 | Must | Media | US-010 (funcional), US-018 (funcional), US-023 (funcional); externa: tres participantes ajenos al equipo | IT-006 |
+| ID | Historia | Épica | MoSCoW | Incertidumbre | Predecesoras | Plan | PO (h-p) |
+|---|---|---|---|---|---|---|---|
+| US-001 | Preparar el entorno base | EP-001 | Must | Media | —; externa: confirmación de tecnologías autorizadas | IT-001 | 6 |
+| US-002 | Iniciar sesión con rol | EP-001 | Must | Media | US-001 (técnica), US-003 (técnica) | IT-002 | 6 |
+| US-003 | Cargar los datos de demostración | EP-001 | Must | Media | US-001 (técnica) | IT-001 | 6 |
+| US-004 | Mantener los turnos del cuadrante | EP-001 | Could | Media | US-002 (funcional), US-003 (técnica), US-012 (técnica), US-013 (técnica), US-014 (técnica) | Sin compromiso; tras Must | 5 |
+| US-005 | Consultar mi calendario de turnos | EP-002 | Must | Baja | US-002 (funcional), US-003 (técnica) | IT-002 | 4 |
+| US-006 | Consultar los turnos de compañeros compatibles | EP-002 | Could | Baja | US-005 (funcional) | Sin compromiso; tras Must | 3 |
+| US-007 | Publicar un turno para cambiar | EP-003 | Must | Baja | US-005 (funcional) | IT-003 | 3 |
+| US-008 | Ver los turnos publicados compatibles | EP-003 | Must | Baja | US-007 (funcional) | IT-003 | 3 |
+| US-009 | Proponer un intercambio | EP-003 | Must | Media | US-008 (funcional), US-015 (funcional), US-003 (técnica) | IT-003 | 7 |
+| US-010 | Responder a una propuesta | EP-003 | Must | Baja | US-009 (funcional), US-015 (funcional) | IT-004 | 3 |
+| US-011 | Cancelar una publicación o propuesta | EP-003 | Should | Baja | US-007 (funcional), US-009 (funcional) | Sin compromiso; tras Must | 3 |
+| US-012 | Validar descanso mínimo y solapes | EP-004 | Must | Alta | US-009 (funcional), US-003 (técnica) | IT-004 | 7 |
+| US-013 | Validar las horas semanales | EP-004 | Must | Alta | US-009 (funcional), US-003 (técnica), US-012 (técnica) Reutilización de US-012 a revisar por TL. | IT-004 | 6 |
+| US-014 | Validar categoría, servicio y cobertura | EP-004 | Must | Media | US-009 (funcional), US-003 (técnica), US-012 (técnica) Reutilización de US-012 a revisar por TL. | IT-004 | 4 |
+| US-015 | Validar la antelación mínima | EP-004 | Must | Baja | US-003 (técnica) El formato de solicitud se acuerda con US-009, sin requerir esa historia terminada. | IT-003 | 2 |
+| US-016 | Ampliar el diagnóstico de reglas | EP-004 | Should | Baja | US-012 (funcional), US-013 (funcional), US-014 (funcional), US-015 (funcional) | Sin compromiso; tras Must | 2 |
+| US-017 | Consultar solicitudes y decisiones del servicio | EP-005 | Must | Media | US-010 (funcional), US-012 (funcional), US-013 (funcional), US-014 (funcional), US-015 (funcional) | IT-005 | 5 |
+| US-018 | Resolver una solicitud | EP-005 | Must | Alta | US-017 (funcional), US-012 (funcional), US-013 (funcional), US-014 (funcional), US-015 (funcional) | IT-005 | 7 |
+| US-019 | Consultar una vista unificada de mis solicitudes | EP-006 | Should | Baja | US-009 (funcional), US-010 (funcional), US-018 (funcional) | Sin compromiso; tras Must | 3 |
+| US-020 | Consultar una cronología ampliada de intercambios | EP-006 | Should | Baja | US-017 (funcional), US-018 (funcional) | Sin compromiso; tras Must | 3 |
+| US-021 | Recibir avisos dentro de la aplicación | EP-006 | Could | Media | US-019 (funcional) | Sin compromiso; tras Must | 4 |
+| US-022 | Filtrar el historial | EP-006 | Won't | Baja | US-020 (funcional) | Fuera de versión | 2 |
+| US-023 | Crear el guion inicial de instalación y evaluación | EP-007 | Must | Baja | US-001 (técnica), US-003 (técnica), US-002 (funcional), US-005 (funcional); externa: evaluador ajeno a la implementación | IT-002 | 4 |
+| US-024 | Prueba de usabilidad y accesibilidad básica | EP-007 | Must | Media | US-010 (funcional), US-018 (funcional), US-023 (funcional); externa: tres participantes ajenos al equipo | IT-006 | 3 |
+
+**Estimación individual del PO · 02/10/2026:** horas-persona para implementación, integración, pruebas y documentación, con apoyo de IA y revisión humana incluidos. El PO confirma las cifras sin reducción adicional: **Must 76 h-p, Should 11, Could 12 y Won't 2** (esta última fuera de versión). Las opciones incluidas sumarían 99 h-p. Son estimaciones individuales, no consenso ni compromiso de capacidad; no incluyen de nuevo el esfuerzo de las historias predecesoras. Las reuniones, la coordinación y el margen se descuentan en la capacidad.
 
 **Reparto MoSCoW:** 16 Must · 4 Should · 3 Could · 1 Won't. US-024 pasa a Must porque aporta la evidencia de las métricas acordadas; su esfuerzo se acota a tres participantes.
 
@@ -169,7 +171,7 @@ US-011, US-016, US-019 y US-020 se incorporan solo si cabe su esfuerzo después 
 
 ## 6. Pendientes para cerrar la planificación
 
-- Estimaciones individuales en horas-persona, consenso del Planning Poker y capacidad efectiva por persona y sprint.
+- Estimaciones individuales de los demás integrantes, consenso del Planning Poker y capacidad efectiva por persona y sprint. La estimación del PO ya está registrada.
 - Revisión del TL de dependencias, tecnologías y división de historias con incertidumbre alta; implementación del cómputo temporal definido en las reglas.
 - Revisión de QA de criterios y asignación de IDs NFR y umbrales pendientes. Las reglas se prueban en el servidor, incluidos casos límite.
-- Registrar con el equipo la actualización de M01 a tres participantes y sincronizar los artefactos compartidos cuando se autorice su publicación.
+- Formalizar en el registro de decisiones del equipo la actualización de M01 a tres participantes. El PO comunica el visto bueno de SM al mensaje de alcance y disponibilidad; no equivale al consenso de estimaciones ni a la validación técnica y de QA.

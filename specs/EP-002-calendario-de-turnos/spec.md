@@ -19,7 +19,7 @@ El empleado sabe en todo momento qué turnos tiene y cuáles podría intercambia
 - **Necesidad:** es el punto de partida de cualquier intercambio.
 - **Objetivo:** G01 · S-03
 - **Prioridad:** Must — *valor:* primer paso del flujo esencial (G01); *riesgo:* bajo; *dependencias:* predecesora de publicar un turno.
-- **Estimación:** pendiente de Planning Poker (h-p)
+- **Estimación:** PO individual: **4 h-p**, confirmada el 02/10/2026; consenso pendiente de Planning Poker.
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-002 (funcional), US-003 (técnica)
 - **Plan inicial:** IT-002 · R1
@@ -44,7 +44,7 @@ El empleado sabe en todo momento qué turnos tiene y cuáles podría intercambia
 - **Necesidad:** facilita encontrar un cambio antes de publicar.
 - **Objetivo:** G01 · S-03
 - **Prioridad:** Could — *valor:* medio, US-008 ya muestra los turnos publicados; *riesgo:* expone el cuadrante de otros (privacidad); *dependencias:* ninguna historia depende de ella.
-- **Estimación:** pendiente de Planning Poker (h-p)
+- **Estimación:** PO individual: **3 h-p**, confirmada el 02/10/2026; consenso pendiente de Planning Poker.
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-005 (funcional)
 - **Plan inicial:** fuera del plan salvo capacidad sobrante

@@ -19,7 +19,7 @@ Dos empleados pueden acordar un intercambio sin ayuda y dejarlo pendiente de apr
 - **Necesidad:** hoy los cambios se anuncian por mensajería informal.
 - **Objetivo:** G01 · S-01
 - **Prioridad:** Must — *valor:* inicia el flujo esencial; *riesgo:* bajo; *dependencias:* predecesora de US-008.
-- **Estimación:** pendiente de Planning Poker (h-p)
+- **Estimación:** PO individual: **3 h-p**, confirmada el 02/10/2026; consenso pendiente de Planning Poker.
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-005 (funcional)
 - **Plan inicial:** IT-003 · R2
@@ -42,7 +42,7 @@ Dos empleados pueden acordar un intercambio sin ayuda y dejarlo pendiente de apr
 - **Necesidad:** encontrar contrapartida sin preguntar uno a uno.
 - **Objetivo:** G01 · S-01
 - **Prioridad:** Must — *valor:* sin ella no se puede proponer; *riesgo:* bajo; *dependencias:* predecesora de US-009.
-- **Estimación:** pendiente de Planning Poker (h-p)
+- **Estimación:** PO individual: **3 h-p**, confirmada el 02/10/2026; consenso pendiente de Planning Poker.
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-007 (funcional)
 - **Plan inicial:** IT-003 · R2
@@ -65,7 +65,7 @@ Dos empleados pueden acordar un intercambio sin ayuda y dejarlo pendiente de apr
 - **Necesidad:** formalizar el acuerdo entre dos empleados para que quede registrado y pueda validarse.
 - **Objetivo:** G01 (autonomía) y G02 (la propuesta es el objeto sobre el que se validan las reglas).
 - **Prioridad:** Must — *valor:* núcleo del producto; *riesgo:* medio, concentra los cambios de estado; *dependencias:* predecesora de aceptación, validaciones, estado y cancelación.
-- **Estimación:** pendiente de Planning Poker (h-p)
+- **Estimación:** PO individual: **7 h-p**, confirmada el 02/10/2026; consenso pendiente de Planning Poker.
 - **Incertidumbre:** Media
 - **Predecesoras:** US-008 (funcional), US-015 (funcional), US-003 (técnica)
 - **Plan inicial:** IT-003 · R2
@@ -108,7 +108,7 @@ Dos empleados pueden acordar un intercambio sin ayuda y dejarlo pendiente de apr
 - **Necesidad:** el acuerdo requiere el consentimiento de los dos empleados.
 - **Objetivo:** G01 · M01/S-03
 - **Prioridad:** Must — *valor:* cierra la parte del empleado del flujo (M01); *riesgo:* bajo; *dependencias:* predecesora de la bandeja del responsable.
-- **Estimación:** pendiente de Planning Poker (h-p)
+- **Estimación:** PO individual: **3 h-p**, confirmada el 02/10/2026; consenso pendiente de Planning Poker.
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-009 (funcional), US-015 (funcional)
 - **Plan inicial:** IT-004 · R2
@@ -132,7 +132,7 @@ Dos empleados pueden acordar un intercambio sin ayuda y dejarlo pendiente de apr
 - **Necesidad:** los planes cambian; sin cancelación quedan solicitudes huérfanas.
 - **Objetivo:** G01 · S-01
 - **Prioridad:** Should — *valor:* medio; *riesgo:* bajo; *dependencias:* ninguna historia depende de ella.
-- **Estimación:** pendiente de Planning Poker (h-p)
+- **Estimación:** PO individual: **3 h-p**, confirmada el 02/10/2026; consenso pendiente de Planning Poker.
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-007 (funcional), US-009 (funcional)
 - **Plan inicial:** sin sprint asignado (entra si hay capacidad)

@@ -19,7 +19,7 @@ El responsable resuelve cada solicitud con las reglas ya comprobadas en menos de
 - **Necesidad:** hoy el responsable comprueba las reglas a mano.
 - **Objetivo:** G03 · S-02/S-03
 - **Prioridad:** Must — *valor:* punto de entrada del responsable (G03); *riesgo:* medio; *dependencias:* predecesora de US-018.
-- **Estimación:** pendiente de Planning Poker (h-p)
+- **Estimación:** PO individual: **5 h-p**, confirmada el 02/10/2026; consenso pendiente de Planning Poker.
 - **Incertidumbre:** Media
 - **Predecesoras:** US-010 (funcional), US-012 (funcional), US-013 (funcional), US-014 (funcional), US-015 (funcional)
 - **Plan inicial:** IT-005 · R3
@@ -42,7 +42,7 @@ El responsable resuelve cada solicitud con las reglas ya comprobadas en menos de
 - **Necesidad:** decisión final con trazabilidad de quién aprobó qué y cuándo.
 - **Objetivo:** G03 · M03 y G02 (revalidación antes de aprobar)
 - **Prioridad:** Must — *valor:* cierra el flujo completo; *riesgo:* alto (RT-02, concurrencia); *dependencias:* predecesora de las vistas ampliadas de estado e historial y de la prueba del flujo completo.
-- **Estimación:** pendiente de Planning Poker (h-p)
+- **Estimación:** PO individual: **7 h-p**, confirmada el 02/10/2026; consenso pendiente de Planning Poker.
 - **Incertidumbre:** Alta
 - **Predecesoras:** US-017 (funcional), US-012 (funcional), US-013 (funcional), US-014 (funcional), US-015 (funcional)
 - **Plan inicial:** IT-005 · R3

@@ -21,7 +21,7 @@ Ningún intercambio que incumpla una regla puede aprobarse, y el empleado entien
 - **Necesidad:** el descanso entre turnos es el error más frecuente de los cambios pactados informalmente.
 - **Objetivo:** G02 · M02
 - **Prioridad:** Must — *valor:* regla central del dominio; *riesgo:* alto (RT-01), conviene abordarla pronto; *dependencias:* crea el módulo de validación que reutilizan US-013 y US-014.
-- **Estimación:** pendiente de Planning Poker (h-p)
+- **Estimación:** PO individual: **7 h-p**, confirmada el 02/10/2026; consenso pendiente de Planning Poker.
 - **Incertidumbre:** Alta
 - **Predecesoras:** US-009 (funcional), US-003 (técnica)
 - **Plan inicial:** IT-004 · R2
@@ -63,7 +63,7 @@ Ningún intercambio que incumpla una regla puede aprobarse, y el empleado entien
 - **Necesidad:** cambiar una mañana (7 h) por una noche (10 h) puede superar el límite sin que nadie lo note.
 - **Objetivo:** G02 · M02
 - **Prioridad:** Must — *valor:* G02 exige cubrir RN-01 a RN-06; *riesgo:* alto por el reparto de la noche entre semanas; *dependencias:* reutiliza el módulo de US-012.
-- **Estimación:** pendiente de Planning Poker (h-p)
+- **Estimación:** PO individual: **6 h-p**, confirmada el 02/10/2026; consenso pendiente de Planning Poker.
 - **Incertidumbre:** Alta
 - **Predecesoras:** US-009 (funcional), US-003 (técnica), US-012 (técnica) Reutilización de US-012 a revisar por TL.
 - **Plan inicial:** IT-004 · R2; debe completarse antes de habilitar la aprobación de solicitudes en IT-005.
@@ -102,7 +102,7 @@ Ningún intercambio que incumpla una regla puede aprobarse, y el empleado entien
 - **Necesidad:** que un turno quede sin el personal mínimo es el riesgo más grave para el hospital.
 - **Objetivo:** G02 · M02
 - **Prioridad:** Must — *valor:* protege la cobertura; *riesgo:* medio; *dependencias:* reutiliza el módulo de US-012.
-- **Estimación:** pendiente de Planning Poker (h-p)
+- **Estimación:** PO individual: **4 h-p**, confirmada el 02/10/2026; consenso pendiente de Planning Poker.
 - **Incertidumbre:** Media
 - **Predecesoras:** US-009 (funcional), US-003 (técnica), US-012 (técnica) Reutilización de US-012 a revisar por TL.
 - **Plan inicial:** IT-004 · R2
@@ -138,7 +138,7 @@ Ningún intercambio que incumpla una regla puede aprobarse, y el empleado entien
 - **Necesidad:** evitar cambios de última hora imposibles de gestionar.
 - **Objetivo:** G02 · M02
 - **Prioridad:** Must — *valor:* garantiza el plazo de G02; *riesgo:* bajo; *dependencias:* debe estar disponible al registrar una propuesta en US-009.
-- **Estimación:** pendiente de Planning Poker (h-p)
+- **Estimación:** PO individual: **2 h-p**, confirmada el 02/10/2026; consenso pendiente de Planning Poker.
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-003 (técnica) El formato de solicitud se acuerda con US-009, sin requerir esa historia terminada.
 - **Plan inicial:** IT-003 · R2
@@ -160,7 +160,7 @@ Ningún intercambio que incumpla una regla puede aprobarse, y el empleado entien
 - **Necesidad:** ampliar la explicación básica que ya devuelve cada validación.
 - **Objetivo:** G01 y G02
 - **Prioridad:** Should — *valor:* mejora la autonomía (G01); *riesgo:* bajo; *dependencias:* necesita todas las validaciones. El mensaje básico con regla y motivo forma parte de las Must.
-- **Estimación:** pendiente de Planning Poker (h-p)
+- **Estimación:** PO individual: **2 h-p**, confirmada el 02/10/2026; consenso pendiente de Planning Poker.
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-012 (funcional), US-013 (funcional), US-014 (funcional), US-015 (funcional)
 - **Plan inicial:** candidata IT-006 · R3, solo si hay capacidad después de las Must.

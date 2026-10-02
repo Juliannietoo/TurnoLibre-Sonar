@@ -19,7 +19,7 @@ El empleado puede consultar juntas sus solicitudes y el responsable recorrer una
 - **Necesidad:** agilizar la consulta cuando existen varias solicitudes.
 - **Objetivo:** G01 · S-03
 - **Prioridad:** Should — *valor:* mejora la comodidad; *riesgo:* bajo; *dependencias:* utiliza la consulta básica de US-009/010/018 y habilita US-021. Su ausencia no impide conocer el estado de cada solicitud.
-- **Estimación:** pendiente de Planning Poker (h-p)
+- **Estimación:** PO individual: **3 h-p**, confirmada el 02/10/2026; consenso pendiente de Planning Poker.
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-009 (funcional), US-010 (funcional), US-018 (funcional)
 - **Plan inicial:** candidata IT-006, solo si hay capacidad después de las Must.
@@ -40,7 +40,7 @@ El empleado puede consultar juntas sus solicitudes y el responsable recorrer una
 - **Necesidad:** facilitar la lectura de la secuencia de acciones ya registrada por el flujo básico.
 - **Objetivo:** G03 · S-03
 - **Prioridad:** Should — *valor:* mejora la lectura del historial; *riesgo:* bajo; *dependencias:* amplía US-017/018. La lista y el detalle básicos de las decisiones ya están incluidos en US-017.
-- **Estimación:** pendiente de Planning Poker (h-p)
+- **Estimación:** PO individual: **3 h-p**, confirmada el 02/10/2026; consenso pendiente de Planning Poker.
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-017 (funcional), US-018 (funcional)
 - **Plan inicial:** sin sprint asignado (entra si hay capacidad)
@@ -62,7 +62,7 @@ El empleado puede consultar juntas sus solicitudes y el responsable recorrer una
 - **Objetivo:** G01
 
 - **Prioridad:** Could — *valor:* comodidad; *riesgo:* medio; *dependencias:* necesita US-019.
-- **Estimación:** pendiente de Planning Poker (h-p)
+- **Estimación:** PO individual: **4 h-p**, confirmada el 02/10/2026; consenso pendiente de Planning Poker.
 - **Incertidumbre:** Media
 - **Predecesoras:** US-019 (funcional)
 - **Plan inicial:** fuera del plan salvo capacidad sobrante
@@ -83,7 +83,7 @@ El empleado puede consultar juntas sus solicitudes y el responsable recorrer una
 - **Objetivo:** G03
 
 - **Prioridad:** Won't — *valor:* bajo con pocos datos; *riesgo:* bajo; *dependencias:* ampliaría US-020 sin ser necesaria para el historial básico.
-- **Estimación:** fuera de esta versión; referencia pendiente de estimación individual (h-p).
+- **Estimación:** PO individual: **2 h-p**, confirmada el 02/10/2026; consenso pendiente de Planning Poker. Referencia para versión futura; excluida de la entrega.
 - **Incertidumbre:** Baja
 - **Plan inicial:** fuera de esta versión.
 - **Predecesoras:** US-020 (funcional)

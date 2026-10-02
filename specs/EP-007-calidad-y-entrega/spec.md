@@ -19,7 +19,7 @@ Un tercero instala y evalúa cada release sin ayuda, y se dispone de evidencias 
 - **Necesidad:** métrica M04.
 - **Objetivo:** G04 · M04
 - **Prioridad:** Must — *valor:* permite evaluar R1 y sirve de base para las demás releases; *riesgo:* bajo; *dependencias:* necesita el entorno, los datos y las funciones de R1.
-- **Estimación:** pendiente de Planning Poker (h-p)
+- **Estimación:** PO individual: **4 h-p**, confirmada el 02/10/2026; consenso pendiente de Planning Poker.
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-001 (técnica), US-003 (técnica), US-002 (funcional), US-005 (funcional); externa: evaluador ajeno a la implementación
 - **Plan inicial:** IT-002 · R1. Se actualiza y verifica en R2/R3 dentro de las tareas de entrega de cada incremento, sin mantener esta historia abierta tres sprints.
@@ -42,7 +42,7 @@ Un tercero instala y evalúa cada release sin ayuda, y se dispone de evidencias 
 - **Objetivo:** G01, G03 y G04 · M01/M03
 
 - **Prioridad:** Must — *valor:* demuestra el cumplimiento de M01 y M03; *riesgo:* medio, requiere coordinar participantes; *dependencias:* necesita el flujo completo. Se reduce la muestra a tres personas para acotar el esfuerzo.
-- **Estimación:** pendiente de Planning Poker (h-p)
+- **Estimación:** PO individual: **3 h-p**, confirmada el 02/10/2026; consenso pendiente de Planning Poker.
 - **Incertidumbre:** Media
 - **Predecesoras:** US-010 (funcional), US-018 (funcional), US-023 (funcional); externa: tres participantes ajenos al equipo
 - **Plan inicial:** IT-006 · R3; preparar participantes y guion antes de la prueba.

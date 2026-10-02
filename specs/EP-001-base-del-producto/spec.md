@@ -21,7 +21,7 @@ Cualquier persona puede instalar el producto, entrar con una cuenta ficticia de 
 - **Necesidad:** sin un entorno común no se puede cumplir la Definition of Done (CI en verde, despliegue en demostración).
 - **Objetivo:** G04
 - **Prioridad:** Must — *valor:* habilita todas las demás historias; *riesgo:* alto si se retrasa, porque bloquea el resto; *dependencias:* es la raíz del grafo.
-- **Estimación:** pendiente de Planning Poker (h-p)
+- **Estimación:** PO individual: **6 h-p**, confirmada el 02/10/2026; consenso pendiente de Planning Poker.
 - **Incertidumbre:** Media (tecnologías pendientes de confirmar)
 - **Predecesoras:** —; externa: confirmación de tecnologías autorizadas
 - **Plan inicial:** IT-001 · R1
@@ -46,7 +46,7 @@ Cualquier persona puede instalar el producto, entrar con una cuenta ficticia de 
 - **Necesidad:** empleados y responsable realizan acciones distintas; sin identificación no hay trazabilidad de quién pide, acepta y aprueba.
 - **Objetivo:** G04 (producto evaluable con cuentas de prueba) y principio 5 de la constitución (control de acceso por rol).
 - **Prioridad:** Must — *valor:* todo el flujo depende de saber quién es el usuario; *riesgo:* mitiga RT-03; *dependencias:* predecesora de todas las historias funcionales.
-- **Estimación:** pendiente de Planning Poker (h-p)
+- **Estimación:** PO individual: **6 h-p**, confirmada el 02/10/2026; consenso pendiente de Planning Poker.
 - **Incertidumbre:** Media
 - **Predecesoras:** US-001 (técnica), US-003 (técnica)
 - **Plan inicial:** IT-002 · R1
@@ -99,7 +99,7 @@ Cualquier persona puede instalar el producto, entrar con una cuenta ficticia de 
 - **Necesidad:** la métrica M04 exige que un tercero evalúe el producto siguiendo solo el guion.
 - **Objetivo:** G04 · S-04/S-05
 - **Prioridad:** Must — *valor:* sin datos no se puede demostrar nada; *riesgo:* un cuadrante incoherente falsearía las pruebas de reglas; *dependencias:* predecesora del calendario y del flujo de intercambio.
-- **Estimación:** pendiente de Planning Poker (h-p)
+- **Estimación:** PO individual: **6 h-p**, confirmada el 02/10/2026; consenso pendiente de Planning Poker.
 - **Incertidumbre:** Media (preparar un cuadrante coherente con cobertura y descansos).
 - **Predecesoras:** US-001 (técnica)
 - **Plan inicial:** IT-001 · R1
@@ -123,7 +123,7 @@ Cualquier persona puede instalar el producto, entrar con una cuenta ficticia de 
 - **Necesidad:** permitiría preparar escenarios de prueba sin tocar datos a mano.
 - **Objetivo:** G04 · S-05
 - **Prioridad:** Could — *valor:* bajo, US-003 ya aporta los datos; *riesgo:* abre casos de edición que chocan con solicitudes en curso; *dependencias:* ninguna historia depende de ella.
-- **Estimación:** pendiente de Planning Poker (h-p)
+- **Estimación:** PO individual: **5 h-p**, confirmada el 02/10/2026; consenso pendiente de Planning Poker.
 - **Incertidumbre:** Media
 - **Predecesoras:** US-002 (funcional), US-003 (técnica), US-012 (técnica), US-013 (técnica), US-014 (técnica)
 - **Plan inicial:** fuera del plan salvo capacidad sobrante
