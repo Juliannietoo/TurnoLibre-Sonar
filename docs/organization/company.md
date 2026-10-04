@@ -39,13 +39,15 @@ El presupuesto aprobado el 30/09/2026 utiliza perfiles *júnior* y estimaciones 
 | Rol | Perfil de referencia | Salario bruto anual | Coste empresa anual (× 1,32) | Coste/hora |
 |---|---|---|---|---|
 | Product Owner | Junior Product Owner en España; verificado | 26.000 € | 34.320 € | *19,50 €* |
-| Scrum Master | Scrum Master júnior | 28.000 € | 36.960 € | *21,00 €* |
+| Scrum Master | Scrum Master en España, 1–3 años de experiencia; verificado | 33.000 € | 43.560 € | *24,75 €* |
 | Tech Lead | Desarrollador/a de software (perfil técnico con mayor responsabilidad) | 34.000 € | 44.880 € | *25,50 €* |
 | DevOps / QA | QA / DevOps júnior | 27.000 € | 35.640 € | *20,25 €* |
 
-**Fuente PO:** [Glassdoor: Junior Product Owner en España](https://www.glassdoor.es/Sueldos/junior-product-owner-sueldo-SRCH_KO0,20.htm), consultado el **01/10/2026**. Sueldo base promedio publicado: **26.000 €/año**, con rango de 19.000–30.000 €. La muestra pública es de tres sueldos comunicados en 2021–2022; se utiliza como referencia orientativa. Los importes de SM, TL y QA/DevOps son estimaciones, pendientes de enlace y fecha de consulta.
+**Fuente PO:** [Glassdoor: Junior Product Owner en España](https://www.glassdoor.es/Sueldos/junior-product-owner-sueldo-SRCH_KO0,20.htm), consultado el **01/10/2026**. Sueldo base promedio publicado: **26.000 €/año**, con rango de 19.000–30.000 €. La muestra pública es de tres sueldos comunicados en 2021–2022; se utiliza como referencia orientativa. Los importes de TL y QA/DevOps son estimaciones, pendientes de enlace y fecha de consulta.
 
-**Revisión pendiente por SM:** el PO pasa de 30.000 a 26.000 €/año; con el método acordado, de 22,50 a 19,50 €/h y de 675 a 585 € por 30 h (−90 € de coste directo). Las tablas de presupuesto siguientes conservan la base aprobada del 30/09 hasta que SM recalcule el total y se registre su aprobación.
+**Fuente SM:** [Glassdoor: Scrum Master en España](https://www.glassdoor.es/Sueldos/scrum-master-sueldo-SRCH_KO0,12.htm), consultado el **04/10/2026**. Franja de **1–3 años de experiencia: 33.000–40.000 €/año**. Se toma **33.000 €**, el extremo inferior, porque MedSwap es una empresa pequeña y de reciente creación; es el mismo criterio de referencia baja aplicado al PO (26.000 €).
+
+**Revisión pendiente por SM:** el PO pasa de 30.000 a 26.000 €/año (de 22,50 a 19,50 €/h; −90 € por 30 h) y la SM de 28.000 a 33.000 €/año (de 21,00 a 24,75 €/h; +112,50 € por 30 h). Efecto neto en el coste directo: +22,50 €. Las tablas de presupuesto siguientes conservan la base aprobada del 30/09 hasta que SM recalcule el total y se registre su aprobación.
 
 ## Coste directo de personal — presupuesto aprobado el 30/09
 Cada miembro dedica 5 h/semana × 6 semanas = *30 h*. Se pagan las 120 h completas, no solo la capacidad efectiva: las reuniones y la coordinación también son trabajo remunerado.
