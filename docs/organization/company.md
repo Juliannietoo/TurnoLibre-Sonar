@@ -27,7 +27,7 @@ Todos los miembros participan en el desarrollo con independencia de su rol. La c
 | Juliannietoo (DevOps/QA) | Mi objetivo como DevOps/QA es gestionar la calidad, pruebas y entornos del proyecto, asegurando el cumplimiento de los requisitos no funcionales, el despliegue y su correcta operación. |
 
 ## Justificación de costes por rol
-El presupuesto aprobado el 30/09/2026 utiliza perfiles *júnior* y estimaciones salariales iniciales. El 01/10/2026 se ha contrastado el salario del PO; los otros tres salarios siguen pendientes de verificación por sus responsables.
+El presupuesto aprobado el 30/09/2026 utiliza perfiles **júnior** y estimaciones salariales iniciales. El salario del PO fue contrastado el 01/10/2026, el de la SM el 04/10/2026 y los de TL y DevOps/QA el 05/10/2026.
 
 *Por qué júnior:* MedSwap es una empresa de reciente creación formada por titulados sin experiencia profesional previa; un salario de nivel medio no sería creíble para este equipo.
 
@@ -40,16 +40,18 @@ El presupuesto aprobado el 30/09/2026 utiliza perfiles *júnior* y estimaciones 
 |---|---|---|---|---|
 | Product Owner | Junior Product Owner en España; verificado | 26.000 € | 34.320 € | *19,50 €* |
 | Scrum Master | Scrum Master en España, 1–3 años de experiencia; verificado | 33.000 € | 43.560 € | *24,75 €* |
-| Tech Lead | Desarrollador/a de software (perfil técnico con mayor responsabilidad) | 34.000 € | 44.880 € | *25,50 €* |
+| Tech Lead | Junior Software Developer en España; verificado | 21.000 € | 27.720 € | **15,75 €** |
 | DevOps / QA | QA / DevOps júnior | 27.000 € | 35.640 € | *20,25 €* |
 
-**Fuente PO:** [Glassdoor: Junior Product Owner en España](https://www.glassdoor.es/Sueldos/junior-product-owner-sueldo-SRCH_KO0,20.htm), consultado el **01/10/2026**. Sueldo base promedio publicado: **26.000 €/año**, con rango de 19.000–30.000 €. La muestra pública es de tres sueldos comunicados en 2021–2022; se utiliza como referencia orientativa. Los importes de TL y QA/DevOps son estimaciones, pendientes de enlace y fecha de consulta.
+**Fuente PO:** [Glassdoor: Junior Product Owner en España](https://www.glassdoor.es/Sueldos/junior-product-owner-sueldo-SRCH_KO0,20.htm), consultado el **01/10/2026**. Sueldo base promedio publicado: **26.000 €/año**, con rango de 19.000–30.000 €. La muestra pública es de tres sueldos comunicados en 2021–2022; se utiliza como referencia orientativa.
 
 **Fuente SM:** [Glassdoor: Scrum Master en España](https://www.glassdoor.es/Sueldos/scrum-master-sueldo-SRCH_KO0,12.htm), consultado el **04/10/2026**. Franja de **1–3 años de experiencia: 33.000–40.000 €/año**. Se toma **33.000 €**, el extremo inferior, porque MedSwap es una empresa pequeña y de reciente creación; es el mismo criterio de referencia baja aplicado al PO (26.000 €).
 
+**Fuente TL:** [Glassdoor: Junior Software Developer en España](https://www.glassdoor.es/Sueldos/junior-software-developer-sueldo-SRCH_KO0,25.htm), consultado el **05/10/2026**. Sueldo base promedio publicado: **21.000 €/año**, con un rango de **18.000–25.000 €/año**. Glassdoor indica además una media aproximada de **2.000 €/año** en complementos. Para el presupuesto se utiliza el sueldo base promedio como referencia.
+
 **Fuente DevOps/QA:**[Glassdoor: DevOps en España](https://www.glassdoor.es/Sueldos/espa%C3%B1a-devops-sueldo-SRCH_IL.0,6_IN219_KO7,13.htm), consultado el **05/10/2026**. Sueldo base promedio publicado: 27.000 €/año, con rango de **19.000–30.000** €; Se utiliza como referencia orientativa.
 
-**Revisión pendiente por SM:** el PO pasa de 30.000 a 26.000 €/año (de 22,50 a 19,50 €/h; −90 € por 30 h) y la SM de 28.000 a 33.000 €/año (de 21,00 a 24,75 €/h; +112,50 € por 30 h). Efecto neto en el coste directo: +22,50 €. Las tablas de presupuesto siguientes conservan la base aprobada del 30/09 hasta que SM recalcule el total y se registre su aprobación.
+**Revisión pendiente por SM:** el PO pasa de 30.000 a 26.000 €/año (de 22,50 a 19,50 €/h; −90 € por 30 h), la SM de 28.000 a 33.000 €/año (de 21,00 a 24,75 €/h; +112,50 € por 30 h) y el TL de 34.000 a 21.000 €/año (de 25,50 a 15,75 €/h; −292,50 € por 30 h). La referencia de DevOps/QA mantiene los 27.000 €/año utilizados inicialmente. El efecto conjunto sobre el presupuesto queda pendiente de recálculo y aprobación por la SM. Las tablas de presupuesto siguientes conservan la base aprobada del 30/09 hasta que se registre dicha revisión.
 
 ## Coste directo de personal — presupuesto aprobado el 30/09
 Cada miembro dedica 5 h/semana × 6 semanas = *30 h*. Se pagan las 120 h completas, no solo la capacidad efectiva: las reuniones y la coordinación también son trabajo remunerado.
