@@ -47,6 +47,8 @@ El presupuesto aprobado el 30/09/2026 utiliza perfiles *júnior* y estimaciones 
 
 **Fuente SM:** [Glassdoor: Scrum Master en España](https://www.glassdoor.es/Sueldos/scrum-master-sueldo-SRCH_KO0,12.htm), consultado el **04/10/2026**. Franja de **1–3 años de experiencia: 33.000–40.000 €/año**. Se toma **33.000 €**, el extremo inferior, porque MedSwap es una empresa pequeña y de reciente creación; es el mismo criterio de referencia baja aplicado al PO (26.000 €).
 
+**Fuente DevOps/QA:**[Glassdoor: DevOps en España](https://www.glassdoor.es/Sueldos/espa%C3%B1a-devops-sueldo-SRCH_IL.0,6_IN219_KO7,13.htm), consultado el **05/10/2026**. Sueldo base promedio publicado: 27.000 €/año, con rango de **19.000–30.000** €; Se utiliza como referencia orientativa.
+
 **Revisión pendiente por SM:** el PO pasa de 30.000 a 26.000 €/año (de 22,50 a 19,50 €/h; −90 € por 30 h) y la SM de 28.000 a 33.000 €/año (de 21,00 a 24,75 €/h; +112,50 € por 30 h). Efecto neto en el coste directo: +22,50 €. Las tablas de presupuesto siguientes conservan la base aprobada del 30/09 hasta que SM recalcule el total y se registre su aprobación.
 
 ## Coste directo de personal — presupuesto aprobado el 30/09

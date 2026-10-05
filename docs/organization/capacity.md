@@ -4,14 +4,14 @@ Periodo de ejecución: **6 semanas** (6 sprints de 1 semana, de miércoles a mar
 
 ## Revisión individual del 01/10/2026
 
-El PO ha confirmado su reparto semanal y la recuperación de la hora del festivo 12/10. A fecha 01/10/2026 no tiene exámenes ni entregas importantes previstos entre el 23/09 y el 03/11. No se han comunicado otros descuentos de disponibilidad; si aparece alguno, se actualizará la semana afectada. La SM ha confirmado su reparto el 04/10/2026 (ver su apartado). Queda pendiente la revisión individual de TL y QA y la capacidad total del equipo.
+El PO ha confirmado su reparto semanal y la recuperación de la hora del festivo 12/10. A fecha 01/10/2026 no tiene exámenes ni entregas importantes previstos entre el 23/09 y el 03/11. No se han comunicado otros descuentos de disponibilidad; si aparece alguno, se actualizará la semana afectada. La SM ha confirmado su reparto el 04/10/2026 (ver su apartado). Queda pendiente la revisión individual de TL y la capacidad total del equipo.
 
 | Rol | Nominal semanal | Reuniones | Coordinación del rol | Margen sobre la neta | Efectiva antes de ausencias | Estado |
 |---|---|---|---|---|---|---|
 | Product Owner | 5 h | 1,5 h | 0,5 h | 20 % | 2,4 h | Reparto confirmado; sin exámenes ni entregas importantes previstos |
 | Scrum Master | 5 h | 1,5 h | 1 h | 10 % | 2,25 h | Reparto confirmado el 04/10; ausencias por exámenes y entregas en IT-003 a IT-006 |
 | Tech Lead | 5 h (hipótesis H1) | Pendiente | Pendiente | Pendiente | Pendiente | Revisión individual por TL |
-| DevOps / QA | 5 h (hipótesis H1) | Pendiente | Pendiente | Pendiente | Pendiente | Revisión individual por QA |
+| DevOps / QA | 5 h | 1,5 h | 0,5 h | 15 % | Reparto confirmado; exámenes y entregas en IT-003, IT-005 y IT-006 |
 
 ## Capacidad del PO
 
