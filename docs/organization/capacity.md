@@ -4,13 +4,13 @@ Periodo de ejecución: **6 semanas** (6 sprints de 1 semana, de miércoles a mar
 
 ## Revisión individual del 01/10/2026
 
-El PO ha confirmado su reparto semanal y la recuperación de la hora del festivo 12/10. A fecha 01/10/2026 no tiene exámenes ni entregas importantes previstos entre el 23/09 y el 03/11. No se han comunicado otros descuentos de disponibilidad; si aparece alguno, se actualizará la semana afectada. La SM ha confirmado su reparto el 04/10/2026 (ver su apartado). Queda pendiente la revisión individual de TL y la capacidad total del equipo.
+El PO ha confirmado su reparto semanal y la recuperación de la hora del festivo 12/10. A fecha 01/10/2026 no tiene exámenes ni entregas importantes previstos entre el 23/09 y el 03/11. No se han comunicado otros descuentos de disponibilidad; si aparece alguno, se actualizará la semana afectada. La SM ha confirmado su reparto el 04/10/2026 (ver su apartado). La revisión individual del TL ha sido confirmada el 05/10/2026. Queda pendiente consolidar la capacidad total del equipo.
 
 | Rol | Nominal semanal | Reuniones | Coordinación del rol | Margen sobre la neta | Efectiva antes de ausencias | Estado |
 |---|---|---|---|---|---|---|
 | Product Owner | 5 h | 1,5 h | 0,5 h | 20 % | 2,4 h | Reparto confirmado; sin exámenes ni entregas importantes previstos |
 | Scrum Master | 5 h | 1,5 h | 1 h | 10 % | 2,25 h | Reparto confirmado el 04/10; ausencias por exámenes y entregas en IT-003 a IT-006 |
-| Tech Lead | 5 h (hipótesis H1) | Pendiente | Pendiente | Pendiente | Pendiente | Revisión individual por TL |
+| Tech Lead | 5 h | 1,5 h | 1 h | 15 % | 2,125 h | Reparto confirmado el 05/10; menor disponibilidad en IT-003 |
 | DevOps / QA | 5 h | 1,5 h | 0,5 h | 15 % | Reparto confirmado; exámenes y entregas en IT-003, IT-005 y IT-006 |
 
 ## Capacidad del PO
@@ -53,6 +53,26 @@ Semanal: **5 − 1,5 − 1 = 2,5 h netas**. Reserva: **2,5 × 10 % = 0,25 h**. C
 | **Total** | **6 semanas** | **30 h** | **5 h** | **9 h** | **6 h** | **10 h** | **1 h** | **9,0 h** |
 
 IT-006 es la semana de menor disponibilidad de la SM: conviene no asignarle historias de desarrollo en ese sprint.
+
+## Capacidad del TL
+
+Revisión individual del 05/10/2026, confirmada por el TL.
+
+Semanal: **5 − 1,5 − 1 = 2,5 h netas**. Reserva: **2,5 × 15 % = 0,375 h**. Capacidad efectiva base: **2,125 h por sprint**.
+
+- **Coordinación del rol (1 h/semana):** tiempo reservado para la revisión de riesgos técnicos, dependencias entre historias, incertidumbre y otras decisiones técnicas propias del rol.
+- **Margen del 15 %:** se reserva para imprevistos derivados de la carga de otras asignaturas y entregas.
+- **IT-003 (07/10–13/10):** disponibilidad inferior a la habitual. El sábado 10/10 estaré fuera y el domingo 11/10 tengo una entrega de la práctica de PBD. Se descuenta 1 h de disponibilidad en este sprint.
+
+| Sprint | Periodo | Nominal | Ausencias declaradas | Reuniones | Coordinación | Neta | Reserva (15 %) | Efectiva |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| IT-001 | 23/09–29/09 | 5 h | 0 h | 1,5 h | 1 h | 2,5 h | 0,375 h | 2,125 h |
+| IT-002 | 30/09–06/10 | 5 h | 0 h | 1,5 h | 1 h | 2,5 h | 0,375 h | 2,125 h |
+| IT-003 | 07/10–13/10 | 5 h | 1 h · ausencia el 10/10 y entrega de PBD el 11/10 | 1,5 h | 1 h | 1,5 h | 0,225 h | 1,275 h |
+| IT-004 | 14/10–20/10 | 5 h | 0 h | 1,5 h | 1 h | 2,5 h | 0,375 h | 2,125 h |
+| IT-005 | 21/10–27/10 | 5 h | 0 h | 1,5 h | 1 h | 2,5 h | 0,375 h | 2,125 h |
+| IT-006 | 28/10–03/11 | 5 h | 0 h | 1,5 h | 1 h | 2,5 h | 0,375 h | 2,125 h |
+| **Total** | **6 semanas** | **30 h** | **1 h** | **9 h** | **6 h** | **14 h** | **2,1 h** | **11,9 h** |
 
 ## Cálculo definitivo y uso
 
