@@ -1,12 +1,12 @@
-# Definition of Done (DoD)
+# TurnoLibre — Definition of Done (DoD)
 
-El *Definition of Done* responde a la pregunta clave:
-> **¿Cumple este incremento todos los estándares de calidad, negocio e integración para considerarse formalmente terminado y potencialmente entregable?**
+Versión 1.0 · 30/09/2026 · Responsable: Juliannietoo (DevOps/QA)
+
+Responde a la pregunta: *¿qué condiciones mínimas debe cumplir cualquier historia para considerarla terminada?*
+Una historia está Done cuando cumple todas las condiciones aplicables siguientes.
 
 > [!NOTE]
 > Una historia no está terminada solo porque funcione en el caso ideal (Constitución, principio 3). Debe cumplir íntegramente con las validaciones del servidor, pruebas automáticas, control de roles y revisión de código.
-
-Una historia de usuario se considera **Done** cuando satisface todas las condiciones a continuación:
 
 ## Implementación y Reglas de Negocio
 - [ ] La funcionalidad descrita ha sido implementada siguiendo la arquitectura y las convenciones técnicas acordadas.

@@ -41,7 +41,7 @@ El presupuesto aprobado el 30/09/2026 utiliza perfiles **júnior** y estimacione
 | Product Owner | Junior Product Owner en España; verificado | 26.000 € | 34.320 € | *19,50 €* |
 | Scrum Master | Scrum Master en España, 1–3 años de experiencia; verificado | 33.000 € | 43.560 € | *24,75 €* |
 | Tech Lead | Junior Software Developer en España; verificado | 21.000 € | 27.720 € | **15,75 €** |
-| DevOps / QA | QA / DevOps júnior | 27.000 € | 35.640 € | *20,25 €* |
+| DevOps / QA | QA / DevOps júnior en España; verificado | 27.000 € | 35.640 € | *20,25 €* |
 
 **Fuente PO:** [Glassdoor: Junior Product Owner en España](https://www.glassdoor.es/Sueldos/junior-product-owner-sueldo-SRCH_KO0,20.htm), consultado el **01/10/2026**. Sueldo base promedio publicado: **26.000 €/año**, con rango de 19.000–30.000 €. La muestra pública es de tres sueldos comunicados en 2021–2022; se utiliza como referencia orientativa.
 

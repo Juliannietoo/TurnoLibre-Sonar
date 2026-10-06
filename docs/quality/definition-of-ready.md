@@ -1,38 +1,42 @@
-# Definition of Ready (DoR)
+# TurnoLibre — Definition of Ready (DoR)
 
-El *Definition of Ready* responde a la pregunta clave:
-> **¿Tiene esta historia de usuario la información y madurez suficiente para entrar en un Sprint y poder cumplir la Definition of Done (DoD)?**
+Versión 1.0 · 30/09/2026 · Responsable: Juliannietoo (DevOps/QA)
 
-> [!NOTE]
-> No implica conocer todos los detalles de implementación por adelantado, sino disponer de la claridad y consenso necesarios para que el equipo asuma el compromiso de desarrollo de forma viable y predecible.
+Responde a la pregunta: *¿tenemos información suficiente para aceptar esta historia como candidata a entrar en un sprint?*
+No significa saberlo todo, sino saber lo suficiente para asumir el trabajo con confianza.
 
-Una Historia de Usuario se considera **Ready** cuando satisface todas las condiciones a continuación:
+## Identificación y trazabilidad
+- [ ] La historia tiene un identificador único y estable (`US-XXX`).
+- [ ] Está asociada a una épica (`EP-XXX`).
+- [ ] Está trazada al menos a un objetivo del producto (`G01`–`G04`).
 
-## Especificación y Trazabilidad
-- [ ] Tiene un identificador único y estable (`US-xxx`) asociado a su Épica correspondiente (`EP-xxx`).
-- [ ] Es trazable hasta los objetivos del producto (`G01`–`G04`) o métricas del proyecto (Constitución, principio 1).
-- [ ] El rol beneficiario (*empleado* o *responsable*) y el valor aportado están claramente identificados.
+## Valor y alcance
+- [ ] El usuario o stakeholder está identificado (empleado, responsable, evaluador…).
+- [ ] La capacidad esperada está descrita con claridad.
+- [ ] El valor o beneficio se entiende.
+- [ ] El alcance y los límites están claros (qué entra y qué no).
 
-## Criterios de Aceptación y Comportamiento
-- [ ] Los criterios de aceptación están definidos de forma observable y verificable (p. ej. formato *Given-When-Then* o reglas claras de verificación).
-- [ ] Describen tanto el flujo principal (camino feliz) como los casos límite y el tratamiento de errores.
-- [ ] Establecen el comportamiento funcional esperado sin imponer innecesariamente detalles de implementación interna.
+## Aceptación
+- [ ] Tiene criterios de aceptación identificados (`US-XXX-AC-01`…).
+- [ ] Los criterios son observables y verificables, incluidos los casos de error.
+- [ ] Describen el comportamiento esperado, no una implementación concreta.
+- [ ] Si afecta a un intercambio o a su validación, indica qué reglas de negocio (`RN-01`–`RN-06`) aplica y sus precondiciones.
 
-## Reglas de Negocio y Requisitos No Funcionales
-- [ ] Se identifican explícitamente las reglas de negocio aplicables (RN-01 a RN-06) y la necesidad de validación en servidor (Constitución, principio 4).
-- [ ] Se definen las restricciones de seguridad y control de acceso por rol (Constitución, principio 5).
-- [ ] Se indican las restricciones técnicas, de usabilidad o accesibilidad pertinentes para la historia.
+## Planificación
+- [ ] Tiene prioridad MoSCoW asignada y justificada.
+- [ ] Tiene una estimación consensuada en horas-persona.
+- [ ] Tiene indicada la incertidumbre (Baja / Media / Alta).
+- [ ] Sus predecesoras y dependencias (funcionales, técnicas y externas) son conocidas y no bloquean el sprint.
+- [ ] Cabe en un sprint; si no cabe, se divide.
 
-## Testabilidad y Datos de Prueba
-- [ ] La historia es comprobable y se tiene identificada la estrategia de pruebas requerida (unitarias, integración o interfaz).
-- [ ] Se conocen o están disponibles los escenarios con datos ficticios/sintéticos necesarios (Constitución, principio 5).
+## Restricciones
+- [ ] Se han identificado los requisitos no funcionales que le aplican (`NFR-XXX`).
+- [ ] Se conocen las restricciones técnicas, organizativas o de proyecto relevantes.
+- [ ] Solo utiliza datos ficticios o sintéticos y cumple las restricciones de privacidad (principio 5 de la constitución).
 
-## Planificación y Dependencias
-- [ ] Tiene asignada una prioridad MoSCoW (*Must*, *Should*, *Could*, *Won't*).
-- [ ] Dispone de una estimación de esfuerzo consensuada y se ha evaluado su nivel de incertidumbre.
-- [ ] El tamaño de la historia está acotado para completarse dentro de un único Sprint.
-- [ ] Se conocen las dependencias y predecesoras relevantes (técnicas o funcionales) y no suponen un bloqueo activo.
+## Cuestiones abiertas
+- [ ] No hay preguntas sin resolver que impidan entender o planificar la historia.
+- [ ] Cualquier supuesto importante o duda no bloqueante está documentado en la ficha.
 
-## Revisión y Consenso
-- [ ] Ha sido revisada en sesión de refinamiento por el Product Owner y el equipo.
-- [ ] No quedan cuestiones abiertas ni dudas que impidan al equipo iniciar el desarrollo y satisfacer con éxito el DoD.
+## Uso
+El Product Owner y el equipo de desarrollo revisan y verifican el cumplimiento de la DoR durante las sesiones de refinamiento previas a cada Sprint Planning. Toda historia que no cumpla íntegramente estas condiciones no puede entrar en el sprint ni ser comprometida en el Sprint Backlog hasta que se resuelvan sus dudas o bloqueos.

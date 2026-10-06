@@ -8,7 +8,7 @@
 
 Un tercero instala y evalúa cada release sin ayuda, y se dispone de evidencias de usabilidad.
 
-**Aplicación común:** cada historia aplica los límites de esta épica y utiliza datos ficticios. Los requisitos no funcionales se describen aquí por su comportamiento; QA asignará los IDs del catálogo compartido.
+**Aplicación común:** cada historia aplica los límites de esta épica y utiliza datos ficticios. Los requisitos no funcionales aplican según los IDs definidos en el [catálogo NFR](../product/non-functional-requirements.md).
 
 ## Historias
 
@@ -30,7 +30,7 @@ Un tercero instala y evalúa cada release sin ayuda, y se dispone de evidencias 
 - US-023-AC-03: Quedan identificadas las instrucciones que se ampliarán con las funciones de R2/R3. Cada release debe volver a instalarse y evaluarse desde un entorno limpio según M04; ese esfuerzo se incluye en las historias del incremento correspondiente.
 
 - **Reglas y límites:** Cuentas y datos ficticios; evaluación de las funciones disponibles de cada release. Se aplican los límites comunes de la épica.
-- NFR: Instalación desde cero con pasos y versiones documentados; datos totalmente ficticios.
+- NFR: NFR-003 (datos 100 % ficticios) y NFR-008 (instalación reproducible desde cero en < 10 min según guion documentado).
 
 ---
 
@@ -55,4 +55,4 @@ Un tercero instala y evalúa cada release sin ayuda, y se dispone de evidencias 
 La muestra de tres participantes sustituye la meta anterior de cuatro éxitos entre cinco participantes, por decisión del PO del 01/10/2026. Con tres personas se exige el éxito de las tres para conservar un umbral de al menos el 80 %.
 
 - **Reglas y límites:** M01: tres éxitos de tres en menos de 5 min; M03: tres decisiones de menos de 1 min. Se aplican los límites comunes de la épica.
-- NFR: Prueba con datos ficticios; evidencias sin identificación personal de participantes.
+- NFR: NFR-003 (datos ficticios sin identificación de participantes), NFR-004 (accesibilidad básica WCAG 2.1 AA) y NFR-009 (compatibilidad en navegadores).

@@ -10,7 +10,7 @@ La solución inicial utiliza datos ficticios precargados y restablecibles median
 
 Cualquier persona puede instalar el producto, entrar con una cuenta ficticia de empleado o de responsable y encontrar un cuadrante de demostración coherente con las reglas.
 
-**Aplicación común:** cada historia aplica los límites de esta épica y utiliza datos ficticios. Los requisitos no funcionales se describen aquí por su comportamiento; QA asignará los IDs del catálogo compartido.
+**Aplicación común:** cada historia aplica los límites de esta épica y utiliza datos ficticios. Los requisitos no funcionales aplican según los IDs definidos en el [catálogo NFR](../product/non-functional-requirements.md).
 
 ## Historias
 
@@ -32,7 +32,7 @@ Cualquier persona puede instalar el producto, entrar con una cuenta ficticia de 
 - US-001-AC-03: La versión de `main` puede desplegarse en el entorno de demostración siguiendo un procedimiento documentado.
 
 **Verificación y restricciones**
-- NFR: instalabilidad y reproducibilidad del entorno (catálogo NFR pendiente de DevOps/QA).
+- NFR: NFR-008 (instalabilidad y reproducibilidad del entorno en < 10 min).
 - Restricción: uso de las tecnologías autorizadas para el proyecto.
 
 - **Reglas y límites:** Sin regla de negocio propia; se aplican los límites de la épica. Se aplican los límites comunes de la épica.
@@ -73,8 +73,8 @@ Cualquier persona puede instalar el producto, entrar con una cuenta ficticia de 
 | Ver historial de decisiones de su servicio | No | Sí |
 
 **Verificación y restricciones**
-- NFR: contraseñas almacenadas mediante hash con sal; autorización y bloqueo temporal comprobados siempre en el servidor (RT-03); mensajes de error accesibles.
-- Restricción: solo cuentas ficticias; no hay alta de usuarios en el MVP.
+- NFR: NFR-001 (autorización en servidor por rol, RT-03), NFR-002 (contraseñas hasheadas con sal), NFR-004 (accesibilidad básica WCAG 2.1 AA en formulario), NFR-005 (mensajes de error genéricos y claros) y NFR-009 (compatibilidad en navegadores). Bloqueo temporal tras 5 fallos comprobado siempre en servidor.
+- Restricción: solo cuentas ficticias (NFR-003); no hay alta de usuarios en el MVP.
 
 **Ejemplos**
 - `empleado01` / contraseña de demo → sesión de empleado y página de inicio de Ana (Enfermería, Urgencias).

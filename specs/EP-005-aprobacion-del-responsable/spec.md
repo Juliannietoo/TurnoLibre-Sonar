@@ -8,7 +8,7 @@
 
 El responsable resuelve cada solicitud con las reglas ya comprobadas en menos de 1 minuto (métrica M03), y el cuadrante se actualiza sin inconsistencias.
 
-**Aplicación común:** cada historia aplica los límites de esta épica y utiliza datos ficticios. Los requisitos no funcionales se describen aquí por su comportamiento; QA asignará los IDs del catálogo compartido.
+**Aplicación común:** cada historia aplica los límites de esta épica y utiliza datos ficticios. Los requisitos no funcionales aplican según los IDs definidos en el [catálogo NFR](../product/non-functional-requirements.md).
 
 ## Historias
 
@@ -58,7 +58,7 @@ El responsable resuelve cada solicitud con las reglas ya comprobadas en menos de
 **Reglas:** RN-01 a RN-06 (revalidación); RN-05 (no se aprueban solicitudes caducadas).
 
 **Verificación y restricciones**
-- NFR: la aprobación y el cambio de cuadrante se confirman o fallan juntos (transacción, RT-02); autorización solo para el responsable del servicio (RT-03).
+- NFR: NFR-001 (autorización exclusiva en servidor para el responsable del servicio, RT-03), NFR-004 (interfaz y controles accesibles con teclado), NFR-005 (motivo de rechazo obligatorio y visible; regla indicada si falla revalidación), NFR-006 (revalidación completa de reglas en < 500 ms), NFR-007 (aprobación y permuta de cuadrante como transacción atómica ACID; control de concurrencia, RT-02) y NFR-009 (compatibilidad en navegadores).
 - Métrica M03: el responsable decide en menos de 1 minuto desde que abre el detalle.
 
 **Ejemplos**

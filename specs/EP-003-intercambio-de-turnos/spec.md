@@ -8,7 +8,7 @@
 
 Dos empleados pueden acordar un intercambio sin ayuda y dejarlo pendiente de aprobación (métrica M01).
 
-**Aplicación común:** cada historia aplica los límites de esta épica y utiliza datos ficticios. Los requisitos no funcionales se describen aquí por su comportamiento; QA asignará los IDs del catálogo compartido.
+**Aplicación común:** cada historia aplica los límites de esta épica y utiliza datos ficticios. Los requisitos no funcionales aplican según los IDs definidos en el [catálogo NFR](../product/non-functional-requirements.md).
 
 ## Historias
 
@@ -84,7 +84,7 @@ Dos empleados pueden acordar un intercambio sin ayuda y dejarlo pendiente de apr
 **Estados:** la publicación está Disponible, Ocupada por una solicitud o Cerrada. La solicitud nace como Propuesta; pasa a Aceptada (pendiente de aprobación), Aprobada o Rechazada. Puede quedar Caducada al comenzar el primero de sus turnos, o Cancelada si se incorpora US-011. Publicada describe una oferta de turno, no una solicitud.
 
 **Verificación y restricciones**
-- NFR: la creación se confirma o falla de forma atómica (RT-02).
+- NFR: NFR-001 (autorización por rol: solo empleados participantes o su responsable acceden), NFR-004 (interfaz accesible por teclado), NFR-005 (mensajes claros con regla y motivo ante rechazo por RN-03 o RN-05), NFR-007 (creación atómica y consistente ante concurrencia, RT-02) y NFR-009 (compatibilidad de navegadores).
 - Restricción: intercambio uno a uno, sin cesiones.
 
 **Ejemplos**

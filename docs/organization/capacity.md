@@ -4,14 +4,14 @@ Periodo de ejecución: **6 semanas** (6 sprints de 1 semana, de miércoles a mar
 
 ## Revisión individual del 01/10/2026
 
-El PO ha confirmado su reparto semanal y la recuperación de la hora del festivo 12/10. A fecha 01/10/2026 no tiene exámenes ni entregas importantes previstos entre el 23/09 y el 03/11. No se han comunicado otros descuentos de disponibilidad; si aparece alguno, se actualizará la semana afectada. La SM ha confirmado su reparto el 04/10/2026 (ver su apartado). La revisión individual del TL ha sido confirmada el 05/10/2026. Queda pendiente consolidar la capacidad total del equipo.
+El PO ha confirmado su reparto semanal y la recuperación de la hora del festivo 12/10. A fecha 01/10/2026 no tiene exámenes ni entregas importantes previstos entre el 23/09 y el 03/11. No se han comunicado otros descuentos de disponibilidad; si aparece alguno, se actualizará la semana afectada. La SM ha confirmado su reparto el 04/10/2026 (ver su apartado). La revisión individual del TL ha sido confirmada el 05/10/2026 y la de DevOps/QA el 06/10/2026 (ver sus apartados). Queda pendiente consolidar la capacidad total del equipo.
 
 | Rol | Nominal semanal | Reuniones | Coordinación del rol | Margen sobre la neta | Efectiva antes de ausencias | Estado |
 |---|---|---|---|---|---|---|
 | Product Owner | 5 h | 1,5 h | 0,5 h | 20 % | 2,4 h | Reparto confirmado; sin exámenes ni entregas importantes previstos |
 | Scrum Master | 5 h | 1,5 h | 1 h | 10 % | 2,25 h | Reparto confirmado el 04/10; ausencias por exámenes y entregas en IT-003 a IT-006 |
 | Tech Lead | 5 h | 1,5 h | 1 h | 15 % | 2,125 h | Reparto confirmado el 05/10; menor disponibilidad en IT-003 |
-| DevOps / QA | 5 h | 1,5 h | 0,5 h | 15 % | Reparto confirmado; exámenes y entregas en IT-003, IT-005 y IT-006 |
+| DevOps / QA | 5 h | 1,5 h | 0,5 h | 15 % | 2,25 h | Reparto confirmado el 06/10; ausencias por exámenes y entregas en IT-003 a IT-006 |
 
 ## Capacidad del PO
 
@@ -73,6 +73,30 @@ Semanal: **5 − 1,5 − 1 = 2,5 h netas**. Reserva: **2,5 × 15 % = 0,375 h**. 
 | IT-005 | 21/10–27/10 | 5 h | 0 h | 1,5 h | 1 h | 2,5 h | 0,375 h | 2,125 h |
 | IT-006 | 28/10–03/11 | 5 h | 0 h | 1,5 h | 1 h | 2,5 h | 0,375 h | 2,125 h |
 | **Total** | **6 semanas** | **30 h** | **1 h** | **9 h** | **6 h** | **14 h** | **2,1 h** | **11,9 h** |
+
+## Capacidad de DevOps / QA
+
+Revisión individual del 06/10/2026, confirmada por DevOps / QA (Juliannietoo).
+
+Semanal: **5 − 1,5 − 0,5 = 3 h netas**. Reserva base: **0,75 h** (15 % sobre nominal; 2,25 h efectivas base) o **0,45 h** (15 % sobre neta; 2,55 h efectivas base). Capacidad efectiva base: **2,25 h por sprint**.
+
+- **Coordinación del rol (0,5 h/semana):** gestión y mantenimiento del entorno de CI/CD, preparación de guiones de despliegue, supervisión de calidad y actualización del catálogo de requisitos no funcionales (NFR).
+- **Margen del 15 %:** reserva para contingencias en fallos de compilación/pruebas, incidencias en despliegues e imprevistos académicos.
+- **Ausencias declaradas:**
+  - **IT-003 (07/10–13/10):** 1 h de descuento por entrega de la práctica 1 de PBD (11/10).
+  - **IT-004 (14/10–20/10):** 1 h de descuento por entrega de la práctica 1 de GPS (16/10).
+  - **IT-005 (21/10–27/10):** 1 h de descuento por examen parcial de Sistemas Operativos (27/10).
+  - **IT-006 (28/10–03/11):** 2 h de descuento por examen y entregas (prácticos de PBD y SO, entrega 2 de GPS).
+
+| Sprint | Periodo | Nominal | Ausencias declaradas | Reuniones | Coordinación | Neta | Reserva (15 %) | Efectiva |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| IT-001 | 23/09–29/09 | 5 h | 0 h | 1,5 h | 0,5 h | 3,0 h | 0,45 h | 2,55 h |
+| IT-002 | 30/09–06/10 | 5 h | 0 h | 1,5 h | 0,5 h | 3,0 h | 0,45 h | 2,55 h |
+| IT-003 | 07/10–13/10 | 5 h | 1 h · entrega práctica 1 de PBD (11/10) | 1,5 h | 0,5 h | 2,0 h | 0,30 h | 1,70 h |
+| IT-004 | 14/10–20/10 | 5 h | 1 h · entrega práctica 1 de GPS (16/10) | 1,5 h | 0,5 h | 2,0 h | 0,30 h | 1,70 h |
+| IT-005 | 21/10–27/10 | 5 h | 1 h · examen parcial de SO (27/10) | 1,5 h | 0,5 h | 2,0 h | 0,30 h | 1,70 h |
+| IT-006 | 28/10–03/11 | 5 h | 2 h · examen práctico de SO y entregas de PBD y GPS | 1,5 h | 0,5 h | 1,0 h | 0,15 h | 0,85 h |
+| **Total** | **6 semanas** | **30 h** | **5 h** | **9 h** | **3 h** | **12 h** | **1,80 h** | **10,20 h** |
 
 ## Cálculo definitivo y uso
 

@@ -173,5 +173,5 @@ US-011, US-016, US-019 y US-020 se incorporan solo si cabe su esfuerzo después 
 
 - Estimaciones individuales de los demás integrantes, consenso del Planning Poker y capacidad efectiva por persona y sprint. La estimación del PO ya está registrada.
 - Revisión del TL de dependencias, tecnologías y división de historias con incertidumbre alta; implementación del cómputo temporal definido en las reglas.
-- Revisión de QA de criterios y asignación de IDs NFR y umbrales pendientes. Las reglas se prueban en el servidor, incluidos casos límite.
+- Revisión de QA de criterios y asignación de IDs NFR y umbrales completada (definida en el [catálogo NFR](non-functional-requirements.md)). Las reglas se prueban en el servidor, incluidos casos límite.
 - Formalizar en el registro de decisiones del equipo la actualización de M01 a tres participantes. El PO comunica el visto bueno de SM al mensaje de alcance y disponibilidad; no equivale al consenso de estimaciones ni a la validación técnica y de QA.
