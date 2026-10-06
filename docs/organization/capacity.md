@@ -11,7 +11,7 @@ El PO ha confirmado su reparto semanal y la recuperación de la hora del festivo
 | Product Owner | 5 h | 1,5 h | 0,5 h | 20 % | 2,4 h | Reparto confirmado; sin exámenes ni entregas importantes previstos |
 | Scrum Master | 5 h | 1,5 h | 1 h | 10 % | 2,25 h | Reparto confirmado el 04/10; ausencias por exámenes y entregas en IT-003 a IT-006 |
 | Tech Lead | 5 h | 1,5 h | 1 h | 15 % | 2,125 h | Reparto confirmado el 05/10; menor disponibilidad en IT-003 |
-| DevOps / QA | 5 h | 1,5 h | 0,5 h | 15 % | 2,25 h | Reparto confirmado el 06/10; ausencias por exámenes y entregas en IT-003 a IT-006 |
+| DevOps / QA | 5 h | 1,5 h | 0,5 h | 15 % | 2,55 h | Reparto confirmado el 06/10; ausencias por exámenes y entregas en IT-003 a IT-006 |
 
 ## Capacidad del PO
 
@@ -78,7 +78,7 @@ Semanal: **5 − 1,5 − 1 = 2,5 h netas**. Reserva: **2,5 × 15 % = 0,375 h**. 
 
 Revisión individual del 06/10/2026, confirmada por DevOps / QA (Juliannietoo).
 
-Semanal: **5 − 1,5 − 0,5 = 3 h netas**. Reserva base: **0,75 h** (15 % sobre nominal; 2,25 h efectivas base) o **0,45 h** (15 % sobre neta; 2,55 h efectivas base). Capacidad efectiva base: **2,25 h por sprint**.
+Semanal: **5 − 1,5 − 0,5 = 3 h netas**. Reserva: **3 × 15 % = 0,45 h**. Capacidad efectiva base: **2,55 h por sprint**.
 
 - **Coordinación del rol (0,5 h/semana):** gestión y mantenimiento del entorno de CI/CD, preparación de guiones de despliegue, supervisión de calidad y actualización del catálogo de requisitos no funcionales (NFR).
 - **Margen del 15 %:** reserva para contingencias en fallos de compilación/pruebas, incidencias en despliegues e imprevistos académicos.
@@ -96,7 +96,25 @@ Semanal: **5 − 1,5 − 0,5 = 3 h netas**. Reserva base: **0,75 h** (15 % sobre
 | IT-004 | 14/10–20/10 | 5 h | 1 h · entrega práctica 1 de GPS (16/10) | 1,5 h | 0,5 h | 2,0 h | 0,30 h | 1,70 h |
 | IT-005 | 21/10–27/10 | 5 h | 1 h · examen parcial de SO (27/10) | 1,5 h | 0,5 h | 2,0 h | 0,30 h | 1,70 h |
 | IT-006 | 28/10–03/11 | 5 h | 2 h · examen práctico de SO y entregas de PBD y GPS | 1,5 h | 0,5 h | 1,0 h | 0,15 h | 0,85 h |
-| **Total** | **6 semanas** | **30 h** | **5 h** | **9 h** | **3 h** | **12 h** | **1,80 h** | **10,20 h** |
+| **Total** | **6 semanas** | **30 h** | **5 h** | **9 h** | **3 h** | **13 h** | **1,95 h** | **11,05 h** |
+
+## Capacidad del equipo
+
+Consolidada por la SM el 06/10/2026 a partir de las cuatro revisiones individuales. Corrección del 06/10: los totales de DevOps/QA se recalculan a partir de sus filas por sprint (11,05 h efectivas; antes figuraba 10,20 h por un error de suma).
+
+| Sprint | Periodo | PO | SM | TL | QA | **Equipo** |
+|---|---|---:|---:|---:|---:|---:|
+| IT-001 | 23/09–29/09 | 2,40 h | 2,25 h | 2,125 h | 2,55 h | **9,33 h** |
+| IT-002 | 30/09–06/10 | 2,40 h | 2,25 h | 2,125 h | 2,55 h | **9,33 h** |
+| IT-003 | 07/10–13/10 | 2,40 h | 1,35 h | 1,275 h | 1,70 h | **6,73 h** |
+| IT-004 | 14/10–20/10 | 2,40 h | 1,35 h | 2,125 h | 1,70 h | **7,58 h** |
+| IT-005 | 21/10–27/10 | 2,40 h | 1,35 h | 2,125 h | 1,70 h | **7,58 h** |
+| IT-006 | 28/10–03/11 | 2,40 h | 0,45 h | 2,125 h | 0,85 h | **5,83 h** |
+| **Total** | **6 semanas** | **14,40 h** | **9,00 h** | **11,90 h** | **11,05 h** | **46,35 h** |
+
+- **Nominal:** 120 h (4 × 5 h × 6 semanas). **Efectiva:** 46,35 h, el 39 % de la nominal: reuniones (36 h), coordinación por rol (18 h), ausencias declaradas (11 h) y reservas individuales.
+- **Comparación con el backlog:** las Must consensuadas suman 81 h-p (`specs/product/catalogo.md`), ≈ 35 h por encima de la capacidad efectiva. Hay que recortar alcance Must antes de fijar la línea base.
+- IT-003 e IT-006 son los sprints con menos capacidad por exámenes y entregas; no deben recibir las historias de mayor incertidumbre.
 
 ## Cálculo definitivo y uso
 
