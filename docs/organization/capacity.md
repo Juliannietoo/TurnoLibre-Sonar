@@ -86,7 +86,7 @@ Semanal: **5 − 1,5 − 0,5 = 3 h netas**. Reserva base: **0,75 h** (15 % sobre
   - **IT-003 (07/10–13/10):** 1 h de descuento por entrega de la práctica 1 de PBD (11/10).
   - **IT-004 (14/10–20/10):** 1 h de descuento por entrega de la práctica 1 de GPS (16/10).
   - **IT-005 (21/10–27/10):** 1 h de descuento por examen parcial de Sistemas Operativos (27/10).
-  - **IT-006 (28/10–03/11):** 2 h de descuento por examen y entregas (prácticos de PBD y SO, entrega 2 de GPS).
+  - **IT-006 (28/10–03/11):** 2 h de descuento por examen práctico de SO (29/10) y entregas (PBD y GPS).
 
 | Sprint | Periodo | Nominal | Ausencias declaradas | Reuniones | Coordinación | Neta | Reserva (15 %) | Efectiva |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
