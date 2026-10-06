@@ -2,6 +2,8 @@
 
 Versión 0.2 · 24/09/2026 · Validada por Lucansado (Product Owner) el 28/09/2026 tras la revisión de PaulaJCruz ([PR #1](https://github.com/UniExtremadura/TurnoLibre_GC02/pull/1)).
 
+> **Ajuste de alcance D-18 (06/10/2026):** las seis reglas se mantienen definidas, pero en el MVP se comprueban en el servidor **RN-01, RN-03 y RN-06**; **RN-04** se garantiza al preparar el cuadrante de demostración (los intercambios uno a uno dentro de la misma categoría y servicio no alteran la cobertura); **RN-02 y RN-05** pasan a Should (US-013, US-015). Los datos de demostración no incluyen semanas con cambio de hora (supuesto A-05 de `goals.md`).
+
 Reglas que el sistema comprueba **en el servidor** antes de que un intercambio pueda aprobarse (constitución, principio 4). Son reglas **ficticias**, definidas por el equipo e **inspiradas** en la normativa laboral española, simplificadas para el proyecto. No describen por sí solas el régimen laboral de un hospital real: el [art. 34.1 del Estatuto de los Trabajadores](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430) expresa las 40 h semanales como promedio en cómputo anual; aquí RN-02 fija deliberadamente un máximo estricto en cada semana natural.
 
 ## Turnos del Hospital Comarcal Vega Alta (ficticio)

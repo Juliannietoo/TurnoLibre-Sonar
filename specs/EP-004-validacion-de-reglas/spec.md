@@ -16,15 +16,17 @@ Ningún intercambio que incumpla una regla puede aprobarse, y el empleado entien
 
 ### US-012 — Validar descanso mínimo y solapes  *(muestra detallada)*
 
+> **Cambio D-18 (06/10/2026):** sin cambio de hora: los datos de demostración no incluyen esas semanas.
+
 > Como responsable, quiero que el sistema compruebe el descanso mínimo entre turnos y que no haya solapes, para no aprobar cambios que los incumplan.
 
 - **Necesidad:** el descanso entre turnos es el error más frecuente de los cambios pactados informalmente.
 - **Objetivo:** G02 · M02
 - **Prioridad:** Must — *valor:* regla central del dominio; *riesgo:* alto (RT-01), conviene abordarla pronto; *dependencias:* crea el módulo de validación que reutilizan US-013 y US-014.
-- **Estimación:** PO individual: **7 h-p**, confirmada el 02/10/2026; consenso pendiente de Planning Poker.
+- **Estimación:** consenso del 06/10/2026: **8 h-p** (individuales: PO 7 · SM 8 · TL 8 · QA 8); revisada por D-18: **5 h-p**, votada por el equipo.
 - **Incertidumbre:** Alta
 - **Predecesoras:** US-009 (funcional), US-003 (técnica)
-- **Plan inicial:** IT-004 · R2
+- **Plan inicial:** IT-003 · R2
 
 **Criterios de aceptación**
 - US-012-AC-01: Si entre el fin de un turno y el inicio del siguiente del mismo empleado hay menos de 12 h, el intercambio se marca inválido por RN-01.
@@ -58,15 +60,17 @@ Ningún intercambio que incumpla una regla puede aprobarse, y el empleado entien
 
 ### US-013 — Validar las horas semanales  *(muestra detallada)*
 
+> **Cambio D-18 (06/10/2026):** pasa a Should; G02 deja de exigir RN-02 en el MVP.
+
 > Como responsable, quiero que el sistema compruebe que ningún empleado supera 40 h en una semana natural tras el intercambio, para respetar el límite interno de jornada.
 
 - **Necesidad:** cambiar una mañana (7 h) por una noche (10 h) puede superar el límite sin que nadie lo note.
 - **Objetivo:** G02 · M02
-- **Prioridad:** Must — *valor:* G02 exige cubrir RN-01 a RN-06; *riesgo:* alto por el reparto de la noche entre semanas; *dependencias:* reutiliza el módulo de US-012.
-- **Estimación:** PO individual: **6 h-p**, confirmada el 02/10/2026; consenso pendiente de Planning Poker.
+- **Prioridad:** Should (antes Must) — *valor:* G02 exige cubrir RN-01 a RN-06; *riesgo:* alto por el reparto de la noche entre semanas; *dependencias:* reutiliza el módulo de US-012.
+- **Estimación:** consenso del 06/10/2026: **5 h-p** (individuales: PO 6 · SM 5 · TL 8 · QA 5); revisada por D-18: **3 h-p**, votada por el equipo.
 - **Incertidumbre:** Alta
 - **Predecesoras:** US-009 (funcional), US-003 (técnica), US-012 (técnica) Reutilización de US-012 a revisar por TL.
-- **Plan inicial:** IT-004 · R2; debe completarse antes de habilitar la aprobación de solicitudes en IT-005.
+- **Plan inicial:** sin compromiso; tras las Must
 
 **Criterios de aceptación**
 - US-013-AC-01: Si tras el intercambio un empleado supera 40 h en alguna semana natural afectada, el intercambio se marca inválido por RN-02.
@@ -97,15 +101,17 @@ Ningún intercambio que incumpla una regla puede aprobarse, y el empleado entien
 
 ### US-014 — Validar categoría, servicio y cobertura  *(muestra detallada)*
 
+> **Cambio D-18 (06/10/2026):** en cada intercambio solo se comprueba RN-03; RN-04 se comprueba al preparar los datos (US-003). Los intercambios siguen siendo uno a uno dentro de la misma categoría y servicio, por lo que la cobertura se conserva.
+
 > Como responsable, quiero que solo se permitan intercambios entre empleados de la misma categoría y servicio y que se mantenga la cobertura mínima, para que ningún turno quede desatendido.
 
 - **Necesidad:** que un turno quede sin el personal mínimo es el riesgo más grave para el hospital.
 - **Objetivo:** G02 · M02
 - **Prioridad:** Must — *valor:* protege la cobertura; *riesgo:* medio; *dependencias:* reutiliza el módulo de US-012.
-- **Estimación:** PO individual: **4 h-p**, confirmada el 02/10/2026; consenso pendiente de Planning Poker.
+- **Estimación:** consenso del 06/10/2026: **5 h-p** (individuales: PO 4 · SM 5 · TL 5 · QA 5); revisada por D-18: **3 h-p**, votada por el equipo.
 - **Incertidumbre:** Media
 - **Predecesoras:** US-009 (funcional), US-003 (técnica), US-012 (técnica) Reutilización de US-012 a revisar por TL.
-- **Plan inicial:** IT-004 · R2
+- **Plan inicial:** por replanificar tras D-18 (ver catálogo, apartado 4)
 
 **Criterios de aceptación**
 - US-014-AC-01: Un intercambio entre empleados de distinta categoría o servicio se marca inválido por RN-03.
@@ -133,15 +139,17 @@ Ningún intercambio que incumpla una regla puede aprobarse, y el empleado entien
 
 ### US-015 — Validar la antelación mínima
 
+> **Cambio D-18 (06/10/2026):** pasa a Should; G02 deja de exigir RN-05 en el MVP.
+
 > Como responsable, quiero que no se admitan solicitudes con menos de 48 h de antelación, para tener tiempo de resolverlas.
 
 - **Necesidad:** evitar cambios de última hora imposibles de gestionar.
 - **Objetivo:** G02 · M02
-- **Prioridad:** Must — *valor:* garantiza el plazo de G02; *riesgo:* bajo; *dependencias:* debe estar disponible al registrar una propuesta en US-009.
-- **Estimación:** PO individual: **2 h-p**, confirmada el 02/10/2026; consenso pendiente de Planning Poker.
+- **Prioridad:** Should (antes Must) — *valor:* garantiza el plazo de G02; *riesgo:* bajo; *dependencias:* debe estar disponible al registrar una propuesta en US-009.
+- **Estimación:** consenso del 06/10/2026: **3 h-p** (individuales: PO 2 · SM 3 · TL 3 · QA 2).
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-003 (técnica) El formato de solicitud se acuerda con US-009, sin requerir esa historia terminada.
-- **Plan inicial:** IT-003 · R2
+- **Plan inicial:** sin compromiso; tras las Must
 
 **Criterios de aceptación**
 - US-015-AC-01: Al registrar una solicitud, el servidor exige al menos 48 h hasta el inicio más temprano de los dos turnos. Exactamente 48 h se admite; 47 h y 59 min se rechaza, indicando RN-05 y la antelación disponible.
@@ -160,7 +168,7 @@ Ningún intercambio que incumpla una regla puede aprobarse, y el empleado entien
 - **Necesidad:** ampliar la explicación básica que ya devuelve cada validación.
 - **Objetivo:** G01 y G02
 - **Prioridad:** Should — *valor:* mejora la autonomía (G01); *riesgo:* bajo; *dependencias:* necesita todas las validaciones. El mensaje básico con regla y motivo forma parte de las Must.
-- **Estimación:** PO individual: **2 h-p**, confirmada el 02/10/2026; consenso pendiente de Planning Poker.
+- **Estimación:** consenso del 06/10/2026: **2 h-p** (individuales: PO 2 · SM 5 · TL 2 · QA 2).
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-012 (funcional), US-013 (funcional), US-014 (funcional), US-015 (funcional)
 - **Plan inicial:** candidata IT-006 · R3, solo si hay capacidad después de las Must.

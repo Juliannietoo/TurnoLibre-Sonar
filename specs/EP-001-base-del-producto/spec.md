@@ -21,7 +21,7 @@ Cualquier persona puede instalar el producto, entrar con una cuenta ficticia de 
 - **Necesidad:** sin un entorno común no se puede cumplir la Definition of Done (CI en verde, despliegue en demostración).
 - **Objetivo:** G04
 - **Prioridad:** Must — *valor:* habilita todas las demás historias; *riesgo:* alto si se retrasa, porque bloquea el resto; *dependencias:* es la raíz del grafo.
-- **Estimación:** PO individual: **6 h-p**, confirmada el 02/10/2026; consenso pendiente de Planning Poker.
+- **Estimación:** consenso del 06/10/2026: **5 h-p** (individuales: PO 6 · SM 5 · TL 5 · QA 5).
 - **Incertidumbre:** Media (tecnologías pendientes de confirmar)
 - **Predecesoras:** —; externa: confirmación de tecnologías autorizadas
 - **Plan inicial:** IT-001 · R1
@@ -41,12 +41,14 @@ Cualquier persona puede instalar el producto, entrar con una cuenta ficticia de 
 
 ### US-002 — Iniciar sesión con rol  *(muestra detallada)*
 
+> **Cambio D-18 (06/10/2026):** sin bloqueo por intentos fallidos; queda como mejora futura.
+
 > Como usuario de TurnoLibre, quiero iniciar sesión con mi cuenta ficticia, para acceder solo a las funciones de mi rol (empleado o responsable).
 
 - **Necesidad:** empleados y responsable realizan acciones distintas; sin identificación no hay trazabilidad de quién pide, acepta y aprueba.
 - **Objetivo:** G04 (producto evaluable con cuentas de prueba) y principio 5 de la constitución (control de acceso por rol).
 - **Prioridad:** Must — *valor:* todo el flujo depende de saber quién es el usuario; *riesgo:* mitiga RT-03; *dependencias:* predecesora de todas las historias funcionales.
-- **Estimación:** PO individual: **6 h-p**, confirmada el 02/10/2026; consenso pendiente de Planning Poker.
+- **Estimación:** consenso del 06/10/2026: **5 h-p** (individuales: PO 6 · SM 5 · TL 8 · QA 5); revisada por D-18: **3 h-p**, votada por el equipo.
 - **Incertidumbre:** Media
 - **Predecesoras:** US-001 (técnica), US-003 (técnica)
 - **Plan inicial:** IT-002 · R1
@@ -94,12 +96,14 @@ Cualquier persona puede instalar el producto, entrar con una cuenta ficticia de 
 
 ### US-003 — Cargar los datos de demostración
 
+> **Cambio D-18 (06/10/2026):** un solo servicio con 2 categorías y sin semanas con cambio de hora; RN-04 (cobertura 3/3/2) se comprueba aquí, al preparar el cuadrante.
+
 > Como evaluador, quiero que la aplicación arranque con empleados, turnos y un cuadrante ficticios, para poder probarla sin preparar datos.
 
 - **Necesidad:** la métrica M04 exige que un tercero evalúe el producto siguiendo solo el guion.
 - **Objetivo:** G04 · S-04/S-05
 - **Prioridad:** Must — *valor:* sin datos no se puede demostrar nada; *riesgo:* un cuadrante incoherente falsearía las pruebas de reglas; *dependencias:* predecesora del calendario y del flujo de intercambio.
-- **Estimación:** PO individual: **6 h-p**, confirmada el 02/10/2026; consenso pendiente de Planning Poker.
+- **Estimación:** consenso del 06/10/2026: **5 h-p** (individuales: PO 6 · SM 5 · TL 5 · QA 5); revisada por D-18: **3 h-p**, votada por el equipo.
 - **Incertidumbre:** Media (preparar un cuadrante coherente con cobertura y descansos).
 - **Predecesoras:** US-001 (técnica)
 - **Plan inicial:** IT-001 · R1
@@ -123,7 +127,7 @@ Cualquier persona puede instalar el producto, entrar con una cuenta ficticia de 
 - **Necesidad:** permitiría preparar escenarios de prueba sin tocar datos a mano.
 - **Objetivo:** G04 · S-05
 - **Prioridad:** Could — *valor:* bajo, US-003 ya aporta los datos; *riesgo:* abre casos de edición que chocan con solicitudes en curso; *dependencias:* ninguna historia depende de ella.
-- **Estimación:** PO individual: **5 h-p**, confirmada el 02/10/2026; consenso pendiente de Planning Poker.
+- **Estimación:** consenso del 06/10/2026: **5 h-p** (individuales: PO 5 · SM 8 · TL 5 · QA 5).
 - **Incertidumbre:** Media
 - **Predecesoras:** US-002 (funcional), US-003 (técnica), US-012 (técnica), US-013 (técnica), US-014 (técnica)
 - **Plan inicial:** fuera del plan salvo capacidad sobrante

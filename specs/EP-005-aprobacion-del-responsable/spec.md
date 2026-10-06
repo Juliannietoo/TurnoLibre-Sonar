@@ -14,15 +14,17 @@ El responsable resuelve cada solicitud con las reglas ya comprobadas en menos de
 
 ### US-017 — Consultar solicitudes y decisiones del servicio
 
+> **Cambio D-18 (06/10/2026):** fusionada en US-018 (una sola pantalla para consultar las pendientes y resolverlas). Se conserva el identificador.
+
 > Como responsable, quiero consultar las solicitudes pendientes y las decisiones anteriores de mi servicio, para resolver cambios y comprobar su resultado.
 
 - **Necesidad:** hoy el responsable comprueba las reglas a mano.
 - **Objetivo:** G03 · S-02/S-03
-- **Prioridad:** Must — *valor:* punto de entrada del responsable (G03); *riesgo:* medio; *dependencias:* predecesora de US-018.
-- **Estimación:** PO individual: **5 h-p**, confirmada el 02/10/2026; consenso pendiente de Planning Poker.
+- **Prioridad:** Fusionada en US-018 (antes Must) — *valor:* punto de entrada del responsable (G03); *riesgo:* medio; *dependencias:* predecesora de US-018.
+- **Estimación:** consenso del 06/10/2026: **5 h-p** (individuales: PO 5 · SM 5 · TL 5 · QA 5); sin estimación propia tras D-18 (fusionada en US-018).
 - **Incertidumbre:** Media
 - **Predecesoras:** US-010 (funcional), US-012 (funcional), US-013 (funcional), US-014 (funcional), US-015 (funcional)
-- **Plan inicial:** IT-005 · R3
+- **Plan inicial:** fusionada en US-018
 
 **Criterios de aceptación**
 - US-017-AC-01: El responsable dispone de una lista de solicitudes Aceptadas de su servicio, ordenadas por el inicio más próximo, y de una lista básica de las que ya aprobó o rechazó. No accede a solicitudes de otros servicios.
@@ -37,15 +39,17 @@ El responsable resuelve cada solicitud con las reglas ya comprobadas en menos de
 
 ### US-018 — Resolver una solicitud  *(muestra detallada)*
 
+> **Cambio D-18 (06/10/2026):** una sola pantalla para consultar las pendientes y resolverlas (absorbe US-017); se mantiene el registro básico de la decisión y el resultado visible para ambos empleados.
+
 > Como responsable, quiero aprobar o rechazar con motivo una solicitud, para mantener el cuadrante correcto y que los empleados conozcan el resultado.
 
 - **Necesidad:** decisión final con trazabilidad de quién aprobó qué y cuándo.
 - **Objetivo:** G03 · M03 y G02 (revalidación antes de aprobar)
 - **Prioridad:** Must — *valor:* cierra el flujo completo; *riesgo:* alto (RT-02, concurrencia); *dependencias:* predecesora de las vistas ampliadas de estado e historial y de la prueba del flujo completo.
-- **Estimación:** PO individual: **7 h-p**, confirmada el 02/10/2026; consenso pendiente de Planning Poker.
+- **Estimación:** consenso del 06/10/2026: **8 h-p** (individuales: PO 7 · SM 8 · TL 8 · QA 8).
 - **Incertidumbre:** Alta
 - **Predecesoras:** US-017 (funcional), US-012 (funcional), US-013 (funcional), US-014 (funcional), US-015 (funcional)
-- **Plan inicial:** IT-005 · R3
+- **Plan inicial:** por replanificar tras D-18: con 8 h-p no cabe en ningún sprint desde IT-003 (ver catálogo, apartado 4)
 
 **Criterios de aceptación**
 - US-018-AC-01: Al aprobar una solicitud válida, los turnos se intercambian en el calendario de ambos empleados, la solicitud pasa a *Aprobada* y se cierran las publicaciones de los turnos afectados.

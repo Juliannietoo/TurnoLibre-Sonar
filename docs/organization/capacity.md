@@ -113,7 +113,7 @@ Consolidada por la SM el 06/10/2026 a partir de las cuatro revisiones individual
 | **Total** | **6 semanas** | **14,40 h** | **9,00 h** | **11,90 h** | **11,05 h** | **46,35 h** |
 
 - **Nominal:** 120 h (4 × 5 h × 6 semanas). **Efectiva:** 46,35 h, el 39 % de la nominal: reuniones (36 h), coordinación por rol (18 h), ausencias declaradas (11 h) y reservas individuales.
-- **Comparación con el backlog:** las Must consensuadas suman 81 h-p (`specs/product/catalogo.md`), ≈ 35 h por encima de la capacidad efectiva. Hay que recortar alcance Must antes de fijar la línea base.
+- **Comparación con el backlog:** las Must consensuadas sumaban 81 h-p, ≈ 35 h por encima de la capacidad. Tras los recortes de D-18 suman **46 h-p** frente a 46,35 h (`specs/product/catalogo.md`). Queda pendiente que US-009 y US-018 (8 h-p) quepan en un sprint.
 - IT-003 e IT-006 son los sprints con menos capacidad por exámenes y entregas; no deben recibir las historias de mayor incertidumbre.
 
 ## Cálculo definitivo y uso

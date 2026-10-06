@@ -14,12 +14,14 @@ El empleado sabe en todo momento qué turnos tiene y cuáles podría intercambia
 
 ### US-005 — Consultar mi calendario de turnos
 
+> **Cambio D-18 (06/10/2026):** calendario en formato lista de próximos turnos, en lugar de cuadrícula mensual.
+
 > Como empleado, quiero ver mi calendario mensual de turnos, para saber qué días trabajo y qué turno puedo ofrecer.
 
 - **Necesidad:** es el punto de partida de cualquier intercambio.
 - **Objetivo:** G01 · S-03
 - **Prioridad:** Must — *valor:* primer paso del flujo esencial (G01); *riesgo:* bajo; *dependencias:* predecesora de publicar un turno.
-- **Estimación:** PO individual: **4 h-p**, confirmada el 02/10/2026; consenso pendiente de Planning Poker.
+- **Estimación:** consenso del 06/10/2026: **5 h-p** (individuales: PO 4 · SM 5 · TL 3 · QA 3); revisada por D-18: **3 h-p**, votada por el equipo.
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-002 (funcional), US-003 (técnica)
 - **Plan inicial:** IT-002 · R1
@@ -39,15 +41,17 @@ El empleado sabe en todo momento qué turnos tiene y cuáles podría intercambia
 
 ### US-006 — Consultar los turnos de compañeros compatibles
 
+> **Cambio D-18 (06/10/2026):** pasa a Must: es el punto de partida de la propuesta directa sobre un turno de un compañero compatible (sustituye a US-007 y US-008).
+
 > Como empleado, quiero ver los turnos de compañeros de mi categoría y servicio, para saber con quién podría cambiar aunque no los hayan publicado.
 
 - **Necesidad:** facilita encontrar un cambio antes de publicar.
 - **Objetivo:** G01 · S-03
-- **Prioridad:** Could — *valor:* medio, US-008 ya muestra los turnos publicados; *riesgo:* expone el cuadrante de otros (privacidad); *dependencias:* ninguna historia depende de ella.
-- **Estimación:** PO individual: **3 h-p**, confirmada el 02/10/2026; consenso pendiente de Planning Poker.
+- **Prioridad:** Must (antes Could) — *valor:* medio, US-008 ya muestra los turnos publicados; *riesgo:* expone el cuadrante de otros (privacidad); *dependencias:* ninguna historia depende de ella.
+- **Estimación:** consenso del 06/10/2026: **3 h-p** (individuales: PO 3 · SM 3 · TL 2 · QA 3).
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-005 (funcional)
-- **Plan inicial:** fuera del plan salvo capacidad sobrante
+- **Plan inicial:** IT-002 · R1
 
 **Criterios de aceptación**
 - US-006-AC-01: Solo se muestran compañeros de la misma categoría y servicio (RN-03).

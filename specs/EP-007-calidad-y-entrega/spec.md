@@ -14,15 +14,17 @@ Un tercero instala y evalúa cada release sin ayuda, y se dispone de evidencias 
 
 ### US-023 — Crear el guion inicial de instalación y evaluación
 
+> **Cambio D-18 (06/10/2026):** guion mínimo de instalación y evaluación al final del proyecto, no en cada release.
+
 > Como evaluador, quiero un guion paso a paso para instalar y evaluar el producto, para comprobarlo sin ayuda del equipo.
 
 - **Necesidad:** métrica M04.
 - **Objetivo:** G04 · M04
 - **Prioridad:** Must — *valor:* permite evaluar R1 y sirve de base para las demás releases; *riesgo:* bajo; *dependencias:* necesita el entorno, los datos y las funciones de R1.
-- **Estimación:** PO individual: **4 h-p**, confirmada el 02/10/2026; consenso pendiente de Planning Poker.
+- **Estimación:** consenso del 06/10/2026: **5 h-p** (individuales: PO 4 · SM 5 · TL 3 · QA 3); revisada por D-18: **2 h-p**, votada por el equipo.
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-001 (técnica), US-003 (técnica), US-002 (funcional), US-005 (funcional); externa: evaluador ajeno a la implementación
-- **Plan inicial:** IT-002 · R1. Se actualiza y verifica en R2/R3 dentro de las tareas de entrega de cada incremento, sin mantener esta historia abierta tres sprints.
+- **Plan inicial:** por replanificar tras D-18 (ver catálogo, apartado 4)
 
 **Criterios de aceptación**
 - US-023-AC-01: Una persona que no ha participado en el desarrollo instala el producto desde un entorno limpio siguiendo solo el guion.
@@ -36,16 +38,18 @@ Un tercero instala y evalúa cada release sin ayuda, y se dispone de evidencias 
 
 ### US-024 — Prueba de usabilidad y accesibilidad básica
 
+> **Cambio D-18 (06/10/2026):** pasa a Should; si cabe, se realiza durante la review final.
+
 > Como Product Owner, quiero probar el flujo con 3 participantes y revisar la accesibilidad básica, para comprobar M01 y M03 antes de la entrega.
 
 - **Necesidad:** Obtener evidencia medible de autonomía de los empleados y rapidez del responsable.
 - **Objetivo:** G01, G03 y G04 · M01/M03
 
-- **Prioridad:** Must — *valor:* demuestra el cumplimiento de M01 y M03; *riesgo:* medio, requiere coordinar participantes; *dependencias:* necesita el flujo completo. Se reduce la muestra a tres personas para acotar el esfuerzo.
-- **Estimación:** PO individual: **3 h-p**, confirmada el 02/10/2026; consenso pendiente de Planning Poker.
+- **Prioridad:** Should (antes Must) — *valor:* demuestra el cumplimiento de M01 y M03; *riesgo:* medio, requiere coordinar participantes; *dependencias:* necesita el flujo completo. Se reduce la muestra a tres personas para acotar el esfuerzo.
+- **Estimación:** consenso del 06/10/2026: **5 h-p** (individuales: PO 3 · SM 5 · TL 5 · QA 3); revisada por D-18: **3 h-p**, votada por el equipo.
 - **Incertidumbre:** Media
 - **Predecesoras:** US-010 (funcional), US-018 (funcional), US-023 (funcional); externa: tres participantes ajenos al equipo
-- **Plan inicial:** IT-006 · R3; preparar participantes y guion antes de la prueba.
+- **Plan inicial:** sin compromiso; si cabe, en la review final
 
 **Criterios de aceptación**
 - US-024-AC-01: Tres participantes ajenos al equipo completan individualmente los pasos de publicar, proponer y aceptar un intercambio válido utilizando dos cuentas ficticias, hasta dejarlo pendiente de aprobación. Se registran tiempo, ayuda necesaria y resultado. M01 se cumple si los tres terminan en menos de cinco minutos y sin ayuda; se excluye el tiempo de decisión del responsable.

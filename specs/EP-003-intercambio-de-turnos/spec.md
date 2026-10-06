@@ -14,15 +14,17 @@ Dos empleados pueden acordar un intercambio sin ayuda y dejarlo pendiente de apr
 
 ### US-007 — Publicar un turno para cambiar
 
+> **Cambio D-18 (06/10/2026):** fuera de esta versión; la propuesta se hace directamente sobre un turno compatible (US-006 + US-009). Se conserva el identificador.
+
 > Como empleado, quiero publicar un turno que quiero cambiar, para que mis compañeros compatibles lo vean.
 
 - **Necesidad:** hoy los cambios se anuncian por mensajería informal.
 - **Objetivo:** G01 · S-01
-- **Prioridad:** Must — *valor:* inicia el flujo esencial; *riesgo:* bajo; *dependencias:* predecesora de US-008.
-- **Estimación:** PO individual: **3 h-p**, confirmada el 02/10/2026; consenso pendiente de Planning Poker.
+- **Prioridad:** Won't, fuera de esta versión (antes Must) — *valor:* inicia el flujo esencial; *riesgo:* bajo; *dependencias:* predecesora de US-008.
+- **Estimación:** consenso del 06/10/2026: **3 h-p** (individuales: PO 3 · SM 3 · TL 2 · QA 3).
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-005 (funcional)
-- **Plan inicial:** IT-003 · R2
+- **Plan inicial:** fuera de esta versión
 
 **Criterios de aceptación**
 - US-007-AC-01: El empleado puede publicar uno de sus turnos futuros desde el calendario.
@@ -37,15 +39,17 @@ Dos empleados pueden acordar un intercambio sin ayuda y dejarlo pendiente de apr
 
 ### US-008 — Ver los turnos publicados compatibles
 
+> **Cambio D-18 (06/10/2026):** fuera de esta versión; la propuesta se hace directamente sobre un turno compatible (US-006 + US-009). Se conserva el identificador.
+
 > Como empleado, quiero ver los turnos publicados por compañeros compatibles, para encontrar un cambio posible.
 
 - **Necesidad:** encontrar contrapartida sin preguntar uno a uno.
 - **Objetivo:** G01 · S-01
-- **Prioridad:** Must — *valor:* sin ella no se puede proponer; *riesgo:* bajo; *dependencias:* predecesora de US-009.
-- **Estimación:** PO individual: **3 h-p**, confirmada el 02/10/2026; consenso pendiente de Planning Poker.
+- **Prioridad:** Won't, fuera de esta versión (antes Must) — *valor:* sin ella no se puede proponer; *riesgo:* bajo; *dependencias:* predecesora de US-009.
+- **Estimación:** consenso del 06/10/2026: **3 h-p** (individuales: PO 3 · SM 3 · TL 3 · QA 3).
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-007 (funcional)
-- **Plan inicial:** IT-003 · R2
+- **Plan inicial:** fuera de esta versión
 
 **Criterios de aceptación**
 - US-008-AC-01: Solo se listan turnos de empleados de la misma categoría y servicio (RN-03).
@@ -60,15 +64,17 @@ Dos empleados pueden acordar un intercambio sin ayuda y dejarlo pendiente de apr
 
 ### US-009 — Proponer un intercambio  *(muestra detallada)*
 
+> **Cambio D-18 (06/10/2026):** propuesta directa sobre un turno de un compañero compatible, sin publicación previa; se mantiene una única propuesta activa por turno.
+
 > Como empleado, quiero proponer un intercambio ofreciendo uno de mis turnos a cambio de uno publicado, para cambiar un turno que no puedo hacer.
 
 - **Necesidad:** formalizar el acuerdo entre dos empleados para que quede registrado y pueda validarse.
 - **Objetivo:** G01 (autonomía) y G02 (la propuesta es el objeto sobre el que se validan las reglas).
 - **Prioridad:** Must — *valor:* núcleo del producto; *riesgo:* medio, concentra los cambios de estado; *dependencias:* predecesora de aceptación, validaciones, estado y cancelación.
-- **Estimación:** PO individual: **7 h-p**, confirmada el 02/10/2026; consenso pendiente de Planning Poker.
+- **Estimación:** consenso del 06/10/2026: **8 h-p** (individuales: PO 7 · SM 8 · TL 5 · QA 8).
 - **Incertidumbre:** Media
 - **Predecesoras:** US-008 (funcional), US-015 (funcional), US-003 (técnica)
-- **Plan inicial:** IT-003 · R2
+- **Plan inicial:** por replanificar tras D-18: con 8 h-p no cabe en ningún sprint desde IT-003 (ver catálogo, apartado 4)
 
 **Criterios de aceptación**
 - US-009-AC-01: Dado un turno publicado compatible, el empleado elige uno de sus turnos futuros y confirma; la solicitud queda en estado *Propuesta*.
@@ -108,10 +114,10 @@ Dos empleados pueden acordar un intercambio sin ayuda y dejarlo pendiente de apr
 - **Necesidad:** el acuerdo requiere el consentimiento de los dos empleados.
 - **Objetivo:** G01 · M01/S-03
 - **Prioridad:** Must — *valor:* cierra la parte del empleado del flujo (M01); *riesgo:* bajo; *dependencias:* predecesora de la bandeja del responsable.
-- **Estimación:** PO individual: **3 h-p**, confirmada el 02/10/2026; consenso pendiente de Planning Poker.
+- **Estimación:** consenso del 06/10/2026: **3 h-p** (individuales: PO 3 · SM 5 · TL 3 · QA 3).
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-009 (funcional), US-015 (funcional)
-- **Plan inicial:** IT-004 · R2
+- **Plan inicial:** por replanificar tras D-18 (ver catálogo, apartado 4)
 
 **Criterios de aceptación**
 - US-010-AC-01: Al aceptar, la solicitud pasa a *Aceptada* y queda pendiente de aprobación.
@@ -132,7 +138,7 @@ Dos empleados pueden acordar un intercambio sin ayuda y dejarlo pendiente de apr
 - **Necesidad:** los planes cambian; sin cancelación quedan solicitudes huérfanas.
 - **Objetivo:** G01 · S-01
 - **Prioridad:** Should — *valor:* medio; *riesgo:* bajo; *dependencias:* ninguna historia depende de ella.
-- **Estimación:** PO individual: **3 h-p**, confirmada el 02/10/2026; consenso pendiente de Planning Poker.
+- **Estimación:** consenso del 06/10/2026: **3 h-p** (individuales: PO 3 · SM 3 · TL 2 · QA 3).
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-007 (funcional), US-009 (funcional)
 - **Plan inicial:** sin sprint asignado (entra si hay capacidad)
