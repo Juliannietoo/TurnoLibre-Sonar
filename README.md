@@ -19,6 +19,11 @@ Aplicación web para el intercambio de turnos entre trabajadores de una organiza
 | `docs/quality/definition-of-ready.md` | Definition of Ready |
 | `docs/quality/definition-of-done.md` | Definition of Done |
 | `docs/risks/technical-risks.md` | Riesgos técnicos con probabilidad, impacto y mitigación |
+| `docs/planning/` | Excel de planificación |
+| `.github/agents/` | Instrucciones de referencia de los agentes del H3 (Requirements Agent y Planning Agent), adaptadas de las plantillas del profesorado |
+| `.claude/agents/` | Los mismos agentes preparados para Claude Code |
+| [`docs/agents/README.md`](docs/agents/README.md) | Cómo ejecutar los agentes con Claude Code, ChatGPT y Antigravity |
+| `docs/reviews/` | Informes versionados que generan los agentes |
 
 ## Equipo
 

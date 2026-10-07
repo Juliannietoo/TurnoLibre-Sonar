@@ -53,7 +53,7 @@ El presupuesto utiliza perfiles **júnior**. Los cuatro salarios se han contrast
 
 **Revisión aplicada por la SM el 06/10/2026:** con los cuatro salarios verificados, el coste directo pasa de 2.677,50 € a 2.407,50 € (PO −90 €, SM +112,50 €, TL −292,50 €, DevOps/QA sin cambio) y el precio con IVA de 4.935,59 € a 4.460,33 €. Sustituye al presupuesto del 30/09 (D-13).
 
-*Nota sobre el TL:* resulta el perfil con menor coste/hora porque la referencia verificada es *Junior Software Developer*; se mantiene por coherencia con el criterio júnior, aunque el rol tenga mayor responsabilidad técnica; el equipo lo confirmará en la sesión del 07/10/2026.
+*Nota sobre el TL:* resulta el perfil con menor coste/hora porque la referencia verificada es *Junior Software Developer*; se mantiene por coherencia con el criterio júnior, aunque el rol tenga mayor responsabilidad técnica. Confirmado por todo el equipo en la sesión del 07/10/2026.
 
 ## Coste directo de personal
 Cada miembro dedica 5 h/semana × 6 semanas = *30 h*. Se pagan las 120 h completas, no solo la capacidad efectiva: las reuniones y la coordinación también son trabajo remunerado.

@@ -39,12 +39,12 @@ Precisiones de G01, G02 y M01–M05 propuestas el 24/09/2026 y validadas por el 
 - **A-01:** las reglas de negocio de los intercambios son las definidas por el equipo en [`business-rules.md`](business-rules.md): descanso mínimo de 12 h entre turnos, máximo interno de 40 h por semana natural, intercambio solo entre empleados de la misma categoría y servicio, cobertura mínima por turno, solicitud con 48 h de antelación y turnos sin solapamientos ni doble asignación por fecha de inicio.
 - **A-02:** hay un único centro y un único responsable de planificación por servicio.
 - **A-03:** los usuarios disponen de un navegador moderno.
-- **A-04:** la hipótesis de partida es 5 h/semana por miembro durante 6 semanas (120 h nominales). La capacidad efectiva se calcula individualmente en [capacidad del equipo](../../docs/organization/capacity.md); el PO ha confirmado su reparto y los otros roles siguen pendientes. El cálculo homogéneo de H1 no constituye la capacidad definitiva de H2.
+- **A-04:** la hipótesis de partida es 5 h/semana por miembro durante 6 semanas (120 h nominales). La capacidad efectiva se calcula individualmente en [capacidad del equipo](../../docs/organization/capacity.md); los cuatro miembros la han confirmado y, con las fechas de D-19, suma 37,25 h efectivas. El cálculo homogéneo de H1 queda solo como referencia.
 - **A-05:** los datos de demostración no incluyen semanas con cambio de hora; el tratamiento del cambio de hora en las reglas queda fuera del MVP (D-18, 06/10/2026).
 
 ## Restricciones
 - Prohibido usar datos personales, laborales o sanitarios reales.
-- Ejecución de **6 semanas** (del 23/09/2026 al 03/11/2026), en **3 releases de 2 semanas**, con sprints de **1 semana que comienzan en miércoles**.
+- Ejecución de **6 semanas** (del 21/10/2026 al 01/12/2026, después de la primera entrega de la práctica; D-19), en **3 releases de 2 semanas**, con sprints de **1 semana que comienzan en miércoles**.
 - Equipo de **4 personas** a 5 h/semana cada una; coste directo de personal de **2.407,50 €** y precio al cliente de **4.460,33 € IVA incluido** (cálculo en `docs/organization/company.md`).
 - Uso de las tecnologías y convenciones aprobadas por la asignatura (se definirán más adelante).
 
