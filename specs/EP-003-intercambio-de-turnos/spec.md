@@ -74,7 +74,7 @@ Dos empleados pueden acordar un intercambio sin ayuda y dejarlo pendiente de apr
 - **Estimación:** consenso del 06/10/2026: **8 h-p** (individuales: PO 7 · SM 8 · TL 5 · QA 8).
 - **Incertidumbre:** Media
 - **Predecesoras:** US-008 (funcional), US-015 (funcional), US-003 (técnica)
-- **Plan inicial:** por replanificar tras D-18: con 8 h-p no cabe en ningún sprint desde IT-003 (ver catálogo, apartado 4)
+- **Plan inicial:** por replanificar tras D-18: ajustar carga por sprint y tareas individuales según D-21 (ver catálogo, apartado 4)
 
 **Criterios de aceptación**
 - US-009-AC-01: Dado un turno publicado compatible, el empleado elige uno de sus turnos futuros y confirma; la solicitud queda en estado *Propuesta*.

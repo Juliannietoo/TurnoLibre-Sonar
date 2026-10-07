@@ -49,7 +49,7 @@ El responsable resuelve cada solicitud con las reglas ya comprobadas en menos de
 - **Estimación:** consenso del 06/10/2026: **8 h-p** (individuales: PO 7 · SM 8 · TL 8 · QA 8).
 - **Incertidumbre:** Alta
 - **Predecesoras:** US-017 (funcional), US-012 (funcional), US-013 (funcional), US-014 (funcional), US-015 (funcional)
-- **Plan inicial:** por replanificar tras D-18: con 8 h-p no cabe en ningún sprint desde IT-003 (ver catálogo, apartado 4)
+- **Plan inicial:** por replanificar tras D-18: ajustar carga por sprint y tareas individuales según D-21 (ver catálogo, apartado 4)
 
 **Criterios de aceptación**
 - US-018-AC-01: Al aprobar una solicitud válida, los turnos se intercambian en el calendario de ambos empleados, la solicitud pasa a *Aprobada* y se cierran las publicaciones de los turnos afectados.

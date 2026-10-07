@@ -57,7 +57,7 @@ Muestra detallada (necesidad, objetivo, criterios, reglas, restricciones, NFR, e
 | Could | 12 | 14 | 9 | 11 | **11** |
 | Won't | 2 | 3 | 2 | 2 | **2** |
 
-**Comparación con la capacidad:** la capacidad efectiva del equipo es **46,35 h** (`docs/organization/capacity.md`). Las Must consensuadas (**81 h**) la superan en **≈ 35 h**: el alcance Must no cabía. **Resuelto en D-18:** tras los recortes, las Must suman 46 h-p (ver "Ajuste de alcance D-18").
+**Comparación histórica anterior a D-21:** la capacidad efectiva del equipo es **46,35 h** (`docs/organization/capacity.md`). Las Must consensuadas (**81 h**) la superan en **≈ 35 h**: el alcance Must no cabía. **Resuelto en D-18:** tras los recortes, las Must suman 46 h-p (ver "Ajuste de alcance D-18").
 
 
 ### Ajuste de alcance D-18 · 06/10/2026
@@ -80,7 +80,7 @@ Para que las Must quepan en la capacidad, el PO acepta los recortes propuestos p
 | Won't / fuera de versión | US-007, 008, 022 | 8 |
 | Fusionada | US-017 (en US-018) | — |
 
-**Must 46 h-p frente a 46,35 h de capacidad.** El margen explícito es mínimo (0,35 h), pero cada capacidad individual ya incluye su reserva para imprevistos (≈ 8,65 h en total). Las Should solo entran si sobra capacidad.
+**D-21 (07/10/2026): Must 46 h-p frente a 57,65 h de capacidad** en el periodo 21/10–01/12, con 6 h semanales por persona. Quedan 11,65 h sin comprometer. El reparto por sprint aún requiere ajustes; las Should no se incorporan automáticamente.
 
 **Reparto MoSCoW antes de D-18:** 16 Must · 4 Should · 3 Could · 1 Won't. US-024 pasa a Must porque aporta la evidencia de las métricas acordadas; su esfuerzo se acota a tres participantes.
 
@@ -216,39 +216,25 @@ El diagrama muestra Must y Should. La tabla recoge también las dependencias de 
 
 ## 4. Plan inicial por iteración
 
-### Propuesta tras D-18 (06/10/2026) · pendiente de cerrar con PO y TL
-Cada sprint se compara con la capacidad del equipo de `docs/organization/capacity.md`.
+### Revisión D-21 · 07/10/2026
+
+Periodo 21/10–01/12/2026, con 6 h semanales por persona. Se conservan provisionalmente las asignaciones de D-18 para mostrar los desequilibrios que SM/TL deben resolver en H3. No representan una carga ya aprobada por persona.
 
 | Release | Iteración | Fechas | Capacidad | Historias Must | Carga | ¿Cabe? |
-|---|---|---|---|---|---|---|
-| R1 | IT-001 | 23/09–29/09 | 9,33 h | US-001, US-003 | 8 h | Sí |
-| R1 | IT-002 | 30/09–06/10 | 9,33 h | US-002, US-005, US-006 | 9 h | Sí |
-| R2 | IT-003 | 07/10–13/10 | 6,73 h | US-012 (módulo de reglas con el formato de solicitud acordado) | 5 h | Sí |
-| R2 | IT-004 | 14/10–20/10 | 7,58 h | US-009 | 8 h | **No (+0,42 h)** |
-| R3 | IT-005 | 21/10–27/10 | 7,58 h | US-010, US-014 | 6 h | Sí |
-| R3 | IT-006 | 28/10–03/11 | 5,83 h | US-018, US-023 | 10 h | **No (+4,17 h)** |
-| | | | **46,35 h** | | **46 h** | |
+|---|---|---|---:|---|---:|---|
+| R1 | IT-001 | 21/10–27/10 | 10,18 h | US-001, US-003 | 8 h-p | Sí |
+| R1 | IT-002 | 28/10–03/11 | 6,78 h | US-002, US-005, US-006 | 9 h-p | **No (+2,23 h)** |
+| R2 | IT-003 | 04/11–10/11 | 12,73 h | US-012 | 5 h-p | Sí |
+| R2 | IT-004 | 11/11–17/11 | 9,33 h | US-009 | 8 h-p | Sí |
+| R3 | IT-005 | 18/11–24/11 | 9,33 h | US-010, US-014 | 6 h-p | Sí |
+| R3 | IT-006 | 25/11–01/12 | 9,33 h | US-018, US-023 | 10 h-p | **No (+0,68 h)** |
+| | | **Total** | **57,65 h** | | **46 h-p** | **Cabe el total** |
 
-**Problema detectado:** el total cabe, pero **US-009 y US-018 (8 h-p cada una) son mayores que la capacidad de cualquier sprint a partir de IT-003** (máximo 7,58 h), y la Definition of Ready exige que una historia quepa en un sprint. Opciones para el PO y el TL:
-1. **Dividir US-009 y US-018** en dos historias cada una (p. ej. crear la propuesta / reservar y bloquear turnos; aprobar / rechazar con motivo). Requiere nuevos identificadores; el catálogo pasaría de 24 a 26, por encima del máximo de 25, salvo que se retire del catálogo alguna historia fuera de versión (p. ej. US-022).
-2. **Revisar las fechas de ejecución:** IT-001 e IT-002 ya han transcurrido sin desarrollo. Si la ejecución empieza después de la entrega de la práctica, se recalcula la capacidad por sprint con las ausencias de las nuevas semanas y el reparto puede cambiar.
-
-La tabla siguiente es el plan anterior a D-18 y queda sustituida por esta propuesta.
-
-Distribución provisional de precedencias, pendiente de estimaciones y capacidad efectiva. No representa trabajo ya realizado ni un compromiso de carga. Las historias que excedan un sprint se dividirán con TL/QA antes de planificarlas.
-
-| Release | Iteración | Fechas de 2026 | Historias Must | Control de entrega |
-|---|---|---|---|---|
-| R1 | IT-001 | 23/09–29/09 | US-001, US-003 | Entorno y datos de demostración |
-| R1 | IT-002 | 30/09–06/10 | US-002, US-005, US-023 | Instalar y evaluar R1 desde cero |
-| R2 | IT-003 | 07/10–13/10 | US-007, US-008, US-015, US-009 | Descontar o reubicar las horas del festivo 12/10 |
-| R2 | IT-004 | 14/10–20/10 | US-010, US-012, US-013, US-014 | Actualizar guion y evaluar R2; validar carga de reglas |
-| R3 | IT-005 | 21/10–27/10 | US-017, US-018 | Aprobar con todas las reglas y consultar decisiones |
-| R3 | IT-006 | 28/10–03/11 | US-024 | Prueba con tres participantes y evaluación limpia de R3 |
-
-US-011, US-016, US-019 y US-020 se incorporan solo si cabe su esfuerzo después de las Must; a continuación US-004, US-006 y US-021. US-022 queda fuera de esta versión. Las actualizaciones del guion y las comprobaciones de cada release se incluyen en el esfuerzo de sus historias; US-023 no se contabiliza tres veces.
+Quedan **11,65 h sin comprometer**, pero IT-002 e IT-006 requieren redistribución. Las historias de 8 h-p ya caben en varios sprints a nivel de equipo; repartirlas en tareas entre varias personas debe respetar las capacidades individuales y las dependencias. No se rebajan estimaciones ni se añaden Should para llenar el margen. El plan definitivo de H3 queda a cargo de SM/TL, con revisión de alcance del PO.
 
 ## 5. Decisiones del PO · 01/10/2026
+
+Registro histórico: los recortes de D-18 sustituyen las decisiones de alcance afectadas; D-21 actualiza dedicación, fechas y capacidad. Esta sección no define el alcance vigente.
 
 1. **Alcance y capacidad:** mantener las seis reglas de negocio, incluida RN-02, y la consulta básica de estado e historial. Para reducir esfuerzo, aplazar primero avisos internos (US-021), consulta de turnos no publicados de compañeros (US-006) y gestión manual del cuadrante (US-004). Después, recortar ampliaciones de presentación del historial, estado y mensajes (US-020, US-019 y US-016), conservando su información básica; la cancelación (US-011) se aplaza en último lugar. US-022 sigue fuera de esta versión. El recorte y la distribución por sprint se cuantificarán con estimaciones consensuadas y capacidad efectiva; el número de Must no demuestra que la carga quepa. RN-02 debe estar terminada antes de habilitar la aprobación.
 2. **Una propuesta activa por turno:** los dos turnos de una solicitud quedan reservados mientras esté Propuesta o Aceptada, pendiente de aprobación. Rechazar o cancelar libera los turnos; aprobar cierra sus publicaciones. No se admiten ofertas simultáneas sobre el mismo turno.
@@ -261,7 +247,7 @@ US-011, US-016, US-019 y US-020 se incorporan solo si cabe su esfuerzo después 
 
 ## 6. Pendientes para cerrar la planificación
 
-- Estimaciones individuales de los demás integrantes, consenso del Planning Poker y capacidad efectiva por persona y sprint. La estimación del PO ya está registrada.
+- Las estimaciones consensuadas y revisadas por D-18 están registradas en el Excel. Para H3, redistribuir IT-002 e IT-006 sin sobreasignar personas.
 - Revisión del TL de dependencias, tecnologías y división de historias con incertidumbre alta; implementación del cómputo temporal definido en las reglas.
 - Revisión de QA de criterios y asignación de IDs NFR y umbrales completada (definida en el [catálogo NFR](non-functional-requirements.md)). Las reglas se prueban en el servidor, incluidos casos límite.
 - Formalizar en el registro de decisiones del equipo la actualización de M01 a tres participantes. El PO comunica el visto bueno de SM al mensaje de alcance y disponibilidad; no equivale al consenso de estimaciones ni a la validación técnica y de QA.
