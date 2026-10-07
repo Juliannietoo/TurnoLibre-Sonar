@@ -39,7 +39,7 @@ El empleado puede consultar juntas sus solicitudes y el responsable recorrer una
 
 - **Necesidad:** facilitar la lectura de la secuencia de acciones ya registrada por el flujo básico.
 - **Objetivo:** G03 · S-03
-- **Prioridad:** Should — *valor:* mejora la lectura del historial; *riesgo:* bajo; *dependencias:* amplía US-017/018. La lista y el detalle básicos de las decisiones ya están incluidos en US-017.
+- **Prioridad:** Should — *valor:* mejora la lectura del historial; *riesgo:* bajo; *dependencias:* amplía US-018, que ya incluye la lista y el detalle básicos de las decisiones; US-017 está fusionada en ella.
 - **Estimación:** consenso del 06/10/2026: **3 h-p** (individuales: PO 3 · SM 5 · TL 3 · QA 3).
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-017 (funcional), US-018 (funcional)

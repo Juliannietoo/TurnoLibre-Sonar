@@ -20,7 +20,7 @@ Dos empleados pueden acordar un intercambio sin ayuda y dejarlo pendiente de apr
 
 - **Necesidad:** hoy los cambios se anuncian por mensajería informal.
 - **Objetivo:** G01 · S-01
-- **Prioridad:** Won't, fuera de esta versión (antes Must) — *valor:* inicia el flujo esencial; *riesgo:* bajo; *dependencias:* predecesora de US-008.
+- **Prioridad:** Won't, fuera de esta versión (antes Must) — *valor:* la propuesta directa la sustituye (D-18); *riesgo:* bajo; *dependencias:* ninguna Must depende de ella.
 - **Estimación:** consenso del 06/10/2026: **3 h-p** (individuales: PO 3 · SM 3 · TL 2 · QA 3).
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-005 (funcional)
@@ -45,7 +45,7 @@ Dos empleados pueden acordar un intercambio sin ayuda y dejarlo pendiente de apr
 
 - **Necesidad:** encontrar contrapartida sin preguntar uno a uno.
 - **Objetivo:** G01 · S-01
-- **Prioridad:** Won't, fuera de esta versión (antes Must) — *valor:* sin ella no se puede proponer; *riesgo:* bajo; *dependencias:* predecesora de US-009.
+- **Prioridad:** Won't, fuera de esta versión (antes Must) — *valor:* US-006 la cubre tras D-18; *riesgo:* bajo; *dependencias:* necesitaría US-007.
 - **Estimación:** consenso del 06/10/2026: **3 h-p** (individuales: PO 3 · SM 3 · TL 3 · QA 3).
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-007 (funcional)

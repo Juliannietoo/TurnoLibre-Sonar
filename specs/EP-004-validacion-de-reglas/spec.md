@@ -66,7 +66,7 @@ Ningún intercambio que incumpla una regla puede aprobarse, y el empleado entien
 
 - **Necesidad:** cambiar una mañana (7 h) por una noche (10 h) puede superar el límite sin que nadie lo note.
 - **Objetivo:** G02 · M02
-- **Prioridad:** Should (antes Must) — *valor:* G02 exige cubrir RN-01 a RN-06; *riesgo:* alto por el reparto de la noche entre semanas; *dependencias:* reutiliza el módulo de US-012.
+- **Prioridad:** Should (antes Must) — *valor:* RN-02 sale de G02 por D-18 y queda como mejora opcional; *riesgo:* alto por el reparto de la noche entre semanas; *dependencias:* reutiliza el módulo de US-012.
 - **Estimación:** consenso del 06/10/2026: **5 h-p** (individuales: PO 6 · SM 5 · TL 8 · QA 5); revisada por D-18: **3 h-p**, votada por el equipo.
 - **Incertidumbre:** Alta
 - **Predecesoras:** US-009 (funcional), US-003 (técnica), US-012 (técnica) Reutilización de US-012 a revisar por TL.
@@ -145,7 +145,7 @@ Ningún intercambio que incumpla una regla puede aprobarse, y el empleado entien
 
 - **Necesidad:** evitar cambios de última hora imposibles de gestionar.
 - **Objetivo:** G02 · M02
-- **Prioridad:** Should (antes Must) — *valor:* garantiza el plazo de G02; *riesgo:* bajo; *dependencias:* debe estar disponible al registrar una propuesta en US-009.
+- **Prioridad:** Should (antes Must) — *valor:* RN-05 sale de G02 por D-18 y queda como mejora opcional; *riesgo:* bajo; *dependencias:* se añadiría a la validación de US-009.
 - **Estimación:** consenso del 06/10/2026: **3 h-p** (individuales: PO 2 · SM 3 · TL 3 · QA 2).
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-003 (técnica) El formato de solicitud se acuerda con US-009, sin requerir esa historia terminada.

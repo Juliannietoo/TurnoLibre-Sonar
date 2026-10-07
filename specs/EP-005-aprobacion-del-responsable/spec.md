@@ -20,7 +20,7 @@ El responsable resuelve cada solicitud con las reglas ya comprobadas en menos de
 
 - **Necesidad:** hoy el responsable comprueba las reglas a mano.
 - **Objetivo:** G03 · S-02/S-03
-- **Prioridad:** Fusionada en US-018 (antes Must) — *valor:* punto de entrada del responsable (G03); *riesgo:* medio; *dependencias:* predecesora de US-018.
+- **Prioridad:** Fusionada en US-018 (antes Must) — *valor:* la consulta de pendientes se integra con la resolución en una sola pantalla (D-18); *riesgo:* medio; *dependencias:* no se planifica como predecesora independiente de US-018; su alcance y esfuerzo están incluidos en ella.
 - **Estimación:** consenso del 06/10/2026: **5 h-p** (individuales: PO 5 · SM 5 · TL 5 · QA 5); sin estimación propia tras D-18 (fusionada en US-018).
 - **Incertidumbre:** Media
 - **Predecesoras:** US-010 (funcional), US-012 (funcional), US-013 (funcional), US-014 (funcional), US-015 (funcional)

@@ -20,7 +20,7 @@ El empleado sabe en todo momento qué turnos tiene y cuáles podría intercambia
 
 - **Necesidad:** es el punto de partida de cualquier intercambio.
 - **Objetivo:** G01 · S-03
-- **Prioridad:** Must — *valor:* primer paso del flujo esencial (G01); *riesgo:* bajo; *dependencias:* predecesora de publicar un turno.
+- **Prioridad:** Must — *valor:* primer paso del flujo esencial (G01); *riesgo:* bajo; *dependencias:* predecesora de US-006 (consultar turnos compatibles).
 - **Estimación:** consenso del 06/10/2026: **5 h-p** (individuales: PO 4 · SM 5 · TL 3 · QA 3); revisada por D-18: **3 h-p**, votada por el equipo.
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-002 (funcional), US-003 (técnica)
@@ -47,7 +47,7 @@ El empleado sabe en todo momento qué turnos tiene y cuáles podría intercambia
 
 - **Necesidad:** facilita encontrar un cambio antes de publicar.
 - **Objetivo:** G01 · S-03
-- **Prioridad:** Must (antes Could) — *valor:* medio, US-008 ya muestra los turnos publicados; *riesgo:* expone el cuadrante de otros (privacidad); *dependencias:* ninguna historia depende de ella.
+- **Prioridad:** Must (antes Could) — *valor:* alto; con D-18 permite elegir el turno del compañero al que se propone el cambio y sustituye a US-007 y US-008; *riesgo:* expone el cuadrante de otros, por eso solo se muestran compañeros compatibles; *dependencias:* predecesora de US-009.
 - **Estimación:** consenso del 06/10/2026: **3 h-p** (individuales: PO 3 · SM 3 · TL 2 · QA 3).
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-005 (funcional)

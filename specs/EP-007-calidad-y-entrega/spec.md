@@ -20,7 +20,7 @@ Un tercero instala y evalúa cada release sin ayuda, y se dispone de evidencias 
 
 - **Necesidad:** métrica M04.
 - **Objetivo:** G04 · M04
-- **Prioridad:** Must — *valor:* permite evaluar R1 y sirve de base para las demás releases; *riesgo:* bajo; *dependencias:* necesita el entorno, los datos y las funciones de R1.
+- **Prioridad:** Must — *valor:* aporta el guion mínimo de instalación al final que exigen G04 y M04 tras D-18; *riesgo:* bajo; *dependencias:* necesita el flujo completo (US-018) y una persona ajena a la implementación que lo valide.
 - **Estimación:** consenso del 06/10/2026: **5 h-p** (individuales: PO 4 · SM 5 · TL 3 · QA 3); revisada por D-18: **2 h-p**, votada por el equipo.
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-001 (técnica), US-003 (técnica), US-002 (funcional), US-005 (funcional); externa: evaluador ajeno a la implementación
@@ -45,7 +45,7 @@ Un tercero instala y evalúa cada release sin ayuda, y se dispone de evidencias 
 - **Necesidad:** Obtener evidencia medible de autonomía de los empleados y rapidez del responsable.
 - **Objetivo:** G01, G03 y G04 · M01/M03
 
-- **Prioridad:** Should (antes Must) — *valor:* demuestra el cumplimiento de M01 y M03; *riesgo:* medio, requiere coordinar participantes; *dependencias:* necesita el flujo completo. Se reduce la muestra a tres personas para acotar el esfuerzo.
+- **Prioridad:** Should (antes Must) — *valor:* aporta evidencia de M01 y M03; pasa a Should por D-18 y, si no se hace, M01 queda pendiente; *riesgo:* medio, requiere coordinar participantes; *dependencias:* necesita el flujo completo. La prueba con tres participantes se realiza durante la review final si se incorpora.
 - **Estimación:** consenso del 06/10/2026: **5 h-p** (individuales: PO 3 · SM 5 · TL 5 · QA 3); revisada por D-18: **3 h-p**, votada por el equipo.
 - **Incertidumbre:** Media
 - **Predecesoras:** US-010 (funcional), US-018 (funcional), US-023 (funcional); externa: tres participantes ajenos al equipo
