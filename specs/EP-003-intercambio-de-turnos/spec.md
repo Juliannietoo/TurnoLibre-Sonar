@@ -73,7 +73,7 @@ Dos empleados pueden acordar un intercambio sin ayuda y dejarlo pendiente de apr
 - **Prioridad:** Must — *valor:* núcleo del producto; *riesgo:* medio, concentra los cambios de estado; *dependencias:* predecesora de aceptación, validaciones, estado y cancelación.
 - **Estimación:** consenso del 06/10/2026: **8 h-p** (individuales: PO 7 · SM 8 · TL 5 · QA 8).
 - **Incertidumbre:** Media
-- **Predecesoras:** US-008 (funcional), US-015 (funcional), US-003 (técnica)
+- **Predecesoras:** US-006 (funcional), US-003 (técnica)
 - **Plan inicial:** por replanificar tras D-18: ajustar carga por sprint y tareas individuales según D-21 (ver catálogo, apartado 4)
 
 **Criterios de aceptación**
@@ -116,7 +116,7 @@ Dos empleados pueden acordar un intercambio sin ayuda y dejarlo pendiente de apr
 - **Prioridad:** Must — *valor:* cierra la parte del empleado del flujo (M01); *riesgo:* bajo; *dependencias:* predecesora de la bandeja del responsable.
 - **Estimación:** consenso del 06/10/2026: **3 h-p** (individuales: PO 3 · SM 5 · TL 3 · QA 3).
 - **Incertidumbre:** Baja
-- **Predecesoras:** US-009 (funcional), US-015 (funcional)
+- **Predecesoras:** US-009 (funcional)
 - **Plan inicial:** por replanificar tras D-18 (ver catálogo, apartado 4)
 
 **Criterios de aceptación**
@@ -140,7 +140,7 @@ Dos empleados pueden acordar un intercambio sin ayuda y dejarlo pendiente de apr
 - **Prioridad:** Should — *valor:* medio; *riesgo:* bajo; *dependencias:* ninguna historia depende de ella.
 - **Estimación:** consenso del 06/10/2026: **3 h-p** (individuales: PO 3 · SM 3 · TL 2 · QA 3).
 - **Incertidumbre:** Baja
-- **Predecesoras:** US-007 (funcional), US-009 (funcional)
+- **Predecesoras:** US-009 (funcional)
 - **Plan inicial:** sin sprint asignado (entra si hay capacidad)
 
 **Criterios de aceptación**

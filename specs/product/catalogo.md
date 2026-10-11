@@ -1,7 +1,8 @@
 # TurnoLibre — Catálogo de requisitos V0 (borrador)
 
-Línea base: **requisitos-v0-borrador** · Revisión del 02/10/2026 · Decisiones de alcance en el apartado 5 y estimación individual del PO confirmada; pendientes el consenso y la revisión del equipo.
-Cada épica enlaza su ficha de historias. Se conservan 24 historias; las decisiones del PO constan al final. El consenso de estimaciones y la aceptación técnica del equipo siguen pendientes.
+Línea base: **requisitos-v0-borrador** · Revisión acumulada hasta D-21 (07/10/2026) · Decisiones de alcance en el apartado 5, estimaciones consensuadas y revisión técnica del TL incorporadas.
+
+Cada épica enlaza su ficha de historias. Se conservan 24 historias; las decisiones del PO constan al final y los pendientes vigentes se recogen en el apartado 6.
 
 ## 1. Épicas
 
@@ -29,21 +30,21 @@ Muestra detallada (necesidad, objetivo, criterios, reglas, restricciones, NFR, e
 | US-006 | Consultar los turnos de compañeros compatibles | EP-002 | Must | Baja | US-005 (funcional) | IT-002 | 3 | 3 | 2 | 3 | **3** | **3** |
 | US-007 | Publicar un turno para cambiar | EP-003 | Won't (fuera de versión) | Baja | US-005 (funcional) | Fuera de versión | 3 | 3 | 2 | 3 | **3** | **3** |
 | US-008 | Ver los turnos publicados compatibles | EP-003 | Won't (fuera de versión) | Baja | US-007 (funcional) | Fuera de versión | 3 | 3 | 3 | 3 | **3** | **3** |
-| US-009 | Proponer un intercambio | EP-003 | Must | Media | US-008 (funcional), US-015 (funcional), US-003 (técnica) | Por replanificar (D-18) | 7 | 8 | 5 | 8 | **8** | **8** |
-| US-010 | Responder a una propuesta | EP-003 | Must | Baja | US-009 (funcional), US-015 (funcional) | Por replanificar (D-18) | 3 | 5 | 3 | 3 | **3** | **3** |
-| US-011 | Cancelar una publicación o propuesta | EP-003 | Should | Baja | US-007 (funcional), US-009 (funcional) | Sin compromiso; tras Must | 3 | 3 | 2 | 3 | **3** | **3** |
-| US-012 | Validar descanso mínimo y solapes | EP-004 | Must | Alta | US-009 (funcional), US-003 (técnica) | IT-003 | 7 | 8 | 8 | 8 | **8** | **5** |
-| US-013 | Validar las horas semanales | EP-004 | Should | Alta | US-009 (funcional), US-003 (técnica), US-012 (técnica) Reutilización de US-012 a revisar por TL. | Sin compromiso; tras Must | 6 | 5 | 8 | 5 | **5** | **3** |
-| US-014 | Validar categoría, servicio y cobertura | EP-004 | Must | Media | US-009 (funcional), US-003 (técnica), US-012 (técnica) Reutilización de US-012 a revisar por TL. | Por replanificar (D-18) | 4 | 5 | 5 | 5 | **5** | **3** |
-| US-015 | Validar la antelación mínima | EP-004 | Should | Baja | US-003 (técnica) El formato de solicitud se acuerda con US-009, sin requerir esa historia terminada. | Sin compromiso; tras Must | 2 | 3 | 3 | 2 | **3** | **3** |
+| US-009 | Proponer un intercambio | EP-003 | Must | Media | US-006 (funcional), US-003 (técnica) | Por replanificar (D-18) | 7 | 8 | 5 | 8 | **8** | **8** |
+| US-010 | Responder a una propuesta | EP-003 | Must | Baja | US-009 (funcional) | Por replanificar (D-18) | 3 | 5 | 3 | 3 | **3** | **3** |
+| US-011 | Cancelar una publicación o propuesta | EP-003 | Should | Baja | US-009 (funcional) | Sin compromiso; tras Must | 3 | 3 | 2 | 3 | **3** | **3** |
+| US-012 | Validar descanso mínimo y solapes | EP-004 | Must | Alta | US-003 (técnica). El formato de solicitud se acuerda con US-009, sin requerir esa historia terminada. | IT-003 | 7 | 8 | 8 | 8 | **8** | **5** |
+| US-013 | Validar las horas semanales | EP-004 | Should | Alta | US-003 (técnica), US-012 (técnica). El formato de intercambio se acuerda con US-009, sin requerir esa historia terminada. | Sin compromiso; tras Must | 6 | 5 | 8 | 5 | **5** | **3** |
+| US-014 | Validar categoría, servicio y cobertura | EP-004 | Must | Media | US-003 (técnica), US-012 (técnica). El formato de intercambio se acuerda con US-009, sin requerir esa historia terminada. | Por replanificar (D-18) | 4 | 5 | 5 | 5 | **5** | **3** |
+| US-015 | Validar la antelación mínima | EP-004 | Should | Baja | US-003 (técnica). El formato de solicitud se acuerda con US-009, sin requerir esa historia terminada. | Sin compromiso; tras Must | 2 | 3 | 3 | 2 | **3** | **3** |
 | US-016 | Ampliar el diagnóstico de reglas | EP-004 | Should | Baja | US-012 (funcional), US-013 (funcional), US-014 (funcional), US-015 (funcional) | Sin compromiso; tras Must | 2 | 5 | 2 | 2 | **2** | **2** |
-| US-017 | Consultar solicitudes y decisiones del servicio | EP-005 | Fusionada en US-018 | Media | US-010 (funcional), US-012 (funcional), US-013 (funcional), US-014 (funcional), US-015 (funcional) | Fusionada en US-018 | 5 | 5 | 5 | 5 | **5** | — |
-| US-018 | Resolver una solicitud | EP-005 | Must | Alta | US-017 (funcional), US-012 (funcional), US-013 (funcional), US-014 (funcional), US-015 (funcional) | Por replanificar (D-18) | 7 | 8 | 8 | 8 | **8** | **8** |
+| US-017 | Consultar solicitudes y decisiones del servicio | EP-005 | Fusionada en US-018 | Media | — (fusionada en US-018) | Fusionada en US-018 | 5 | 5 | 5 | 5 | **5** | — |
+| US-018 | Resolver una solicitud | EP-005 | Must | Alta | US-010 (funcional), US-012 (funcional), US-014 (funcional) | Por replanificar (D-18) | 7 | 8 | 8 | 8 | **8** | **8** |
 | US-019 | Consultar una vista unificada de mis solicitudes | EP-006 | Should | Baja | US-009 (funcional), US-010 (funcional), US-018 (funcional) | Sin compromiso; tras Must | 3 | 3 | 3 | 3 | **3** | **3** |
-| US-020 | Consultar una cronología ampliada de intercambios | EP-006 | Should | Baja | US-017 (funcional), US-018 (funcional) | Sin compromiso; tras Must | 3 | 5 | 3 | 3 | **3** | **3** |
+| US-020 | Consultar una cronología ampliada de intercambios | EP-006 | Should | Baja | US-018 (funcional) | Sin compromiso; tras Must | 3 | 5 | 3 | 3 | **3** | **3** |
 | US-021 | Recibir avisos dentro de la aplicación | EP-006 | Could | Media | US-019 (funcional) | Sin compromiso; tras Must | 4 | 3 | 2 | 3 | **3** | **3** |
 | US-022 | Filtrar el historial | EP-006 | Won't | Baja | US-020 (funcional) | Fuera de versión | 2 | 3 | 2 | 2 | **2** | **2** |
-| US-023 | Crear el guion inicial de instalación y evaluación | EP-007 | Must | Baja | US-001 (técnica), US-003 (técnica), US-002 (funcional), US-005 (funcional); externa: evaluador ajeno a la implementación | Por replanificar (D-18) | 4 | 5 | 3 | 3 | **5** | **2** |
+| US-023 | Crear el guion inicial de instalación y evaluación | EP-007 | Must | Baja | US-018 (funcional); externa: evaluador ajeno a la implementación | Por replanificar (D-18) | 4 | 5 | 3 | 3 | **5** | **2** |
 | US-024 | Prueba de usabilidad y accesibilidad básica | EP-007 | Should | Media | US-010 (funcional), US-018 (funcional), US-023 (funcional); externa: tres participantes ajenos al equipo | Sin compromiso; review final si cabe | 3 | 5 | 5 | 3 | **5** | **3** |
 
 **Estimación individual del PO · 02/10/2026:** horas-persona para implementación, integración, pruebas y documentación, con apoyo de IA y revisión humana incluidos. El PO confirma las cifras sin reducción adicional: **Must 76 h-p, Should 11, Could 12 y Won't 2** (esta última fuera de versión). Las opciones incluidas sumarían 99 h-p. Son estimaciones individuales, no consenso ni compromiso de capacidad; no incluyen de nuevo el esfuerzo de las historias predecesoras. Las reuniones, la coordinación y el margen se descuentan en la capacidad.
@@ -59,8 +60,8 @@ Muestra detallada (necesidad, objetivo, criterios, reglas, restricciones, NFR, e
 
 **Comparación histórica anterior a D-21:** la capacidad efectiva del equipo es **46,35 h** (`docs/organization/capacity.md`). Las Must consensuadas (**81 h**) la superan en **≈ 35 h**: el alcance Must no cabía. **Resuelto en D-18:** tras los recortes, las Must suman 46 h-p (ver "Ajuste de alcance D-18").
 
-
 ### Ajuste de alcance D-18 · 06/10/2026
+
 Para que las Must quepan en la capacidad, el PO acepta los recortes propuestos por la SM y el equipo vota las estimaciones de las historias simplificadas:
 
 - Un solo servicio en los datos de demostración, calendario en lista e inicio de sesión sin bloqueo por intentos fallidos.
@@ -89,7 +90,7 @@ El peso de Must se calculará con horas consensuadas divididas entre capacidad e
 ### Criterio de priorización
 
 - **Must:** sin la historia no se cumple alguno de G01–G04, o bloquea a otra Must (p. ej. US-001, US-003 por dependencia técnica).
-- **Should:** mejora el flujo básico. US-019 reúne solicitudes en una pantalla y US-020 añade una cronología; el estado y el historial básicos ya se entregan con US-009/010/017/018. US-016 amplía mensajes que ya incluyen regla y motivo en las Must.
+- **Should:** mejora el flujo básico. US-019 reúne solicitudes en una pantalla y US-020 añade una cronología; el estado y el historial básicos ya se entregan con US-009/010/018 (US-017 está fusionada en US-018). US-016 amplía mensajes que ya incluyen regla y motivo en las Must.
 - **Could:** comodidad o funcionalidad cubierta en parte por otra historia.
 - **Won't:** descartada en esta versión de forma explícita.
 - En empate, se adelanta la historia con más **riesgo** (incertidumbre alta o ligada a RT-01–RT-03) para descubrir problemas pronto.
@@ -97,7 +98,8 @@ El peso de Must se calculará con horas consensuadas divididas entre capacidad e
 ## 3. Dependencias
 
 ### Dependencias tras D-18 (06/10/2026)
-Sustituye al diagrama siguiente, que corresponde al alcance anterior. Se muestran las Must (fondo continuo) y las Should (borde discontinuo); US-007, US-008 y US-017 ya no aparecen.
+
+Este diagrama sustituye al grafo anterior a D-18, conservado en el historial de Git. Se muestran las Must (fondo continuo) y las Should (borde discontinuo); US-007, US-008 y US-017 ya no aparecen.
 
 ```mermaid
 flowchart LR
@@ -112,9 +114,7 @@ flowchart LR
   US003 -- técnica --> US009
   US009 -- funcional --> US010[US-010 Responder]
   US003 -- técnica --> US012[US-012 RN-01 y RN-06]
-  US009 -- funcional --> US012
   US012 -- técnica --> US014[US-014 RN-03]
-  US009 -- funcional --> US014
   US010 -- funcional --> US018[US-018 Pendientes y resolución]
   US012 -- funcional --> US018
   US014 -- funcional --> US018
@@ -132,87 +132,7 @@ flowchart LR
 
 **Cadena crítica de las Must:** US-001 → US-003 → US-002 → US-005 → US-006 → US-009 → US-010 → US-018 → US-023.
 
-
 Tipos: **funcional** (necesita el comportamiento de otra historia), **técnica** (necesita infraestructura o un módulo compartido), **externa** (depende de algo fuera del equipo).
-
-```mermaid
-flowchart LR
-  US001[US-001]
-  US002[US-002]
-  US003[US-003]
-  US005[US-005]
-  US007[US-007]
-  US008[US-008]
-  US009[US-009]
-  US010[US-010]
-  US011[US-011]
-  US012[US-012]
-  US013[US-013]
-  US014[US-014]
-  US015[US-015]
-  US016[US-016]
-  US017[US-017]
-  US018[US-018]
-  US019[US-019]
-  US020[US-020]
-  US023[US-023]
-  US024[US-024]
-  US001 -- "técnica" --> US002
-  US003 -- "técnica" --> US002
-  US001 -- "técnica" --> US003
-  US002 -- "funcional" --> US005
-  US003 -- "técnica" --> US005
-  US005 -- "funcional" --> US007
-  US007 -- "funcional" --> US008
-  US008 -- "funcional" --> US009
-  US015 -- "funcional" --> US009
-  US003 -- "técnica" --> US009
-  US009 -- "funcional" --> US010
-  US015 -- "funcional" --> US010
-  US007 -- "funcional" --> US011
-  US009 -- "funcional" --> US011
-  US009 -- "funcional" --> US012
-  US003 -- "técnica" --> US012
-  US009 -- "funcional" --> US013
-  US003 -- "técnica" --> US013
-  US012 -- "técnica" --> US013
-  US009 -- "funcional" --> US014
-  US003 -- "técnica" --> US014
-  US012 -- "técnica" --> US014
-  US003 -- "técnica" --> US015
-  US012 -- "funcional" --> US016
-  US013 -- "funcional" --> US016
-  US014 -- "funcional" --> US016
-  US015 -- "funcional" --> US016
-  US010 -- "funcional" --> US017
-  US012 -- "funcional" --> US017
-  US013 -- "funcional" --> US017
-  US014 -- "funcional" --> US017
-  US015 -- "funcional" --> US017
-  US017 -- "funcional" --> US018
-  US012 -- "funcional" --> US018
-  US013 -- "funcional" --> US018
-  US014 -- "funcional" --> US018
-  US015 -- "funcional" --> US018
-  US009 -- "funcional" --> US019
-  US010 -- "funcional" --> US019
-  US018 -- "funcional" --> US019
-  US017 -- "funcional" --> US020
-  US018 -- "funcional" --> US020
-  US001 -- "técnica" --> US023
-  US003 -- "técnica" --> US023
-  US002 -- "funcional" --> US023
-  US005 -- "funcional" --> US023
-  US010 -- "funcional" --> US024
-  US018 -- "funcional" --> US024
-  US023 -- "funcional" --> US024
-  TEC([Tecnologías autorizadas]) -. externa .-> US001
-  EVAL([Evaluador externo]) -. externa .-> US023
-  PAR([Tres participantes]) -. externa .-> US024
-```
-El diagrama muestra Must y Should. La tabla recoge también las dependencias de Could y Won't; el TL revisará las dependencias técnicas y la incertidumbre.
-
-**Cadena de dependencias de ejemplo:** US-001 → US-003 → US-002 → US-005 → US-007 → US-008 → US-009 → US-012 → US-013 → US-017 → US-018 → US-024. El camino crítico se calculará con estimaciones y asignación de recursos; la aprobación necesita todas las reglas.
 
 ## 4. Plan inicial por iteración
 
@@ -244,10 +164,9 @@ Registro histórico: los recortes de D-18 sustituyen las decisiones de alcance a
 6. **Calendario:** la consulta del calendario propio (US-005) es imprescindible. Consultar turnos de compañeros que aún no se han publicado (US-006) es opcional, porque US-008 ya permite encontrar ofertas de intercambio.
 7. **Cambio de hora:** aplicar el criterio de horas efectivamente trabajadas de RN-02. Horarios, fechas y semanas usan Europe/Madrid; descanso, jornada y antelación se calculan con tiempo realmente transcurrido. Una noche con retraso de una hora dura 11 h y con adelanto, 9 h. El TL decide la implementación, sin cambiar este criterio funcional.
 
-
 ## 6. Pendientes para cerrar la planificación
 
 - Las estimaciones consensuadas y revisadas por D-18 están registradas en el Excel. Para H3, redistribuir IT-002 e IT-006 sin sobreasignar personas.
-- Revisión del TL de dependencias, tecnologías y división de historias con incertidumbre alta; implementación del cómputo temporal definido en las reglas.
-- Revisión de QA de criterios y asignación de IDs NFR y umbrales completada (definida en el [catálogo NFR](non-functional-requirements.md)). Las reglas se prueban en el servidor, incluidos casos límite.
-- Formalizar en el registro de decisiones del equipo la actualización de M01 a tres participantes. El PO comunica el visto bueno de SM al mensaje de alcance y disponibilidad; no equivale al consenso de estimaciones ni a la validación técnica y de QA.
+- Confirmar las tecnologías autorizadas, dependencia externa de US-001.
+
+**Decisión del TL:** con la capacidad de D-21, US-009 y US-018, ambas estimadas en 8 h-p, ya caben en un sprint de equipo de 9,33 h. No es necesario dividirlas en nuevas historias de usuario; en H3 se descompondrán en tareas (TK) y se repartirán entre varias personas respetando las capacidades individuales y las dependencias.

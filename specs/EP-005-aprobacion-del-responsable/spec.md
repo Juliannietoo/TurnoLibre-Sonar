@@ -23,7 +23,7 @@ El responsable resuelve cada solicitud con las reglas ya comprobadas en menos de
 - **Prioridad:** Fusionada en US-018 (antes Must) — *valor:* la consulta de pendientes se integra con la resolución en una sola pantalla (D-18); *riesgo:* medio; *dependencias:* no se planifica como predecesora independiente de US-018; su alcance y esfuerzo están incluidos en ella.
 - **Estimación:** consenso del 06/10/2026: **5 h-p** (individuales: PO 5 · SM 5 · TL 5 · QA 5); sin estimación propia tras D-18 (fusionada en US-018).
 - **Incertidumbre:** Media
-- **Predecesoras:** US-010 (funcional), US-012 (funcional), US-013 (funcional), US-014 (funcional), US-015 (funcional)
+- **Predecesoras:** — (fusionada en US-018)
 - **Plan inicial:** fusionada en US-018
 
 **Criterios de aceptación**
@@ -48,7 +48,7 @@ El responsable resuelve cada solicitud con las reglas ya comprobadas en menos de
 - **Prioridad:** Must — *valor:* cierra el flujo completo; *riesgo:* alto (RT-02, concurrencia); *dependencias:* predecesora de las vistas ampliadas de estado e historial y de la prueba del flujo completo.
 - **Estimación:** consenso del 06/10/2026: **8 h-p** (individuales: PO 7 · SM 8 · TL 8 · QA 8).
 - **Incertidumbre:** Alta
-- **Predecesoras:** US-017 (funcional), US-012 (funcional), US-013 (funcional), US-014 (funcional), US-015 (funcional)
+- **Predecesoras:** US-010 (funcional), US-012 (funcional), US-014 (funcional)
 - **Plan inicial:** por replanificar tras D-18: ajustar carga por sprint y tareas individuales según D-21 (ver catálogo, apartado 4)
 
 **Criterios de aceptación**

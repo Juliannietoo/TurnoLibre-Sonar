@@ -8,7 +8,7 @@
 
 Ningún intercambio que incumpla una regla puede aprobarse, y el empleado entiende por qué (métrica M02, principio 4 de la constitución).
 
-**Criterio común:** la aprobación comprueba todas las reglas en el servidor. Cada fallo identifica la regla y el motivo con los datos relevantes; esta explicación básica está incluida en US-012…US-015. La reutilización técnica de validadores queda a revisión del TL.
+**Criterio común:** la aprobación comprueba todas las reglas en el servidor. Cada fallo identifica la regla y el motivo con los datos relevantes; esta explicación básica está incluida en US-012…US-015. La reutilización técnica de validadores se realiza a partir del módulo creado en US-012.
 
 **Aplicación común:** cada historia aplica los límites de esta épica y utiliza datos ficticios. Los requisitos no funcionales aplican según los IDs definidos en el [catálogo NFR](../product/non-functional-requirements.md).
 
@@ -25,7 +25,7 @@ Ningún intercambio que incumpla una regla puede aprobarse, y el empleado entien
 - **Prioridad:** Must — *valor:* regla central del dominio; *riesgo:* alto (RT-01), conviene abordarla pronto; *dependencias:* crea el módulo de validación que reutilizan US-013 y US-014.
 - **Estimación:** consenso del 06/10/2026: **8 h-p** (individuales: PO 7 · SM 8 · TL 8 · QA 8); revisada por D-18: **5 h-p**, votada por el equipo.
 - **Incertidumbre:** Alta
-- **Predecesoras:** US-009 (funcional), US-003 (técnica)
+- **Predecesoras:** US-003 (técnica). El formato de solicitud se acuerda con US-009, sin requerir esa historia terminada.
 - **Plan inicial:** IT-003 · R2
 
 **Criterios de aceptación**
@@ -69,7 +69,7 @@ Ningún intercambio que incumpla una regla puede aprobarse, y el empleado entien
 - **Prioridad:** Should (antes Must) — *valor:* RN-02 sale de G02 por D-18 y queda como mejora opcional; *riesgo:* alto por el reparto de la noche entre semanas; *dependencias:* reutiliza el módulo de US-012.
 - **Estimación:** consenso del 06/10/2026: **5 h-p** (individuales: PO 6 · SM 5 · TL 8 · QA 5); revisada por D-18: **3 h-p**, votada por el equipo.
 - **Incertidumbre:** Alta
-- **Predecesoras:** US-009 (funcional), US-003 (técnica), US-012 (técnica) Reutilización de US-012 a revisar por TL.
+- **Predecesoras:** US-003 (técnica), US-012 (técnica). El formato de intercambio se acuerda con US-009, sin requerir esa historia terminada.
 - **Plan inicial:** sin compromiso; tras las Must
 
 **Criterios de aceptación**
@@ -110,7 +110,7 @@ Ningún intercambio que incumpla una regla puede aprobarse, y el empleado entien
 - **Prioridad:** Must — *valor:* protege la cobertura; *riesgo:* medio; *dependencias:* reutiliza el módulo de US-012.
 - **Estimación:** consenso del 06/10/2026: **5 h-p** (individuales: PO 4 · SM 5 · TL 5 · QA 5); revisada por D-18: **3 h-p**, votada por el equipo.
 - **Incertidumbre:** Media
-- **Predecesoras:** US-009 (funcional), US-003 (técnica), US-012 (técnica) Reutilización de US-012 a revisar por TL.
+- **Predecesoras:** US-003 (técnica), US-012 (técnica). El formato de intercambio se acuerda con US-009, sin requerir esa historia terminada.
 - **Plan inicial:** por replanificar tras D-18 (ver catálogo, apartado 4)
 
 **Criterios de aceptación**

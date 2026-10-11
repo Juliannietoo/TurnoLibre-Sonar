@@ -23,7 +23,7 @@ Un tercero instala y evalúa cada release sin ayuda, y se dispone de evidencias 
 - **Prioridad:** Must — *valor:* aporta el guion mínimo de instalación al final que exigen G04 y M04 tras D-18; *riesgo:* bajo; *dependencias:* necesita el flujo completo (US-018) y una persona ajena a la implementación que lo valide.
 - **Estimación:** consenso del 06/10/2026: **5 h-p** (individuales: PO 4 · SM 5 · TL 3 · QA 3); revisada por D-18: **2 h-p**, votada por el equipo.
 - **Incertidumbre:** Baja
-- **Predecesoras:** US-001 (técnica), US-003 (técnica), US-002 (funcional), US-005 (funcional); externa: evaluador ajeno a la implementación
+- **Predecesoras:** US-018 (funcional); externa: evaluador ajeno a la implementación
 - **Plan inicial:** por replanificar tras D-18 (ver catálogo, apartado 4)
 
 **Criterios de aceptación**

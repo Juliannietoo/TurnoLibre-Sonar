@@ -42,7 +42,7 @@ El empleado puede consultar juntas sus solicitudes y el responsable recorrer una
 - **Prioridad:** Should — *valor:* mejora la lectura del historial; *riesgo:* bajo; *dependencias:* amplía US-018, que ya incluye la lista y el detalle básicos de las decisiones; US-017 está fusionada en ella.
 - **Estimación:** consenso del 06/10/2026: **3 h-p** (individuales: PO 3 · SM 5 · TL 3 · QA 3).
 - **Incertidumbre:** Baja
-- **Predecesoras:** US-017 (funcional), US-018 (funcional)
+- **Predecesoras:** US-018 (funcional)
 - **Plan inicial:** sin sprint asignado (entra si hay capacidad)
 
 **Criterios de aceptación**
