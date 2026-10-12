@@ -1,7 +1,7 @@
 # EP-001 — Base del producto: acceso y datos de demostración
 
 **Objetivos:** G04
-**Línea base:** requisitos-v0-borrador · revisión 01/10/2026
+**Línea base documental:** requisitos-v1-revisado · revisión 12/10/2026 (D-18/D-21; recomendaciones nuevas en Uso de agentes)
 **Límites:** incluye el entorno técnico común, el inicio de sesión con rol y los datos ficticios de demostración (S-04, S-05). No incluye registro de usuarios, recuperación de contraseña ni integración con sistemas reales de RR. HH. (EX-02).
 
 La solución inicial utiliza datos ficticios precargados y restablecibles mediante US-003. La pantalla de alta y modificación de turnos (US-004) se mantiene como mejora opcional, sujeta a capacidad disponible. Decisión confirmada por el PO el 01/10/2026.

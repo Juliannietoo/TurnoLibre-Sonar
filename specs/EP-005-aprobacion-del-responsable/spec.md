@@ -1,7 +1,7 @@
 # EP-005 — Aprobación del responsable
 
 **Objetivos:** G03
-**Línea base:** requisitos-v0-borrador · revisión 01/10/2026
+**Línea base documental:** requisitos-v1-revisado · revisión 12/10/2026 (D-18/D-21; recomendaciones nuevas en Uso de agentes)
 **Límites:** resolución de solicitudes aceptadas por ambos empleados (S-02) y consulta básica de decisiones del servicio (S-03). No incluye delegación de la aprobación ni aprobación automática.
 
 ## Resultado de la épica
@@ -52,8 +52,8 @@ El responsable resuelve cada solicitud con las reglas ya comprobadas en menos de
 - **Plan inicial:** por replanificar tras D-18: ajustar carga por sprint y tareas individuales según D-21 (ver catálogo, apartado 4)
 
 **Criterios de aceptación**
-- US-018-AC-01: Al aprobar una solicitud válida, los turnos se intercambian en el calendario de ambos empleados, la solicitud pasa a *Aprobada* y se cierran las publicaciones de los turnos afectados.
-- US-018-AC-02: Al rechazar, es obligatorio escribir un motivo, que ven ambos empleados. La solicitud pasa a *Rechazada*, se liberan ambos turnos y las publicaciones que sigan vigentes vuelven a estar disponibles.
+- US-018-AC-01: Al aprobar una solicitud válida, los turnos se intercambian en el calendario de ambos empleados y la solicitud pasa a *Aprobada*.
+- US-018-AC-02: Al rechazar, es obligatorio escribir un motivo, que ven ambos empleados. La solicitud pasa a *Rechazada* y se liberan ambos turnos.
 - US-018-AC-03: Antes de aprobar se repite la validación completa; si ahora incumple una regla, no se aprueba y se muestra el motivo.
 - US-018-AC-04: El botón *Aprobar* está desactivado si la solicitud incumple alguna regla.
 - US-018-AC-05: Cada decisión queda registrada con fecha, hora y responsable.

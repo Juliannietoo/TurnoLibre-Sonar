@@ -1,7 +1,7 @@
 # EP-002 — Calendario de turnos
 
 **Objetivos:** G01
-**Línea base:** requisitos-v0-borrador · revisión 01/10/2026
+**Línea base documental:** requisitos-v1-revisado · revisión 12/10/2026 (D-18/D-21; recomendaciones nuevas en Uso de agentes)
 **Límites:** consulta del calendario propio y de turnos compatibles. No incluye generación automática del cuadrante (EX-03) ni control horario o fichaje (EX-01).
 
 ## Resultado de la épica

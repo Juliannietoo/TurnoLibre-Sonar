@@ -1,7 +1,7 @@
 # EP-004 — Validación de reglas
 
 **Objetivos:** G02
-**Línea base:** requisitos-v0-borrador · revisión 01/10/2026 · reglas de [reglas de negocio](../product/business-rules.md) v0.2
+**Línea base documental:** requisitos-v1-revisado · revisión 12/10/2026 (D-18/D-21; recomendaciones nuevas en Uso de agentes) · reglas de [reglas de negocio](../product/business-rules.md) v0.2
 **Límites:** comprobación en el servidor de RN-01 a RN-06 sobre el cuadrante resultante de los dos empleados (S-02). No incluye reglas de convenios reales ni cómputo anual de jornada.
 
 ## Resultado de la épica

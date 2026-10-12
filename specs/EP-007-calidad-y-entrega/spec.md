@@ -1,7 +1,7 @@
 # EP-007 — Calidad y entrega
 
 **Objetivos:** G04 (y evidencias de M01, M03, M04)
-**Línea base:** requisitos-v0-borrador · revisión 01/10/2026
+**Línea base documental:** requisitos-v1-revisado · revisión 12/10/2026 (D-18/D-21; recomendaciones nuevas en Uso de agentes)
 **Límites:** documentación de instalación y evaluación, y validación con usuarios. Las pruebas automatizadas de cada historia no están aquí: las exige la Definition of Done de cada historia.
 
 ## Resultado de la épica
@@ -12,7 +12,7 @@ Un tercero instala y evalúa cada release sin ayuda, y se dispone de evidencias 
 
 ## Historias
 
-### US-023 — Crear el guion inicial de instalación y evaluación
+### US-023 — Crear el guion mínimo final de instalación y evaluación
 
 > **Cambio D-18 (06/10/2026):** guion mínimo de instalación y evaluación al final del proyecto, no en cada release.
 
