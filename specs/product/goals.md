@@ -10,12 +10,14 @@ Precisiones de G01, G02 y M01–M05 propuestas el 24/09/2026 y validadas por el 
 | G03 | Control ágil del responsable | El responsable resuelve solicitudes con la información y validaciones ya disponibles. |
 | G04 | Incremento revisable | Un tercero puede instalar, ejecutar y evaluar la versión final de forma estable (D-18). |
 
+> **Decisiones D-22/D-23 (13/10/2026):** la constitución v1.1 y la DoD aplican las reglas vigentes del MVP de G02. R-07 precisa el resultado vacío de US-006; R-09 fija el rechazo por regla y la liberación de reservas al fallar la revalidación; R-08 deja M03 pendiente si no se realiza US-024. Se conserva el alcance y las estimaciones acordadas; la medición opcional no se declara superada sin evidencia.
+
 ## Indicadores de éxito
 | ID | Objetivo | Meta |
 |---|---|---|
 | M01 | G01 | Los 3 participantes de prueba proponen y aceptan un intercambio válido sobre un turno de un compañero compatible, con dos cuentas ficticias, hasta el estado «pendiente de aprobación» en menos de 5 minutos cada uno, sin ayuda (3 de 3). El tiempo no incluye la decisión del responsable. La prueba con usuarios (US-024) es Should: si no se realiza, M01 queda pendiente de validación (D-18). |
 | M02 | G02 | El 100 % de la suite de casos de las reglas del MVP se resuelve correctamente: RN-01, RN-03 y RN-06 en el servidor (los casos inválidos quedan bloqueados antes de aprobar y los válidos pueden aprobarse) y RN-04 sobre el cuadrante de partida. Incluye casos límite. |
-| M03 | G03 | En 3 solicitudes de muestra, el responsable decide cada una en menos de 1 minuto desde que abre el detalle hasta que registra la decisión. |
+| M03 | G03 | En 3 solicitudes de muestra, el responsable decide cada una en menos de 1 minuto desde que abre el detalle hasta que registra la decisión. Se mide mediante US-024; si esa prueba Should no se realiza, M03 queda pendiente de validación, igual que M01 (D-23, 13/10/2026). |
 | M04 | G04 | Una persona ajena a la implementación instala y evalúa la versión final desde un entorno limpio siguiendo solo el guion documentado, sin intervenciones no documentadas (D-18). |
 | M05 | Todos | No hay defectos bloqueantes abiertos al cierre de cada release. Es bloqueante un fallo que impide el flujo principal, la instalación o el bloqueo de un intercambio inválido. |
 

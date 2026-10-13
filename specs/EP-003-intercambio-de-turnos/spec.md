@@ -1,7 +1,7 @@
 # EP-003 — Intercambio de turnos
 
 **Objetivos:** G01
-**Línea base documental:** requisitos-v1-revisado · revisión 12/10/2026 (D-18/D-21; recomendaciones nuevas en Uso de agentes)
+**Línea base documental:** requisitos-v1-revisado · revisión 13/10/2026 (D-18/D-21/D-22/D-23; decisiones en Uso de agentes)
 **Límites:** intercambio uno a uno entre dos empleados (S-01) y consulta básica del estado de cada solicitud propia (S-03). No incluye cesiones sin contrapartida, intercambios en cadena ni notificaciones externas (EX-04).
 
 ## Resultado de la épica
@@ -83,11 +83,12 @@ Dos empleados pueden acordar un intercambio sin ayuda y dejarlo pendiente de apr
 - US-009-AC-04: No se puede proponer sobre un turno propio.
 - US-009-AC-05: Al registrar la propuesta se comprueba RN-03: misma categoría y servicio. Si falla, no se crea la solicitud ni se reservan los turnos; se indica la regla y el motivo. El mínimo de 48 h de RN-05 solo se comprueba si el equipo incorpora US-015 (Should, D-18).
 - US-009-AC-06: Si llegan dos propuestas simultáneas sobre el mismo turno, solo una se registra. La otra no ocupa turnos ni crea una solicitud y recibe un mensaje indicando que el turno ya no está disponible.
-- US-009-AC-07: El detalle básico sigue siendo accesible cuando la solicitud termina; muestra el estado final, quién realizó la última acción y cuándo, y el motivo si hubo rechazo del responsable. Esta consulta forma parte del flujo esencial y funciona sin US-019.
+- US-009-AC-07: El detalle básico sigue siendo accesible cuando la solicitud termina; muestra el estado final, quién realizó la última acción y cuándo, y el motivo del rechazo manual o por regla cuando proceda. Esta consulta forma parte del flujo esencial y funciona sin US-019.
+- US-009-AC-08: Con la hora del servidor, una solicitud cuyo primer turno ya ha empezado se muestra como Caducada, libera los dos turnos y no permite aceptarla ni aprobarla. El detalle básico se actualiza sin depender de que alguien abra la pantalla; el efecto es consistente ante peticiones simultáneas o repetidas (R-04, D-22).
 
 **Reglas:** RN-03 (compatibilidad) al registrar; RN-01 y RN-06 se validan en EP-004 antes de aprobar. RN-04 se garantiza en los datos de demostración (US-003). RN-02 y RN-05 solo se añaden si se incorporan US-013 y US-015, respectivamente (Should, D-18).
 
-**Estados:** la solicitud nace como Propuesta; pasa a Aceptada (pendiente de aprobación), Aprobada o Rechazada. Puede quedar Caducada al comenzar el primero de sus turnos, o Cancelada si se incorpora US-011.
+**Estados:** la solicitud nace como Propuesta; pasa a Aceptada (pendiente de aprobación), Aprobada o Rechazada. Rechazada incluye la respuesta negativa de un empleado, el rechazo con motivo del responsable y el rechazo por una regla incumplida en la revalidación (RN y motivo conservados, R-09/D-23). Puede quedar Caducada al comenzar el primero de sus turnos, o Cancelada si se incorpora US-011. Rechazar, caducar o cancelar libera ambos turnos; los estados terminales conservan el detalle básico.
 
 **Verificación y restricciones**
 - NFR: NFR-001 (autorización por rol: solo empleados participantes o su responsable acceden), NFR-004 (interfaz accesible por teclado), NFR-005 (mensajes claros con regla y motivo ante rechazo por RN-03; también RN-05 si se incorpora US-015), NFR-007 (creación atómica y consistente ante concurrencia, RT-02) y NFR-009 (compatibilidad de navegadores).
@@ -102,7 +103,7 @@ Dos empleados pueden acordar un intercambio sin ayuda y dejarlo pendiente de apr
 - Si se incorpora US-015, Luis ofrece un turno que empieza en menos de 48 h: RN-05 rechaza la propuesta sin reservar los turnos. En el MVP, RN-05 no impone ese mínimo; ambos turnos deben seguir siendo futuros.
 
 **Supuestos**
-- Cada turno admite una sola propuesta activa. El turno seleccionado y el ofrecido quedan reservados mientras la solicitud está Propuesta o Aceptada, pendiente de aprobación. Si se rechaza o cancela, se liberan; si se aprueba, se intercambian las asignaciones. Un turno liberado puede recibir otra propuesta si aún cumple las condiciones para intercambiarse.
+- Cada turno admite una sola propuesta activa. El turno seleccionado y el ofrecido quedan reservados mientras la solicitud está Propuesta o Aceptada, pendiente de aprobación. Si se rechaza, caduca o cancela, se liberan; si se aprueba, se intercambian las asignaciones. Un turno liberado puede recibir otra propuesta si aún cumple las condiciones para intercambiarse.
 - No se permite contraoferta: si no interesa, se rechaza y se propone de nuevo.
 
 ---
@@ -124,6 +125,7 @@ Dos empleados pueden acordar un intercambio sin ayuda y dejarlo pendiente de apr
 - US-010-AC-02: Al rechazar, la solicitud pasa a *Rechazada* y se liberan ambos turnos.
 - US-010-AC-03: Una propuesta solo puede aceptarse antes del inicio más temprano de sus turnos; al llegar ese inicio queda Caducada. Si se incorpora US-015, las 48 h de RN-05 se comprueban al registrar la propuesta, no de nuevo al aceptarla.
 - US-010-AC-04: Solo el destinatario de una propuesta puede responderla. Su respuesta se refleja en el detalle básico de ambos empleados con fecha y autor; repetir la misma acción no cambia dos veces el estado.
+- US-010-AC-05: Con la hora del servidor, una solicitud cuyo primer turno ya ha empezado se muestra como Caducada, libera los dos turnos y no permite aceptarla ni aprobarla. La caducidad forma parte del flujo Must aunque no se incorpore US-015 (R-04, D-22).
 
 **Verificación y restricciones**
 - Reglas y límites: respuesta antes del inicio más temprano de los turnos y caducidad al llegar ese inicio. RN-05 solo se aplica si se incorpora US-015 (Should, D-18).

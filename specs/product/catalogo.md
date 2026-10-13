@@ -1,8 +1,8 @@
 # TurnoLibre — Catálogo de requisitos V1 (revisado)
 
-Línea base documental: **requisitos-v1-revisado** · Revisión 12/10/2026 · Alcance y capacidad de D-18/D-21; estimaciones consensuadas y revisión técnica del TL incorporadas.
+Línea base documental: **requisitos-v1-revisado** · Revisión 13/10/2026 · Alcance y capacidad de D-18/D-21; decisiones de revisión D-22/D-23 incorporadas. Se conservan prioridades y estimaciones consensuadas.
 
-Revisión INITIAL de AG-01 sobre el commit **db086ad9a307a5c05c7e3422d3a6183eb659f415**: [informe v01](../../docs/reviews/requirements/requirements-report-v01.md). Esta versión incorpora las correcciones conocidas de D-18 indicadas en el encargo; las demás recomendaciones se deciden en la Wiki, [Uso de agentes](https://github.com/UniExtremadura/TurnoLibre_GC02/wiki/Uso-de-agentes). El versionado documental no supone la aprobación de una puerta de calidad.
+Revisión INITIAL de AG-01 sobre el commit **db086ad9a307a5c05c7e3422d3a6183eb659f415**: [informe v01](../../docs/reviews/requirements/requirements-report-v01.md). Esta versión incorpora las correcciones de D-18 y las respuestas aceptadas de R-01 a R-09; las decisiones y su aplicación se trazan en la Wiki, [Uso de agentes](https://github.com/UniExtremadura/TurnoLibre_GC02/wiki/Uso-de-agentes). El versionado documental no supone la aprobación de una puerta de calidad.
 
 Cada épica enlaza su ficha de historias. Se conservan 24 historias; las decisiones del PO constan al final y los pendientes vigentes se recogen en el apartado 6.
 
@@ -179,3 +179,5 @@ Registro histórico: los recortes de D-18 sustituyen las decisiones de alcance a
 |---|---|---|---|
 | requisitos-v0-borrador | 01/10/2026; acumulada hasta D-21 | Commit **db086ad9a307a5c05c7e3422d3a6183eb659f415** | Entrada de la revisión INITIAL de AG-01; conservada en Git. |
 | requisitos-v1-revisado | 12/10/2026 | Correcciones conocidas de D-18 indicadas por el usuario; informe v01 y Uso de agentes | Propuesta directa y RN-05 opcional en US-009/US-010; cancelación sin publicación en US-011; aprobación/rechazo sin publicaciones en US-018; título final de US-023. Las siete fichas comparten el identificador documental. |
+
+| requisitos-v1-revisado (actualización) | 13/10/2026 | D-22/D-23; R-01 a R-09 | Restos de D-18, caducidad Must (hora del servidor y liberación), vacío en US-006, M03 pendiente sin US-024 y rechazo por regla en US-018. DoD/NFR corresponden al bloque QA de D-22. Prioridades y horas-persona conservadas. |

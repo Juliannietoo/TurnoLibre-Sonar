@@ -1,14 +1,14 @@
 # EP-004 — Validación de reglas
 
 **Objetivos:** G02
-**Línea base documental:** requisitos-v1-revisado · revisión 12/10/2026 (D-18/D-21; recomendaciones nuevas en Uso de agentes) · reglas de [reglas de negocio](../product/business-rules.md) v0.2
-**Límites:** comprobación en el servidor de RN-01 a RN-06 sobre el cuadrante resultante de los dos empleados (S-02). No incluye reglas de convenios reales ni cómputo anual de jornada.
+**Línea base documental:** requisitos-v1-revisado · revisión 13/10/2026 (D-18/D-21/D-22/D-23; decisiones en Uso de agentes) · reglas de [reglas de negocio](../product/business-rules.md) v0.2
+**Límites:** comprobación en el servidor de las reglas vigentes del MVP (G02): RN-01, RN-03 y RN-06 sobre el cuadrante resultante de los dos empleados (S-02). RN-04 se garantiza al preparar los datos; RN-02/RN-05 se añaden solo si se incorporan sus historias Should (D-18/D-22). No incluye reglas de convenios reales ni cómputo anual de jornada.
 
 ## Resultado de la épica
 
 Ningún intercambio que incumpla una regla puede aprobarse, y el empleado entiende por qué (métrica M02, principio 4 de la constitución).
 
-**Criterio común:** la aprobación comprueba todas las reglas en el servidor. Cada fallo identifica la regla y el motivo con los datos relevantes; esta explicación básica está incluida en US-012…US-015. La reutilización técnica de validadores se realiza a partir del módulo creado en US-012.
+**Criterio común:** la aprobación comprueba en el servidor las reglas vigentes del MVP (G02 y constitución v1.1). Cada fallo identifica la regla y el motivo con los datos relevantes; esta explicación básica está incluida en US-012…US-015. La reutilización técnica de validadores se realiza a partir del módulo creado en US-012.
 
 **Aplicación común:** cada historia aplica los límites de esta épica y utiliza datos ficticios. Los requisitos no funcionales aplican según los IDs definidos en el [catálogo NFR](../product/non-functional-requirements.md).
 
@@ -115,25 +115,25 @@ Ningún intercambio que incumpla una regla puede aprobarse, y el empleado entien
 
 **Criterios de aceptación**
 - US-014-AC-01: Un intercambio entre empleados de distinta categoría o servicio se marca inválido por RN-03.
-- US-014-AC-02: Si tras el intercambio alguna franja de un servicio queda por debajo de 3/3/2, se marca inválido por RN-04.
+- US-014-AC-02: RN-04 se garantiza con el cuadrante de partida (US-003): un intercambio dentro de la misma categoría y servicio no cambia la cobertura. La comprobación de 3/3/2 se realiza al preparar/restablecer los datos, no por cada intercambio (D-18/D-22).
 
-**Reglas:** RN-03, RN-04 (mañana 3, tarde 3, noche 2 por servicio).
+**Reglas:** RN-03 en servidor; RN-04 (mañana 3, tarde 3, noche 2) es precondición garantizada en los datos de US-003 y conservada por la permuta compatible uno a uno.
 
 **Verificación y restricciones**
-- Pruebas automatizadas con los casos de RN-03 y RN-04.
+- Pruebas automatizadas de RN-03 y de conservación de cobertura en la permuta; los casos de cobertura inicial RN-04 corresponden a US-003.
 
 **Ejemplos**
 - Una enfermera y un celador intentan intercambiar → inválido por RN-03.
 - Dos empleados de la misma categoría y servicio intercambian y se conserva 3/3/2 → cumple RN-03/RN-04, sujeto a las demás reglas.
-- Dos empleados compatibles intentan intercambiar con un cuadrante que solo tiene una persona en una noche afectada → RN-04 bloquea la aprobación e indica el déficit.
+- Un cuadrante de demostración con una sola persona en una noche incumple RN-04 y debe corregirse durante la preparación/restablecimiento de US-003; no se añade un validador de cobertura por intercambio.
 
 **Casos límite**
-- Con RN-03 cumplida, un intercambio uno a uno no cambia la cobertura; RN-04 protege frente a datos inconsistentes (cuadrante que ya estaba por debajo del mínimo).
-- Cobertura exactamente 3/3/2: cumple RN-04; 3/3/1: incumple RN-04. Una categoría o servicio inexistente impide validar la solicitud.
+- Con RN-03 cumplida y el cuadrante inicial válido, un intercambio uno a uno no cambia la cobertura. Los datos inconsistentes de cobertura se detectan en US-003.
+- En la preparación del cuadrante, 3/3/2 cumple RN-04 y 3/3/1 no la cumple. En la solicitud, una categoría o servicio inexistente impide validar RN-03.
 
 **Supuestos**
 - El cuadrante inicial cumple 3/3/2 (US-003).
-- NFR: validación en servidor (constitución, principio 4), NFR-005 (mensajes claros con motivo y regla ante categoría distinta o déficit de cobertura) y NFR-006 (rendimiento de validación en < 500 ms). Datos incompletos bloquean la aprobación con motivo.
+- NFR: validación en servidor (constitución, principio 4), NFR-005 (mensajes claros con RN-03 y motivo ante incompatibilidad; la cobertura inicial se verifica en US-003) y NFR-006 (rendimiento de validación en < 500 ms). Datos incompletos bloquean la aprobación con motivo.
 
 ---
 
@@ -154,7 +154,7 @@ Ningún intercambio que incumpla una regla puede aprobarse, y el empleado entien
 **Criterios de aceptación**
 - US-015-AC-01: Al registrar una solicitud, el servidor exige al menos 48 h hasta el inicio más temprano de los dos turnos. Exactamente 48 h se admite; 47 h y 59 min se rechaza, indicando RN-05 y la antelación disponible.
 - US-015-AC-02: Una solicitud registrada a tiempo puede aceptarse y aprobarse hasta antes de ese inicio, aunque ya resten menos de 48 h. Al llegar el inicio queda Caducada y no puede aceptarse ni aprobarse.
-- US-015-AC-03: La caducidad actualiza el detalle básico de ambos empleados y libera los turnos; solo las publicaciones que aún sean futuras quedan disponibles. La comprobación usa la hora del servidor y no depende de que alguien abra la pantalla.
+- US-015-AC-03: La caducidad reutiliza el contrato Must de US-009-AC-08, US-010-AC-05 y US-018-AC-07: actualiza el detalle básico, libera ambos turnos y usa la hora del servidor sin depender de que se abra la pantalla. US-015 añade únicamente la comprobación opcional de antelación.
 
 **Reglas:** RN-05.
 - NFR: Plazos comprobados con la hora del servidor, aunque se manipule el navegador.

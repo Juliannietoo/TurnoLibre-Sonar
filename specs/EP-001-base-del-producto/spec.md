@@ -1,7 +1,7 @@
 # EP-001 — Base del producto: acceso y datos de demostración
 
 **Objetivos:** G04
-**Línea base documental:** requisitos-v1-revisado · revisión 12/10/2026 (D-18/D-21; recomendaciones nuevas en Uso de agentes)
+**Línea base documental:** requisitos-v1-revisado · revisión 13/10/2026 (D-18/D-21/D-22/D-23; decisiones en Uso de agentes)
 **Límites:** incluye el entorno técnico común, el inicio de sesión con rol y los datos ficticios de demostración (S-04, S-05). No incluye registro de usuarios, recuperación de contraseña ni integración con sistemas reales de RR. HH. (EX-02).
 
 La solución inicial utiliza datos ficticios precargados y restablecibles mediante US-003. La pantalla de alta y modificación de turnos (US-004) se mantiene como mejora opcional, sujeta a capacidad disponible. Decisión confirmada por el PO el 01/10/2026.
@@ -59,9 +59,9 @@ Cualquier persona puede instalar el producto, entrar con una cuenta ficticia de 
 - US-002-AC-03: Con credenciales incorrectas, se muestra "Usuario o contraseña incorrectos" sin indicar cuál de los dos falla.
 - US-002-AC-04: Un usuario sin sesión que abre una página interna es redirigido al inicio de sesión.
 - US-002-AC-05: Una petición al servidor a una operación del responsable hecha con sesión de empleado es rechazada.
-- US-002-AC-06: Cinco intentos consecutivos con contraseña incorrecta bloquean el inicio de sesión de esa cuenta durante 15 minutos desde el quinto fallo. Durante ese periodo tampoco se admite la contraseña correcta.
-- US-002-AC-07: Al cumplirse los 15 minutos se permite volver a intentar el acceso y se reinicia el contador. Los intentos durante el bloqueo no prolongan su duración; un acceso correcto también reinicia el contador.
-- US-002-AC-08: El servidor aplica el bloqueo aunque se cambie de navegador. Los fallos de acceso, incluidos los de cuentas bloqueadas o inexistentes, muestran el mismo mensaje genérico.
+- US-002-AC-06 (fuera de esta versión por D-18): Cinco intentos consecutivos con contraseña incorrecta bloquean el inicio de sesión de esa cuenta durante 15 minutos desde el quinto fallo. Durante ese periodo tampoco se admite la contraseña correcta.
+- US-002-AC-07 (fuera de esta versión por D-18): Al cumplirse los 15 minutos se permite volver a intentar el acceso y se reinicia el contador. Los intentos durante el bloqueo no prolongan su duración; un acceso correcto también reinicia el contador.
+- US-002-AC-08 (fuera de esta versión por D-18): El servidor aplica el bloqueo aunque se cambie de navegador. Los fallos de acceso, incluidos los de cuentas bloqueadas o inexistentes, muestran el mismo mensaje genérico.
 - US-002-AC-09: Cerrar sesión invalida el acceso a operaciones protegidas en el servidor; una sesión caducada se trata como una sesión no iniciada.
 
 **Reglas:** matriz de permisos por rol:
@@ -69,13 +69,13 @@ Cualquier persona puede instalar el producto, entrar con una cuenta ficticia de 
 | Acción | Empleado | Responsable |
 |---|---|---|
 | Ver su calendario | Sí | Sí |
-| Publicar, proponer, aceptar, cancelar | Sí | No |
+| Proponer y aceptar intercambios; cancelar si se incorpora US-011 | Sí | No |
 | Ver bandeja y resolver solicitudes | No | Sí |
 | Ver el detalle de sus propias solicitudes | Sí | No |
 | Ver historial de decisiones de su servicio | No | Sí |
 
 **Verificación y restricciones**
-- NFR: NFR-001 (autorización en servidor por rol, RT-03), NFR-002 (contraseñas hasheadas con sal), NFR-004 (accesibilidad básica WCAG 2.1 AA en formulario), NFR-005 (mensajes de error genéricos y claros) y NFR-009 (compatibilidad en navegadores). Bloqueo temporal tras 5 fallos comprobado siempre en servidor.
+- NFR: NFR-001 (autorización en servidor por rol, RT-03), NFR-002 (contraseñas hasheadas con sal), NFR-004 (accesibilidad básica WCAG 2.1 AA en formulario), NFR-005 (mensajes de error genéricos y claros) y NFR-009 (compatibilidad en navegadores). El bloqueo por intentos fallidos queda fuera de esta versión (D-18).
 - Restricción: solo cuentas ficticias (NFR-003); no hay alta de usuarios en el MVP.
 
 **Ejemplos**
@@ -85,12 +85,11 @@ Cualquier persona puede instalar el producto, entrar con una cuenta ficticia de 
 **Casos límite**
 - El nombre de usuario admite mayúsculas y espacios exteriores: se normaliza antes de identificar la cuenta. La contraseña se compara sin alterarla.
 - Sesión caducada mientras se rellena una propuesta: el servidor rechaza el envío y pide volver a iniciar sesión; no crea ninguna solicitud.
-- Cuatro contraseñas incorrectas y después una correcta: permite entrar y reinicia el contador.
-- Quinto fallo: activa el bloqueo. A los 14 minutos y 59 segundos sigue bloqueado; a los 15 minutos permite un nuevo intento.
+- Intentos con contraseña incorrecta seguidos de una correcta: permite entrar; el MVP no añade bloqueo por intentos fallidos.
 
 **Supuestos**
 - Hay un único responsable por servicio (A-02).
-- Se incluye bloqueo temporal tras cinco fallos consecutivos durante 15 minutos, sin añadir recuperación de contraseña ni desbloqueo manual.
+- No se incluyen bloqueo temporal, recuperación de contraseña ni desbloqueo manual en esta versión (D-18).
 
 ---
 
@@ -109,7 +108,7 @@ Cualquier persona puede instalar el producto, entrar con una cuenta ficticia de 
 - **Plan inicial:** IT-001 · R1
 
 **Criterios de aceptación**
-- US-003-AC-01: Tras la instalación existen al menos 2 servicios, 2 categorías profesionales, 1 responsable por servicio y los empleados necesarios para cubrir el mínimo 3/3/2.
+- US-003-AC-01: Tras la instalación existe 1 servicio con 2 categorías profesionales, 1 responsable y los empleados necesarios para cubrir el mínimo 3/3/2 (D-18).
 - US-003-AC-02: El cuadrante inicial cumple RN-01, RN-02, RN-04 y RN-06. Hay empleados compatibles para probar RN-03 y fechas que permiten solicitudes con RN-05; los escenarios inválidos se preparan de forma controlada para las pruebas.
 - US-003-AC-03: Los datos pueden restablecerse a su estado inicial con un único paso documentado.
 

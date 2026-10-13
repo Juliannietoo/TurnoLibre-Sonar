@@ -1,7 +1,7 @@
 # EP-006 — Vistas ampliadas de estado e historial
 
 **Objetivos:** G01, G03
-**Línea base documental:** requisitos-v1-revisado · revisión 12/10/2026 (D-18/D-21; recomendaciones nuevas en Uso de agentes)
+**Línea base documental:** requisitos-v1-revisado · revisión 13/10/2026 (D-18/D-21/D-22/D-23; decisiones en Uso de agentes)
 **Límites:** mejoras de presentación del estado y del historial (S-03). La consulta básica ya forma parte de US-009, US-010, US-017 y US-018. No incluye notificaciones por correo, SMS o push (EX-04).
 
 ## Resultado de la épica
@@ -26,7 +26,7 @@ El empleado puede consultar juntas sus solicitudes y el responsable recorrer una
 
 **Criterios de aceptación**
 - US-019-AC-01: El empleado dispone de una pantalla unificada de sus solicitudes, agrupadas en activas (Propuesta y Aceptada) y terminadas (Aprobada, Rechazada, Caducada y, si existe US-011, Cancelada), ordenadas por última actividad.
-- US-019-AC-02: Cada elemento muestra los turnos y el estado, y enlaza al detalle básico existente, incluido el motivo de rechazo del responsable. Las publicaciones sin solicitud permanecen en el calendario.
+- US-019-AC-02: Cada elemento muestra los turnos y el estado, y enlaza al detalle básico existente, incluido el motivo de rechazo manual o por regla cuando exista.
 
 - **Reglas y límites:** Solo solicitudes propias; estados del flujo básico. Se aplican los límites comunes de la épica.
 - NFR: Vista navegable con teclado y estados identificados con texto.

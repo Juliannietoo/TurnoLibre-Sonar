@@ -5,7 +5,7 @@ TurnoLibre es una aplicación web que permite a los trabajadores de una organiza
 
 La experiencia debe permitir al empleado:
 1. Consultar su calendario de turnos.
-2. Publicar un turno que quiere cambiar.
+2. Consultar los turnos de compañeros de la misma categoría y servicio para elegir una contrapartida.
 3. Proponer o aceptar un intercambio con un compañero.
 4. Saber en qué estado está su solicitud.
 5. Recibir la resolución del responsable.
@@ -24,7 +24,7 @@ Hoy los cambios de turno se pactan por mensajería informal, llamadas o papel. E
 | Responsable de planificación | Aprobar o rechazar cambios de forma controlada, con las reglas comprobadas y con trazabilidad. |
 
 ## Propuesta de valor
-TurnoLibre reúne en un único flujo la publicación, la negociación, la validación de reglas y la aprobación de un cambio de turno. Frente a la gestión informal aporta:
+TurnoLibre reúne en un único flujo la propuesta, la validación de reglas y la aprobación de un cambio de turno. Frente a la gestión informal aporta:
 - Continuidad entre los pasos del intercambio.
 - Validación automática de las reglas antes de que llegue al responsable.
 - Estado visible en todo momento.
