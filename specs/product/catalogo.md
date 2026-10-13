@@ -179,5 +179,4 @@ Registro histórico: los recortes de D-18 sustituyen las decisiones de alcance a
 |---|---|---|---|
 | requisitos-v0-borrador | 01/10/2026; acumulada hasta D-21 | Commit **db086ad9a307a5c05c7e3422d3a6183eb659f415** | Entrada de la revisión INITIAL de AG-01; conservada en Git. |
 | requisitos-v1-revisado | 12/10/2026 | Correcciones conocidas de D-18 indicadas por el usuario; informe v01 y Uso de agentes | Propuesta directa y RN-05 opcional en US-009/US-010; cancelación sin publicación en US-011; aprobación/rechazo sin publicaciones en US-018; título final de US-023. Las siete fichas comparten el identificador documental. |
-
 | requisitos-v1-revisado (actualización) | 13/10/2026 | D-22/D-23; R-01 a R-09 | Restos de D-18, caducidad Must (hora del servidor y liberación), vacío en US-006, M03 pendiente sin US-024 y rechazo por regla en US-018. DoD/NFR corresponden al bloque QA de D-22. Prioridades y horas-persona conservadas. |
