@@ -1,6 +1,6 @@
 # TurnoLibre — Definition of Done (DoD)
 
-Versión 1.0 · 30/09/2026 · Responsable: Juliannietoo (DevOps/QA)
+Versión 1.1 · 13/10/2026 · Responsable: Juliannietoo (DevOps/QA)
 
 Responde a la pregunta: *¿qué condiciones mínimas debe cumplir cualquier historia para considerarla terminada?*
 Una historia está Done cuando cumple todas las condiciones aplicables siguientes.
@@ -10,7 +10,7 @@ Una historia está Done cuando cumple todas las condiciones aplicables siguiente
 
 ## Implementación y Reglas de Negocio
 - [ ] La funcionalidad descrita ha sido implementada siguiendo la arquitectura y las convenciones técnicas acordadas.
-- [ ] Se validan las entradas y las reglas de negocio (RN-01 a RN-06) estrictamente en el servidor (Constitución, principio 4).
+- [ ] Se validan las entradas y las reglas de negocio vigentes del MVP (G02) estrictamente en el servidor (Constitución, principio 4).
 - [ ] Los mensajes de error o rechazo son claros, comprensibles e indican la regla o motivo aplicable.
 - [ ] No quedan problemas críticos de implementación ni advertencias bloqueantes sin resolver.
 

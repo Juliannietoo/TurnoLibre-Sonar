@@ -38,7 +38,7 @@ Ningún intercambio que incumpla una regla puede aprobarse, y el empleado entien
 
 **Verificación y restricciones**
 - Pruebas automatizadas con todos los casos de [reglas de negocio](../product/business-rules.md) para RN-01 y RN-06.
-- NFR: NFR-001 (validación forzosa en el servidor sin posibilidad de omisión), NFR-005 (mensajes claros con indicación de RN-01/RN-06 y horas de descanso resultantes) y NFR-006 (tiempo de validación < 500 ms).
+- NFR: validación en servidor (constitución, principio 4), NFR-005 (mensajes claros con indicación de RN-01/RN-06 y horas de descanso resultantes) y NFR-006 (tiempo de validación < 500 ms).
 
 **Ejemplos** (de [reglas de negocio](../product/business-rules.md))
 
@@ -95,7 +95,7 @@ Ningún intercambio que incumpla una regla puede aprobarse, y el empleado entien
 **Supuestos**
 - Solo cuentan horas de turno; no hay horas extra ni guardias.
 - Los ejemplos de noches de 10 h corresponden a noches ordinarias. Se suman horas realmente transcurridas, repartidas por semanas locales de Europe/Madrid: una noche con retraso de una hora aporta 11 h y con adelanto, 9 h. El TL concreta su implementación.
-- NFR: NFR-001 (validación en servidor), NFR-005 (mensajes de rechazo claros indicando horas acumuladas y superación de 40 h de RN-02) y NFR-006 (cálculo determinista en < 500 ms).
+- NFR: validación en servidor (constitución, principio 4), NFR-005 (mensajes de rechazo claros indicando horas acumuladas y superación de 40 h de RN-02) y NFR-006 (cálculo determinista en < 500 ms).
 
 ---
 
@@ -133,7 +133,7 @@ Ningún intercambio que incumpla una regla puede aprobarse, y el empleado entien
 
 **Supuestos**
 - El cuadrante inicial cumple 3/3/2 (US-003).
-- NFR: NFR-001 (validación forzosa en servidor), NFR-005 (mensajes claros con motivo y regla ante categoría distinta o déficit de cobertura) y NFR-006 (rendimiento de validación en < 500 ms). Datos incompletos bloquean la aprobación con motivo.
+- NFR: validación en servidor (constitución, principio 4), NFR-005 (mensajes claros con motivo y regla ante categoría distinta o déficit de cobertura) y NFR-006 (rendimiento de validación en < 500 ms). Datos incompletos bloquean la aprobación con motivo.
 
 ---
 

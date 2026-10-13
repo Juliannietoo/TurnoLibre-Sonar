@@ -116,7 +116,7 @@ Cualquier persona puede instalar el producto, entrar con una cuenta ficticia de 
 **Verificación y restricciones**
 - Reglas: RN-04 (el cuadrante de partida cumple 3/3/2; mínimo teórico de 11 empleados por servicio, ver [reglas de negocio](../product/business-rules.md)).
 - Restricción: datos 100 % ficticios (principio 5).
-- NFR: Todos los datos son ficticios y se restablecen con un único procedimiento documentado.
+- NFR: NFR-003 (datos ficticios) y NFR-008 (instalación reproducible). Todos los datos son ficticios y se restablecen con un único procedimiento documentado.
 
 ---
 

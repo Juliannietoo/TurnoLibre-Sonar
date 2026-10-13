@@ -59,4 +59,4 @@ El empleado sabe en todo momento qué turnos tiene y cuáles podría intercambia
 
 **Verificación y restricciones**
 - Reglas: RN-03.
-- NFR: privacidad (mínimo de datos visibles).
+- NFR: NFR-003 (privacidad: mínimo de datos visibles), NFR-004 (accesibilidad básica) y NFR-009 (compatibilidad en navegadores).
