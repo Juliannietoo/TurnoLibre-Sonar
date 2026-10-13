@@ -63,7 +63,7 @@ El responsable resuelve cada solicitud con las reglas vigentes del MVP comprobad
 **Reglas:** revalidación en servidor de RN-01, RN-03 y RN-06 conforme a G02/constitución v1.1; RN-04 garantizada por US-003. RN-02/RN-05 solo se comprueban si se incorporan US-013/US-015. La caducidad al primer inicio forma parte del flujo Must, independientemente del mínimo opcional de 48 h.
 
 **Verificación y restricciones**
-- NFR: NFR-001 (autorización exclusiva en servidor para el responsable del servicio, RT-03), NFR-004 (interfaz y controles accesibles con teclado), NFR-005 (motivo de rechazo obligatorio y visible; regla indicada si falla revalidación), NFR-006 (revalidación completa de reglas en < 500 ms), NFR-007 (aprobación y permuta de cuadrante como transacción atómica ACID; control de concurrencia, RT-02) y NFR-009 (compatibilidad en navegadores).
+- NFR: NFR-001 (autorización exclusiva en servidor para el responsable del servicio, RT-03), NFR-004 (interfaz y controles accesibles con teclado), NFR-005 (motivo de rechazo obligatorio y visible; regla indicada si falla revalidación), NFR-006 (mediana < 500 ms y p95 < 1 s en 30 revalidaciones; protocolo central D-22), NFR-007 (aprobación y permuta de cuadrante como transacción atómica ACID; control de concurrencia, RT-02) y NFR-009 (compatibilidad en navegadores).
 - Métrica M03: tres decisiones, cada una en menos de 1 minuto desde que se abre el detalle hasta registrar el resultado. Se mide en US-024; si no se realiza, M03 queda pendiente de validación (R-08, D-23).
 
 **Ejemplos**
