@@ -23,8 +23,8 @@ Un tercero instala y evalúa la versión final siguiendo el guion mínimo sin ay
 - **Prioridad:** Must — *valor:* aporta el guion mínimo de instalación al final que exigen G04 y M04 tras D-18; *riesgo:* bajo; *dependencias:* necesita el flujo completo (US-018) y una persona ajena a la implementación que lo valide.
 - **Estimación:** consenso del 06/10/2026: **5 h-p** (individuales: PO 4 · SM 5 · TL 3 · QA 3); revisada por D-18: **2 h-p**, votada por el equipo.
 - **Incertidumbre:** Baja
-- **Predecesoras:** US-018 (funcional); externa: evaluador ajeno a la implementación
-- **Plan inicial:** por replanificar tras D-18 (ver catálogo, apartado 4)
+- **Predecesoras:** US-018 (funcional); externa: evaluador ajeno a la implementación. La dependencia de US-018 se aplica a la parte 2 (validación final); la parte 1 (guion de instalación) solo necesita US-001, US-002 y US-003 (D-24)
+- **Plan inicial:** IT-005 (parte 1: guion de instalación con las cuentas de prueba, 1,5 h) e IT-006 (parte 2: paso de aprobación y validación con el evaluador externo, 0,5 h) · R3. Excepción explícita a «cabe en un sprint» (D-24)
 
 **Criterios de aceptación**
 - US-023-AC-01: Una persona que no ha participado en el desarrollo instala el producto desde un entorno limpio siguiendo solo el guion.

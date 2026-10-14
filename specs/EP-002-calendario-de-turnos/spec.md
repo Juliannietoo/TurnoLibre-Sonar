@@ -29,7 +29,7 @@ El empleado sabe en todo momento qué turnos tiene y cuáles podría intercambia
 **Criterios de aceptación**
 - US-005-AC-01: El empleado ve sus turnos del mes actual en formato lista, con fecha, franja (M/T/N) y servicio (D-18).
 - US-005-AC-02: Puede avanzar y retroceder de mes.
-- US-005-AC-03: Los turnos implicados en una solicitud pendiente aparecen marcados.
+- ~~US-005-AC-03~~: trasladado a US-009 como US-009-AC-09 (IPR-v01-010, D-24). Las solicitudes nacen en US-009 (IT-004); así US-005 se cierra completa en IT-002.
 
 **Verificación y restricciones**
 - NFR: accesibilidad del calendario (navegable con teclado, no depende solo del color).
@@ -51,7 +51,7 @@ El empleado sabe en todo momento qué turnos tiene y cuáles podría intercambia
 - **Estimación:** consenso del 06/10/2026: **3 h-p** (individuales: PO 3 · SM 3 · TL 2 · QA 3).
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-005 (funcional)
-- **Plan inicial:** IT-002 · R1
+- **Plan inicial:** IT-003 · R2 (plan del H3, D-24)
 
 **Criterios de aceptación**
 - US-006-AC-01: Solo se muestran compañeros de la misma categoría y servicio (RN-03).

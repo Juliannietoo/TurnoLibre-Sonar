@@ -111,7 +111,7 @@ Ningún intercambio que incumpla una regla puede aprobarse, y el empleado entien
 - **Estimación:** consenso del 06/10/2026: **5 h-p** (individuales: PO 4 · SM 5 · TL 5 · QA 5); revisada por D-18: **3 h-p**, votada por el equipo.
 - **Incertidumbre:** Media
 - **Predecesoras:** US-003 (técnica), US-012 (técnica). El formato de intercambio se acuerda con US-009, sin requerir esa historia terminada.
-- **Plan inicial:** por replanificar tras D-18 (ver catálogo, apartado 4)
+- **Plan inicial:** IT-003 · R2, después de US-012 (plan del H3, D-24)
 
 **Criterios de aceptación**
 - US-014-AC-01: Un intercambio entre empleados de distinta categoría o servicio se marca inválido por RN-03.
@@ -171,7 +171,7 @@ Ningún intercambio que incumpla una regla puede aprobarse, y el empleado entien
 - **Estimación:** consenso del 06/10/2026: **2 h-p** (individuales: PO 2 · SM 5 · TL 2 · QA 2).
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-012 (funcional), US-013 (funcional), US-014 (funcional), US-015 (funcional)
-- **Plan inicial:** candidata IT-006 · R3, solo si hay capacidad después de las Must.
+- **Plan inicial:** sin compromiso; tras las Must
 
 **Criterios de aceptación**
 - US-016-AC-01: Si se incumplen varias reglas, se muestran juntas con los resultados que justifican cada fallo.

@@ -8,7 +8,7 @@ Versión 1.0 (23/09/2026): 18 acuerdos (máximo 20). Se refinará durante el cur
 3. Los temas técnicos se discuten en GitHub (issues/PR), no en chats privados.
 
 ## Reuniones
-4. Planning, review y retrospectiva en la sesión semanal presencial (**miércoles de 17:30 a 19:30**), con acta en la Wiki.
+4. Planning, review y retrospectiva en la sesión semanal presencial (**miércoles de 17:30 a 19:30**), con acta en la Wiki. De las 2 h, 1 h son ceremonias; la otra hora es trabajo del proyecto (D-24).
 5. Daily de 15 minutos como máximo, **2 veces por semana (viernes y lunes) por Discord**, para ver avances, bloqueos y siguientes pasos. El miércoles la sustituye la sesión semanal.
 6. Toda reunión tiene agenda previa y acta con decisiones y acciones (responsable y fecha).
 

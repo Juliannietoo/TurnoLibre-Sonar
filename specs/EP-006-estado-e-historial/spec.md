@@ -22,7 +22,7 @@ El empleado puede consultar juntas sus solicitudes y el responsable recorrer una
 - **Estimación:** consenso del 06/10/2026: **3 h-p** (individuales: PO 3 · SM 3 · TL 3 · QA 3).
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-009 (funcional), US-010 (funcional), US-018 (funcional)
-- **Plan inicial:** candidata IT-006, solo si hay capacidad después de las Must.
+- **Plan inicial:** sin compromiso; tras las Must
 
 **Criterios de aceptación**
 - US-019-AC-01: El empleado dispone de una pantalla unificada de sus solicitudes, agrupadas en activas (Propuesta y Aceptada) y terminadas (Aprobada, Rechazada, Caducada y, si existe US-011, Cancelada), ordenadas por última actividad.

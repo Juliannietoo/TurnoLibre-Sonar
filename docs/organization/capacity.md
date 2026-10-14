@@ -26,7 +26,7 @@ El desglose de ausencias corresponde al publicado por la SM el 07/10/2026 (D-19)
 | TL | 6 h | 1,5 h | 1 h | 15 % | Incertidumbre técnica y carga de otras actividades |
 | QA | 6 h | 1,5 h | 0,5 h | 15 % | Incidencias de pruebas/despliegue e imprevistos |
 
-La coordinación cubre refinamiento del PO; actas y seguimiento de SM; dependencias y riesgos de TL; y calidad/entornos de QA. Las reuniones incluyen una hora de planning/review/retrospectiva y dos dailies de 15 minutos.
+La coordinación cubre refinamiento del PO; actas y seguimiento de SM; dependencias y riesgos de TL; y calidad/entornos de QA. La sesión semanal de los miércoles dura 2 h (17:30–19:30): se descuenta 1 h de ceremonias (planning, review y retrospectiva) y la otra hora es trabajo del proyecto con el profesor, que cuenta como capacidad (IPR-005, D-24). Las reuniones incluyen una hora de planning/review/retrospectiva y dos dailies de 15 minutos.
 
 **Exámenes y entregas en el periodo de ejecución:**
 

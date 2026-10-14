@@ -49,7 +49,7 @@ El responsable resuelve cada solicitud con las reglas vigentes del MVP comprobad
 - **Estimación:** consenso del 06/10/2026: **8 h-p** (individuales: PO 7 · SM 8 · TL 8 · QA 8).
 - **Incertidumbre:** Alta
 - **Predecesoras:** US-010 (funcional), US-012 (funcional), US-014 (funcional)
-- **Plan inicial:** por replanificar tras D-18: ajustar carga por sprint y tareas individuales según D-21 (ver catálogo, apartado 4)
+- **Plan inicial:** IT-005 (diseño de la transacción y la revalidación, 1,5 h, TL) e IT-006 (cierre, 6,5 h) · R3. Excepción explícita a «cabe en un sprint»: la parte de IT-005 es preparación (D-24)
 
 **Criterios de aceptación**
 - US-018-AC-01: Al aprobar una solicitud válida, los turnos se intercambian en el calendario de ambos empleados y la solicitud pasa a *Aprobada*.

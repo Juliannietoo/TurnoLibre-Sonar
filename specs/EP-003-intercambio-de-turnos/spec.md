@@ -73,8 +73,8 @@ Dos empleados pueden acordar un intercambio sin ayuda y dejarlo pendiente de apr
 - **Prioridad:** Must — *valor:* núcleo del producto; *riesgo:* medio, concentra los cambios de estado; *dependencias:* predecesora de aceptación, validaciones, estado y cancelación.
 - **Estimación:** consenso del 06/10/2026: **8 h-p** (individuales: PO 7 · SM 8 · TL 5 · QA 8).
 - **Incertidumbre:** Media
-- **Predecesoras:** US-006 (funcional), US-003 (técnica)
-- **Plan inicial:** por replanificar tras D-18: ajustar carga por sprint y tareas individuales según D-21 (ver catálogo, apartado 4)
+- **Predecesoras:** US-006 (funcional), US-005 (funcional: calendario donde se marcan los turnos, US-009-AC-09), US-003 (técnica)
+- **Plan inicial:** IT-004 · R2 (plan del H3, D-24)
 
 **Criterios de aceptación**
 - US-009-AC-01: Dado un turno futuro de un compañero compatible seleccionado desde US-006, el empleado elige uno de sus turnos futuros y confirma, sin publicación previa; la solicitud queda en estado *Propuesta*.
@@ -85,6 +85,7 @@ Dos empleados pueden acordar un intercambio sin ayuda y dejarlo pendiente de apr
 - US-009-AC-06: Si llegan dos propuestas simultáneas sobre el mismo turno, solo una se registra. La otra no ocupa turnos ni crea una solicitud y recibe un mensaje indicando que el turno ya no está disponible.
 - US-009-AC-07: El detalle básico sigue siendo accesible cuando la solicitud termina; muestra el estado final, quién realizó la última acción y cuándo, y el motivo del rechazo manual o por regla cuando proceda. Esta consulta forma parte del flujo esencial y funciona sin US-019.
 - US-009-AC-08: Con la hora del servidor, una solicitud cuyo primer turno ya ha empezado se muestra como Caducada, libera los dos turnos y no permite aceptarla ni aprobarla. El detalle básico se actualiza sin depender de que alguien abra la pantalla; el efecto es consistente ante peticiones simultáneas o repetidas (R-04, D-22).
+- US-009-AC-09: Los turnos implicados en una solicitud pendiente aparecen marcados en el calendario de ambos empleados (US-005). Trasladado desde US-005-AC-03 (IPR-v01-010, D-24).
 
 **Reglas:** RN-03 (compatibilidad) al registrar; RN-01 y RN-06 se validan en EP-004 antes de aprobar. RN-04 se garantiza en los datos de demostración (US-003). RN-02 y RN-05 solo se añaden si se incorporan US-013 y US-015, respectivamente (Should, D-18).
 
@@ -118,7 +119,7 @@ Dos empleados pueden acordar un intercambio sin ayuda y dejarlo pendiente de apr
 - **Estimación:** consenso del 06/10/2026: **3 h-p** (individuales: PO 3 · SM 5 · TL 3 · QA 3).
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-009 (funcional)
-- **Plan inicial:** por replanificar tras D-18 (ver catálogo, apartado 4)
+- **Plan inicial:** IT-005 · R3 (plan del H3, D-24)
 
 **Criterios de aceptación**
 - US-010-AC-01: Al aceptar, la solicitud pasa a *Aceptada* y queda pendiente de aprobación.

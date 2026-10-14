@@ -29,24 +29,24 @@ Muestra detallada (necesidad, objetivo, criterios, reglas, restricciones, NFR, e
 | US-003 | Cargar los datos de demostración | EP-001 | Must | Media | US-001 (técnica) | IT-001 | 6 | 5 | 5 | 5 | **5** | **3** |
 | US-004 | Mantener los turnos del cuadrante | EP-001 | Could | Media | US-002 (funcional), US-003 (técnica), US-012 (técnica), US-013 (técnica), US-014 (técnica) | Sin compromiso; tras Must | 5 | 8 | 5 | 5 | **5** | **5** |
 | US-005 | Consultar mi calendario de turnos | EP-002 | Must | Baja | US-002 (funcional), US-003 (técnica) | IT-002 | 4 | 5 | 3 | 3 | **5** | **3** |
-| US-006 | Consultar los turnos de compañeros compatibles | EP-002 | Must | Baja | US-005 (funcional) | IT-002 | 3 | 3 | 2 | 3 | **3** | **3** |
+| US-006 | Consultar los turnos de compañeros compatibles | EP-002 | Must | Baja | US-005 (funcional) | IT-003 | 3 | 3 | 2 | 3 | **3** | **3** |
 | US-007 | Publicar un turno para cambiar | EP-003 | Won't (fuera de versión) | Baja | US-005 (funcional) | Fuera de versión | 3 | 3 | 2 | 3 | **3** | **3** |
 | US-008 | Ver los turnos publicados compatibles | EP-003 | Won't (fuera de versión) | Baja | US-007 (funcional) | Fuera de versión | 3 | 3 | 3 | 3 | **3** | **3** |
-| US-009 | Proponer un intercambio | EP-003 | Must | Media | US-006 (funcional), US-003 (técnica) | Por replanificar (D-18) | 7 | 8 | 5 | 8 | **8** | **8** |
-| US-010 | Responder a una propuesta | EP-003 | Must | Baja | US-009 (funcional) | Por replanificar (D-18) | 3 | 5 | 3 | 3 | **3** | **3** |
+| US-009 | Proponer un intercambio | EP-003 | Must | Media | US-006 (funcional), US-005 (funcional), US-003 (técnica) | IT-004 | 7 | 8 | 5 | 8 | **8** | **8** |
+| US-010 | Responder a una propuesta | EP-003 | Must | Baja | US-009 (funcional) | IT-005 | 3 | 5 | 3 | 3 | **3** | **3** |
 | US-011 | Cancelar una solicitud de intercambio | EP-003 | Should | Baja | US-009 (funcional) | Sin compromiso; tras Must | 3 | 3 | 2 | 3 | **3** | **3** |
 | US-012 | Validar descanso mínimo y solapes | EP-004 | Must | Alta | US-003 (técnica). El formato de solicitud se acuerda con US-009, sin requerir esa historia terminada. | IT-003 | 7 | 8 | 8 | 8 | **8** | **5** |
 | US-013 | Validar las horas semanales | EP-004 | Should | Alta | US-003 (técnica), US-012 (técnica). El formato de intercambio se acuerda con US-009, sin requerir esa historia terminada. | Sin compromiso; tras Must | 6 | 5 | 8 | 5 | **5** | **3** |
-| US-014 | Validar categoría, servicio y cobertura | EP-004 | Must | Media | US-003 (técnica), US-012 (técnica). El formato de intercambio se acuerda con US-009, sin requerir esa historia terminada. | Por replanificar (D-18) | 4 | 5 | 5 | 5 | **5** | **3** |
+| US-014 | Validar categoría, servicio y cobertura | EP-004 | Must | Media | US-003 (técnica), US-012 (técnica). El formato de intercambio se acuerda con US-009, sin requerir esa historia terminada. | IT-003 | 4 | 5 | 5 | 5 | **5** | **3** |
 | US-015 | Validar la antelación mínima | EP-004 | Should | Baja | US-003 (técnica). El formato de solicitud se acuerda con US-009, sin requerir esa historia terminada. | Sin compromiso; tras Must | 2 | 3 | 3 | 2 | **3** | **3** |
 | US-016 | Ampliar el diagnóstico de reglas | EP-004 | Should | Baja | US-012 (funcional), US-013 (funcional), US-014 (funcional), US-015 (funcional) | Sin compromiso; tras Must | 2 | 5 | 2 | 2 | **2** | **2** |
 | US-017 | Consultar solicitudes y decisiones del servicio | EP-005 | Fusionada en US-018 | Media | — (fusionada en US-018) | Fusionada en US-018 | 5 | 5 | 5 | 5 | **5** | — |
-| US-018 | Resolver una solicitud | EP-005 | Must | Alta | US-010 (funcional), US-012 (funcional), US-014 (funcional) | Por replanificar (D-18) | 7 | 8 | 8 | 8 | **8** | **8** |
+| US-018 | Resolver una solicitud | EP-005 | Must | Alta | US-010 (funcional), US-012 (funcional), US-014 (funcional) | IT-005 (diseño) · IT-006 | 7 | 8 | 8 | 8 | **8** | **8** |
 | US-019 | Consultar una vista unificada de mis solicitudes | EP-006 | Should | Baja | US-009 (funcional), US-010 (funcional), US-018 (funcional) | Sin compromiso; tras Must | 3 | 3 | 3 | 3 | **3** | **3** |
 | US-020 | Consultar una cronología ampliada de intercambios | EP-006 | Should | Baja | US-018 (funcional) | Sin compromiso; tras Must | 3 | 5 | 3 | 3 | **3** | **3** |
 | US-021 | Recibir avisos dentro de la aplicación | EP-006 | Could | Media | US-019 (funcional) | Sin compromiso; tras Must | 4 | 3 | 2 | 3 | **3** | **3** |
 | US-022 | Filtrar el historial | EP-006 | Won't | Baja | US-020 (funcional) | Fuera de versión | 2 | 3 | 2 | 2 | **2** | **2** |
-| US-023 | Crear el guion mínimo final de instalación y evaluación | EP-007 | Must | Baja | US-018 (funcional); externa: evaluador ajeno a la implementación | Por replanificar (D-18) | 4 | 5 | 3 | 3 | **5** | **2** |
+| US-023 | Crear el guion mínimo final de instalación y evaluación | EP-007 | Must | Baja | US-018 (funcional); externa: evaluador ajeno a la implementación. La dependencia de US-018 se aplica a la parte 2 (validación final); la parte 1 solo necesita US-001 a US-003 (D-24) | IT-005 · IT-006 | 4 | 5 | 3 | 3 | **5** | **2** |
 | US-024 | Prueba de usabilidad y accesibilidad básica | EP-007 | Should | Media | US-010 (funcional), US-018 (funcional), US-023 (funcional); externa: tres participantes ajenos al equipo | Sin compromiso; review final si cabe | 3 | 5 | 5 | 3 | **5** | **3** |
 
 **Estimación individual del PO · 02/10/2026:** horas-persona para implementación, integración, pruebas y documentación, con apoyo de IA y revisión humana incluidos. El PO confirma las cifras sin reducción adicional: **Must 76 h-p, Should 11, Could 12 y Won't 2** (esta última fuera de versión). Las opciones incluidas sumarían 99 h-p. Son estimaciones individuales, no consenso ni compromiso de capacidad; no incluyen de nuevo el esfuerzo de las historias predecesoras. Las reuniones, la coordinación y el margen se descuentan en la capacidad.
@@ -138,7 +138,26 @@ Tipos: **funcional** (necesita el comportamiento de otra historia), **técnica**
 
 ## 4. Plan inicial por iteración
 
-### Revisión D-21 · 07/10/2026
+### Plan del H3 · 14/10/2026 (D-24)
+
+Primera planificación humana a nivel de historia, con la primera iteración detallada por tareas. Fuente: [`docs/planning/TurnoLibre_H3_planificacion.xlsx`](../../docs/planning/TurnoLibre_H3_planificacion.xlsx) (versión 2), que comprueba con fórmulas la carga de cada persona frente a su capacidad, el trabajo sin asignar, las dependencias y el coste. Revisado por el Planning Agent ([informe v01](../../docs/reviews/initial-planning/initial-planning-review-v01.md)); las decisiones del equipo sobre sus hallazgos constan en D-24.
+
+| Release | Iteración | Fechas | Capacidad | Historias Must | Carga | Margen |
+|---|---|---|---:|---|---:|---:|
+| R1 | IT-001 | 21/10–27/10 | 10,18 h | US-001, US-003 | 8 h | 2,18 h |
+| R1 | IT-002 | 28/10–03/11 | 6,78 h | US-002, US-005 | 6 h | 0,78 h |
+| R2 | IT-003 | 04/11–10/11 | 12,73 h | US-006, US-012, US-014 | 11 h | 1,73 h |
+| R2 | IT-004 | 11/11–17/11 | 9,33 h | US-009 | 8 h | 1,33 h |
+| R3 | IT-005 | 18/11–24/11 | 9,33 h | US-010; US-018 (diseño, 1,5 h); US-023 (parte 1, 1,5 h) | 6 h | 3,33 h |
+| R3 | IT-006 | 25/11–01/12 | 9,33 h | US-018 (cierre, 6,5 h); US-023 (parte 2, 0,5 h) | 7 h | 2,33 h |
+| | | **Total** | **57,65 h** | | **46 h** | **11,65 h** |
+
+- **Sin sobrecargas:** ninguna persona supera su capacidad efectiva en ninguna iteración, y no queda trabajo Must sin asignar.
+- **US-018 y US-023 (excepción explícita a «cabe en un sprint», D-24):** la parte de IT-005 es preparación. El TL diseña la transacción y la revalidación de US-018 (incertidumbre alta) dentro de sus 8 h-p, y QA redacta el guion de instalación de US-023. Las dos historias se cierran en IT-006. La dependencia US-023 → US-018 se aplica a la parte 2.
+- **Should, Could y Won't:** sin compromiso. US-011 entra solo si el equipo va adelantado; el margen de IT-005 se reserva para el riesgo de US-018.
+- **Pendientes externos:** las tecnologías autorizadas (TK-001 condicionada) y el evaluador externo de US-023.
+
+### Revisión D-21 · 07/10/2026 (sustituida por el plan del H3)
 
 Periodo 21/10–01/12/2026, con 6 h semanales por persona. Se conservan provisionalmente las asignaciones de D-18 para mostrar los desequilibrios que SM/TL deben resolver en H3. No representan una carga ya aprobada por persona.
 
@@ -180,3 +199,4 @@ Registro histórico: los recortes de D-18 sustituyen las decisiones de alcance a
 | requisitos-v0-borrador | 01/10/2026; acumulada hasta D-21 | Commit **db086ad9a307a5c05c7e3422d3a6183eb659f415** | Entrada de la revisión INITIAL de AG-01; conservada en Git. |
 | requisitos-v1-revisado | 12/10/2026 | Correcciones conocidas de D-18 indicadas por el usuario; informe v01 y Uso de agentes | Propuesta directa y RN-05 opcional en US-009/US-010; cancelación sin publicación en US-011; aprobación/rechazo sin publicaciones en US-018; título final de US-023. Las siete fichas comparten el identificador documental. |
 | requisitos-v1-revisado (actualización) | 13/10/2026 | D-22/D-23; R-01 a R-09 | Restos de D-18, caducidad Must (hora del servidor y liberación), vacío en US-006, M03 pendiente sin US-024 y rechazo por regla en US-018. DoD/NFR corresponden al bloque QA de D-22. Prioridades y horas-persona conservadas. |
+| requisitos-v1-revisado (plan H3) | 14/10/2026 | D-24; informe v01 del Planning Agent | Plan del H3 en el apartado 4 y en la columna Plan; nota de la dependencia US-023 → US-018 (parte 2). US-005-AC-03 se traslada a US-009 como US-009-AC-09 (IPR-v01-010) y US-009 añade US-005 como predecesora. Sin cambios de alcance, prioridad ni estimación. |
