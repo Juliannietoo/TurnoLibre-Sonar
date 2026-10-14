@@ -1,7 +1,7 @@
 # EP-006 — Vistas ampliadas de estado e historial
 
 **Objetivos:** G01, G03
-**Línea base documental:** requisitos-v1-revisado · revisión 13/10/2026 (D-18/D-21/D-22/D-23; decisiones en Uso de agentes)
+**Línea base documental:** requisitos-v1-revisado · revisión 14/10/2026 (D-18/D-21/D-22/D-23/D-24; decisiones en Uso de agentes)
 **Límites:** mejoras de presentación del estado y del historial (S-03). La consulta básica ya forma parte de US-009, US-010, US-017 y US-018. No incluye notificaciones por correo, SMS o push (EX-04).
 
 ## Resultado de la épica

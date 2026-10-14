@@ -1,6 +1,6 @@
 # TurnoLibre — Catálogo de requisitos V1 (revisado)
 
-Línea base documental: **requisitos-v1-revisado** · Revisión 13/10/2026 · Alcance y capacidad de D-18/D-21; decisiones de revisión D-22/D-23 incorporadas. Se conservan prioridades y estimaciones consensuadas.
+Línea base documental: **requisitos-v1-revisado** · Revisión 14/10/2026 (plan del H3, D-24 y D-25) · Alcance y capacidad de D-18/D-21; decisiones de revisión D-22/D-23 incorporadas. Se conservan prioridades y estimaciones consensuadas.
 
 Revisión INITIAL de AG-01 sobre el commit **db086ad9a307a5c05c7e3422d3a6183eb659f415**: [informe v01](../../docs/reviews/requirements/requirements-report-v01.md). Esta versión incorpora las correcciones de D-18 y las respuestas aceptadas de R-01 a R-09; las decisiones y su aplicación se trazan en la Wiki, [Uso de agentes](https://github.com/UniExtremadura/TurnoLibre_GC02/wiki/Uso-de-agentes). El versionado documental no supone la aprobación de una puerta de calidad.
 
@@ -113,6 +113,7 @@ flowchart LR
   US003 -- técnica --> US005
   US005 -- funcional --> US006[US-006 Turnos compatibles]
   US006 -- funcional --> US009[US-009 Proponer]
+  US005 -- funcional --> US009
   US003 -- técnica --> US009
   US009 -- funcional --> US010[US-010 Responder]
   US003 -- técnica --> US012[US-012 RN-01 y RN-06]
@@ -187,10 +188,10 @@ Registro histórico: los recortes de D-18 sustituyen las decisiones de alcance a
 
 ## 6. Pendientes para cerrar la planificación
 
-- Las estimaciones consensuadas y revisadas por D-18 están registradas en el Excel. Para H3, redistribuir IT-002 e IT-006 sin sobreasignar personas.
-- Confirmar las tecnologías autorizadas, dependencia externa de US-001.
+- **Tecnologías autorizadas por la asignatura** sin confirmar (dependencia externa de US-001; TK-001 condicionada). El TL lo pregunta en la sesión del 21/10/2026; riesgo RT-04.
+- **Evaluador externo de US-023:** lo identifican PO y QA antes de planificar IT-005 (18/11/2026).
 
-**Decisión del TL:** con la capacidad de D-21, US-009 y US-018, ambas estimadas en 8 h-p, ya caben en un sprint de equipo de 9,33 h. No es necesario dividirlas en nuevas historias de usuario; en H3 se descompondrán en tareas (TK) y se repartirán entre varias personas respetando las capacidades individuales y las dependencias.
+El reparto de IT-002 e IT-006 quedó resuelto en el plan del H3 (apartado 4, D-24). **Decisión del TL (D-21):** US-009 y US-018 (8 h-p) no se dividen en nuevas historias; se descomponen en tareas al planificar cada iteración. US-018 y US-023 tienen una excepción explícita a «cabe en un sprint» (D-24).
 
 ## 7. Historial de la línea base documental
 
@@ -200,3 +201,4 @@ Registro histórico: los recortes de D-18 sustituyen las decisiones de alcance a
 | requisitos-v1-revisado | 12/10/2026 | Correcciones conocidas de D-18 indicadas por el usuario; informe v01 y Uso de agentes | Propuesta directa y RN-05 opcional en US-009/US-010; cancelación sin publicación en US-011; aprobación/rechazo sin publicaciones en US-018; título final de US-023. Las siete fichas comparten el identificador documental. |
 | requisitos-v1-revisado (actualización) | 13/10/2026 | D-22/D-23; R-01 a R-09 | Restos de D-18, caducidad Must (hora del servidor y liberación), vacío en US-006, M03 pendiente sin US-024 y rechazo por regla en US-018. DoD/NFR corresponden al bloque QA de D-22. Prioridades y horas-persona conservadas. |
 | requisitos-v1-revisado (plan H3) | 14/10/2026 | D-24; informe v01 del Planning Agent | Plan del H3 en el apartado 4 y en la columna Plan; nota de la dependencia US-023 → US-018 (parte 2). US-005-AC-03 se traslada a US-009 como US-009-AC-09 (IPR-v01-010) y US-009 añade US-005 como predecesora. Sin cambios de alcance, prioridad ni estimación. |
+| requisitos-v1-revisado (RECHECK del plan) | 14/10/2026 | D-25; informe v02 del Planning Agent | Pendientes del apartado 6 actualizados; arista US-005 → US-009 en el diagrama; cabeceras de las fichas a 14/10. El TL confirma que US-009-AC-09 cabe en las 8 h-p de US-009. |

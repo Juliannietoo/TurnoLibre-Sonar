@@ -1,7 +1,7 @@
 # EP-004 — Validación de reglas
 
 **Objetivos:** G02
-**Línea base documental:** requisitos-v1-revisado · revisión 13/10/2026 (D-18/D-21/D-22/D-23; decisiones en Uso de agentes) · reglas de [reglas de negocio](../product/business-rules.md) v0.2
+**Línea base documental:** requisitos-v1-revisado · revisión 14/10/2026 (D-18/D-21/D-22/D-23/D-24; decisiones en Uso de agentes) · reglas de [reglas de negocio](../product/business-rules.md) v0.2
 **Límites:** comprobación en el servidor de las reglas vigentes del MVP (G02): RN-01, RN-03 y RN-06 sobre el cuadrante resultante de los dos empleados (S-02). RN-04 se garantiza al preparar los datos; RN-02/RN-05 se añaden solo si se incorporan sus historias Should (D-18/D-22). No incluye reglas de convenios reales ni cómputo anual de jornada.
 
 ## Resultado de la épica

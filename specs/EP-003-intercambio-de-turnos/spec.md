@@ -1,7 +1,7 @@
 # EP-003 — Intercambio de turnos
 
 **Objetivos:** G01
-**Línea base documental:** requisitos-v1-revisado · revisión 13/10/2026 (D-18/D-21/D-22/D-23; decisiones en Uso de agentes)
+**Línea base documental:** requisitos-v1-revisado · revisión 14/10/2026 (D-18/D-21/D-22/D-23/D-24; decisiones en Uso de agentes)
 **Límites:** intercambio uno a uno entre dos empleados (S-01) y consulta básica del estado de cada solicitud propia (S-03). No incluye cesiones sin contrapartida, intercambios en cadena ni notificaciones externas (EX-04).
 
 ## Resultado de la épica

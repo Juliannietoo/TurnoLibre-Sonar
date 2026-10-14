@@ -1,7 +1,7 @@
 # EP-007 — Calidad y entrega
 
 **Objetivos:** G04 (y evidencias de M01, M03, M04)
-**Línea base documental:** requisitos-v1-revisado · revisión 13/10/2026 (D-18/D-21/D-22/D-23; decisiones en Uso de agentes)
+**Línea base documental:** requisitos-v1-revisado · revisión 14/10/2026 (D-18/D-21/D-22/D-23/D-24; decisiones en Uso de agentes)
 **Límites:** documentación de instalación y evaluación, y validación con usuarios. Las pruebas automatizadas de cada historia no están aquí: las exige la Definition of Done de cada historia.
 
 ## Resultado de la épica

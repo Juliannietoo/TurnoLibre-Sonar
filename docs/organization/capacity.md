@@ -62,6 +62,6 @@ La coordinación cubre refinamiento del PO; actas y seguimiento de SM; dependenc
 
 Las Must suman **46 h-p**: quedan **11,65 h** de capacidad sin comprometer. Las Should siguen siendo opcionales; no se incorporan automáticamente.
 
-El encaje total no demuestra que el plan por sprint sea viable. Con el reparto actual, IT-002 tiene 9 h-p frente a 6,775 h disponibles e IT-006 tiene 10 h-p frente a 9,325 h. SM/TL deben redistribuir la carga respetando dependencias y preparar las tareas de H3. Una historia de 5 u 8 h-p requiere varias personas: ninguna tarea individual puede superar la disponibilidad de su responsable en ese sprint. El máximo individual del nuevo plan es 3,40 h, no las 2,55 h del escenario de 5 h semanales. Se mantiene WIP 2.
+El reparto por persona e iteración está en el plan del H3 ([`TurnoLibre_H3_planificacion.xlsx`](../planning/TurnoLibre_H3_planificacion.xlsx), D-24 y D-25): ninguna persona supera su capacidad efectiva en ninguna iteración y no queda trabajo Must sin asignar. Una historia de 5 u 8 h-p se reparte entre varias personas; ninguna tarea individual supera la disponibilidad de su responsable en ese sprint. Se mantiene WIP 2.
 
 Referencia histórica: el periodo anterior tenía 46,35 h de capacidad; el nuevo periodo con 5 h semanales tendría 37,25 h. El detalle vigente es el de D-21.
