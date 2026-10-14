@@ -47,7 +47,7 @@ Precisiones de G01, G02 y M01–M05 propuestas el 24/09/2026 y validadas por el 
 ## Restricciones
 - Prohibido usar datos personales, laborales o sanitarios reales.
 - Ejecución de **6 semanas** (del 21/10/2026 al 01/12/2026), en **3 releases de 2 semanas**, con sprints de **1 semana que comienzan en miércoles**.
-- Equipo de **4 personas** a 6 h/semana cada una; coste directo de personal de **2.889,00 €** y precio al cliente de **5.307,88 € IVA incluido** (cálculo en `docs/organization/company.md`).
+- Equipo de **4 personas** a 6 h/semana cada una; coste de personal de **1.996,88 €** (Σ horas asignadas × tarifa: 46 h de historias y 54 h de gestión, D-26) y precio al cliente de **3.737,53 € IVA incluido** (cálculo en `docs/organization/company.md`).
 - Uso de las tecnologías y convenciones aprobadas por la asignatura (se definirán más adelante).
 
 ## Trazabilidad

@@ -1,11 +1,12 @@
 # Agentes de IA de TurnoLibre
 
-Decisión D-20 (07/10/2026). El profesorado proporcionó dos plantillas para GitHub Copilot. El equipo no usa Copilot, así que las plantillas se han adaptado a TurnoLibre y se ejecutan con las herramientas de cada miembro. Las instrucciones son las mismas para todos; solo cambia cómo se cargan.
+Decisión D-20 (07/10/2026); el agente auditor del H4 se añade con D-26 (15/10/2026). El profesorado proporcionó dos plantillas para GitHub Copilot. El equipo no usa Copilot, así que las plantillas se han adaptado a TurnoLibre y se ejecutan con las herramientas de cada miembro. Las instrucciones son las mismas para todos; solo cambia cómo se cargan.
 
 | ID | Agente | Instrucciones de referencia | Informes |
 |---|---|---|---|
 | AG-01 | Requirements Agent | [`.github/agents/requirements-reviewer.agent.md`](../../.github/agents/requirements-reviewer.agent.md) | `docs/reviews/requirements/requirements-report-vNN.md` |
 | AG-03 | Planning Agent | [`.github/agents/initial-planning-reviewer.agent.md`](../../.github/agents/initial-planning-reviewer.agent.md) | `docs/reviews/initial-planning/initial-planning-review-vNN.md` |
+| AG-02 | Agente auditor (H4, opcional) | [`.github/agents/project-auditor.agent.md`](../../.github/agents/project-auditor.agent.md) | `docs/reviews/audit/audit-report-vNN.md` |
 
 Los agentes **revisan y proponen**. No cambian requisitos, estimaciones, capacidad ni planes, y no aprueban nada. Cada propuesta se registra y la decide el equipo en la página *Uso de agentes* de la Wiki.
 

@@ -27,7 +27,7 @@ Todos los miembros participan en el desarrollo con independencia de su rol. La c
 | Juliannietoo (DevOps/QA) | Mi objetivo como DevOps/QA es gestionar la calidad, pruebas y entornos del proyecto, asegurando el cumplimiento de los requisitos no funcionales, el despliegue y su correcta operación. |
 
 ## Justificación de costes por rol
-El presupuesto utiliza perfiles **júnior**. Los cuatro salarios se han contrastado en Glassdoor entre el 01/10 y el 05/10/2026; el presupuesto se recalculó el 07/10/2026 por D-21.
+El presupuesto utiliza perfiles **júnior**. Los cuatro salarios se han contrastado en Glassdoor entre el 01/10 y el 05/10/2026; el presupuesto se recalculó el 07/10/2026 por D-21 y el 15/10/2026 por D-26 (fórmula del enunciado: horas asignadas × tarifa).
 
 *Por qué júnior:* MedSwap es una empresa de reciente creación formada por titulados sin experiencia profesional previa; un salario de nivel medio no sería creíble para este equipo.
 
@@ -56,29 +56,35 @@ El presupuesto utiliza perfiles **júnior**. Los cuatro salarios se han contrast
 *Nota sobre el TL:* resulta el perfil con menor coste/hora porque la referencia verificada es *Junior Software Developer*; se mantiene por coherencia con el criterio júnior, aunque el rol tenga mayor responsabilidad técnica. Confirmado por todo el equipo en la sesión del 07/10/2026.
 
 ## Coste directo de personal
-Cada miembro dedica 6 h/semana × 6 semanas = *36 h*. Se pagan las 144 h completas, no solo la capacidad efectiva: las reuniones y la coordinación también son trabajo remunerado.
+**D-26 (15/10/2026):** se aplica la fórmula del enunciado de la Semana 4: **coste de personal = Σ (horas asignadas × tarifa justificada)**. Las horas asignadas son las del plan del H3–H4 ([`TurnoLibre_H3_planificacion.xlsx`](../planning/TurnoLibre_H3_planificacion.xlsx), versión 4, y planes de ProjectLibre en [`docs/planning/projectlibre/`](../planning/projectlibre/)):
+- **Historias de usuario:** 46 h (las Must del catálogo V1).
+- **Tareas de gestión (MGT):** 54 h, 9 h por iteración: sprint planning (0,5 h por persona), dailies (0,5 h), review (0,25 h), retrospectiva (0,25 h) y coordinación del rol (PO 0,5 · SM 1 · TL 1 · QA 0,5).
 
-| Rol | Horas | Coste/hora | Coste |
-|---|---|---|---|
-| Product Owner | 36 | 19,50 € | 702,00 € |
-| Scrum Master | 36 | 24,75 € | 891,00 € |
-| Tech Lead | 36 | 15,75 € | 567,00 € |
-| DevOps / QA | 36 | 20,25 € | 729,00 € |
-| *Total* | *144* | | *2.889,00 €* |
+Las horas nominales que no se asignan a ninguna tarea (ausencias por exámenes, márgenes individuales y margen del equipo) no se imputan. Sustituye al cálculo sobre 144 h nominales de D-21 (2.889,00 € de personal y 5.307,88 € de precio).
+
+| Rol | Horas de historias | Horas de gestión | Horas asignadas | Coste/hora | Coste |
+|---|---|---|---|---|---|
+| Product Owner | 10,5 | 12 | 22,5 | 19,50 € | 438,75 € |
+| Scrum Master | 10 | 15 | 25 | 24,75 € | 618,75 € |
+| Tech Lead | 12,5 | 15 | 27,5 | 15,75 € | 433,13 € |
+| DevOps / QA | 13 | 12 | 25 | 20,25 € | 506,25 € |
+| *Total* | *46* | *54* | *100* | | *1.996,88 €* |
 
 ## Coste total y precio al cliente
-Presupuesto revisado el 07/10/2026 por D-21: 6 h semanales por persona del 21/10 al 01/12, con las tarifas verificadas de D-17. Se revisará en H4 con la planificación final.
+Presupuesto revisado el 15/10/2026 por D-26, con las tarifas verificadas de D-17 y los porcentajes de D-13.
 
 | Concepto | Criterio | Importe |
 |---|---|---|
-| Personal directo | 144 h × coste/hora de cada rol | 2.889,00 € |
+| Personal directo | Σ horas asignadas × coste/hora de cada rol (100 h) | 1.996,88 € |
 | Equipos | 4 portátiles de 1.000 € amortizados en 4 años; parte proporcional de 6 semanas | 115,38 € |
 | Software e infraestructura | GitHub y Jira en plan gratuito; servidor de demostración ≈ 20 €/mes durante 1,5 meses | 30,00 € |
-| Gastos generales | 15 % del personal directo: oficina, suministros, internet, gestoría | 433,35 € |
-| *Coste del proyecto* | | *3.467,73 €* |
-| Reserva para imprevistos | 10 % del coste, justificada por los riesgos RT-01 a RT-03 ([`technical-risks.md`](../risks/technical-risks.md)) | 346,77 € |
-| *Coste con reserva* | | *3.814,50 €* |
-| Margen de beneficio | 15 % | 572,18 € |
-| *Precio al cliente (sin IVA)* | | *4.386,68 €* |
-| IVA | 21 % | 921,20 € |
-| *Precio al cliente (IVA incluido)* | | *5.307,88 €* |
+| Gastos generales | 15 % del personal directo: oficina, suministros, internet, gestoría | 299,53 € |
+| *Coste del proyecto* | | *2.441,79 €* |
+| Reserva para imprevistos | 10 % del coste, justificada por los riesgos RT-01 a RT-04 ([`technical-risks.md`](../risks/technical-risks.md)) | 244,18 € |
+| *Coste con reserva* | | *2.685,97 €* |
+| Margen de beneficio | 15 % | 402,90 € |
+| *Precio al cliente (sin IVA)* | | *3.088,87 €* |
+| IVA | 21 % | 648,66 € |
+| *Precio al cliente (IVA incluido)* | | *3.737,53 €* |
+
+**Historial:** D-13 (30/09) 4.935,59 € → D-17 (06/10, salarios verificados) 4.460,33 € → D-21 (07/10, 6 h/semana sobre horas nominales) 5.307,88 € → **D-26 (15/10, horas asignadas) 3.737,53 €**.
