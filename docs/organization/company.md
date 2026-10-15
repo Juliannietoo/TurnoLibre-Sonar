@@ -56,7 +56,7 @@ El presupuesto utiliza perfiles **júnior**. Los cuatro salarios se han contrast
 *Nota sobre el TL:* resulta el perfil con menor coste/hora porque la referencia verificada es *Junior Software Developer*; se mantiene por coherencia con el criterio júnior, aunque el rol tenga mayor responsabilidad técnica. Confirmado por todo el equipo en la sesión del 07/10/2026.
 
 ## Coste directo de personal
-**D-26 (14/10/2026):** se aplica la fórmula del enunciado de la Semana 4: **coste de personal = Σ (horas asignadas × tarifa justificada)**. Las horas asignadas son las del plan del H3–H4 ([`TurnoLibre_H3_planificacion.xlsx`](../planning/TurnoLibre_H3_planificacion.xlsx), versión 4, y planes de ProjectLibre en [`docs/planning/projectlibre/`](../planning/projectlibre/)):
+**D-26 (14/10/2026):** se aplica la fórmula del enunciado de la Semana 4: **coste de personal = Σ (horas asignadas × tarifa justificada)**. Las horas asignadas son las del plan del H3–H4 ([`TurnoLibre_H3_planificacion.xlsx`](../planning/TurnoLibre_H3_planificacion.xlsx), versión 5, y planes de ProjectLibre en [`docs/planning/projectlibre/`](../planning/projectlibre/)):
 - **Historias de usuario:** 46 h (las Must del catálogo V1).
 - **Tareas de gestión (MGT):** 54 h, 9 h por iteración: sprint planning (0,5 h por persona), dailies (0,5 h), review (0,25 h), retrospectiva (0,25 h) y coordinación del rol (PO 0,5 · SM 1 · TL 1 · QA 0,5).
 
@@ -86,5 +86,7 @@ Presupuesto revisado el 14/10/2026 por D-26, con las tarifas verificadas de D-17
 | *Precio al cliente (sin IVA)* | | *3.088,87 €* |
 | IVA | 21 % | 648,66 € |
 | *Precio al cliente (IVA incluido)* | | *3.737,53 €* |
+
+**Alcance de la reserva (D-28):** la reserva del 10 % (244,18 €) cubre el coste de personal de usar las 11,65 h de margen de capacidad si se materializan los riesgos RT-01 a RT-07 (239,96 €). Los gastos generales asociados a esas horas (36,00 €) no están cubiertos y los absorbería el margen de beneficio; el equipo lo acepta conscientemente.
 
 **Historial:** D-13 (30/09) 4.935,59 € → D-17 (06/10, salarios verificados) 4.460,33 € → D-21 (07/10, 6 h/semana sobre horas nominales) 5.307,88 € → **D-26 (14/10, horas asignadas) 3.737,53 €**.

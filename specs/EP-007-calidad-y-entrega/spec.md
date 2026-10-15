@@ -1,7 +1,7 @@
 # EP-007 — Calidad y entrega
 
 **Objetivos:** G04 (y evidencias de M01, M03, M04)
-**Línea base documental:** requisitos-v1-revisado · revisión 14/10/2026 (D-18/D-21/D-22/D-23/D-24; decisiones en Uso de agentes)
+**Línea base documental:** requisitos-v1-revisado · revisión 15/10/2026 (D-18/D-21/D-22/D-23/D-24/D-27/D-28; decisiones en Uso de agentes)
 **Límites:** documentación de instalación y evaluación, y validación con usuarios. Las pruebas automatizadas de cada historia no están aquí: las exige la Definition of Done de cada historia.
 
 ## Resultado de la épica
@@ -23,7 +23,7 @@ Un tercero instala y evalúa la versión final siguiendo el guion mínimo sin ay
 - **Prioridad:** Must — *valor:* aporta el guion mínimo de instalación al final que exigen G04 y M04 tras D-18; *riesgo:* bajo; *dependencias:* necesita el flujo completo (US-018) y una persona ajena a la implementación que lo valide.
 - **Estimación:** consenso del 06/10/2026: **5 h-p** (individuales: PO 4 · SM 5 · TL 3 · QA 3); revisada por D-18: **2 h-p**, votada por el equipo.
 - **Incertidumbre:** Baja
-- **Predecesoras:** US-018 (funcional); externa: evaluador ajeno a la implementación. La dependencia de US-018 se aplica a la parte 2 (validación final); la parte 1 (guion de instalación) solo necesita US-001, US-002 y US-003 (D-24)
+- **Predecesoras:** US-018 (funcional); externa: evaluador ajeno a la implementación. Por partes (D-24, D-27 y D-28): la parte 1 (entorno, datos, cuentas y pasos de consultar y proponer) necesita US-001, US-002, US-003 y US-009; la parte 2 (pasos de aceptar y resolver, y validación externa) necesita US-010 y US-018
 - **Plan inicial:** IT-005 (parte 1: entorno, restablecimiento de datos, cuentas ficticias y pasos de consultar y proponer, 1,5 h) e IT-006 (parte 2: pasos de aceptar y resolver, y validación con el evaluador externo, 0,5 h) · R3. Excepción explícita a «cabe en un sprint» (D-24). El paso «aceptar» va en la parte 2 porque US-010 se desarrolla en IT-005 a la vez que la parte 1 (AUD-v01-006, D-27)
 
 **Criterios de aceptación**
