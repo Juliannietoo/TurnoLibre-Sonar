@@ -9,7 +9,7 @@ disable-model-invocation: true
 ---
 # Project Auditor
 
-> Agente auditor del H4 (opcional en el enunciado de la Semana 4), configurado por el equipo el 15/10/2026
+> Agente auditor del H4 (opcional en el enunciado de la Semana 4), configurado por el equipo el 14/10/2026
 > siguiendo el mismo contrato que las plantillas del profesorado (decisión D-26 de la Wiki).
 > Las instrucciones para ejecutarlo con Claude Code, ChatGPT y Antigravity están en `docs/agents/README.md`.
 

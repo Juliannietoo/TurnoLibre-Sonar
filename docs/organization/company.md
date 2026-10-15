@@ -27,7 +27,7 @@ Todos los miembros participan en el desarrollo con independencia de su rol. La c
 | Juliannietoo (DevOps/QA) | Mi objetivo como DevOps/QA es gestionar la calidad, pruebas y entornos del proyecto, asegurando el cumplimiento de los requisitos no funcionales, el despliegue y su correcta operación. |
 
 ## Justificación de costes por rol
-El presupuesto utiliza perfiles **júnior**. Los cuatro salarios se han contrastado en Glassdoor entre el 01/10 y el 05/10/2026; el presupuesto se recalculó el 07/10/2026 por D-21 y el 15/10/2026 por D-26 (fórmula del enunciado: horas asignadas × tarifa).
+El presupuesto utiliza perfiles **júnior**. Los cuatro salarios se han contrastado en Glassdoor entre el 01/10 y el 05/10/2026; el presupuesto se recalculó el 07/10/2026 por D-21 y el 14/10/2026 por D-26 (fórmula del enunciado: horas asignadas × tarifa).
 
 *Por qué júnior:* MedSwap es una empresa de reciente creación formada por titulados sin experiencia profesional previa; un salario de nivel medio no sería creíble para este equipo.
 
@@ -56,7 +56,7 @@ El presupuesto utiliza perfiles **júnior**. Los cuatro salarios se han contrast
 *Nota sobre el TL:* resulta el perfil con menor coste/hora porque la referencia verificada es *Junior Software Developer*; se mantiene por coherencia con el criterio júnior, aunque el rol tenga mayor responsabilidad técnica. Confirmado por todo el equipo en la sesión del 07/10/2026.
 
 ## Coste directo de personal
-**D-26 (15/10/2026):** se aplica la fórmula del enunciado de la Semana 4: **coste de personal = Σ (horas asignadas × tarifa justificada)**. Las horas asignadas son las del plan del H3–H4 ([`TurnoLibre_H3_planificacion.xlsx`](../planning/TurnoLibre_H3_planificacion.xlsx), versión 4, y planes de ProjectLibre en [`docs/planning/projectlibre/`](../planning/projectlibre/)):
+**D-26 (14/10/2026):** se aplica la fórmula del enunciado de la Semana 4: **coste de personal = Σ (horas asignadas × tarifa justificada)**. Las horas asignadas son las del plan del H3–H4 ([`TurnoLibre_H3_planificacion.xlsx`](../planning/TurnoLibre_H3_planificacion.xlsx), versión 4, y planes de ProjectLibre en [`docs/planning/projectlibre/`](../planning/projectlibre/)):
 - **Historias de usuario:** 46 h (las Must del catálogo V1).
 - **Tareas de gestión (MGT):** 54 h, 9 h por iteración: sprint planning (0,5 h por persona), dailies (0,5 h), review (0,25 h), retrospectiva (0,25 h) y coordinación del rol (PO 0,5 · SM 1 · TL 1 · QA 0,5).
 
@@ -71,7 +71,7 @@ Las horas nominales que no se asignan a ninguna tarea (ausencias por exámenes, 
 | *Total* | *46* | *54* | *100* | | *1.996,88 €* |
 
 ## Coste total y precio al cliente
-Presupuesto revisado el 15/10/2026 por D-26, con las tarifas verificadas de D-17 y los porcentajes de D-13.
+Presupuesto revisado el 14/10/2026 por D-26, con las tarifas verificadas de D-17 y los porcentajes de D-13.
 
 | Concepto | Criterio | Importe |
 |---|---|---|
@@ -80,11 +80,11 @@ Presupuesto revisado el 15/10/2026 por D-26, con las tarifas verificadas de D-17
 | Software e infraestructura | GitHub y Jira en plan gratuito; servidor de demostración ≈ 20 €/mes durante 1,5 meses | 30,00 € |
 | Gastos generales | 15 % del personal directo: oficina, suministros, internet, gestoría | 299,53 € |
 | *Coste del proyecto* | | *2.441,79 €* |
-| Reserva para imprevistos | 10 % del coste, justificada por los riesgos RT-01 a RT-04 ([`technical-risks.md`](../risks/technical-risks.md)) | 244,18 € |
+| Reserva para imprevistos | 10 % del coste, justificada por los riesgos RT-01 a RT-07 ([`technical-risks.md`](../risks/technical-risks.md)) | 244,18 € |
 | *Coste con reserva* | | *2.685,97 €* |
 | Margen de beneficio | 15 % | 402,90 € |
 | *Precio al cliente (sin IVA)* | | *3.088,87 €* |
 | IVA | 21 % | 648,66 € |
 | *Precio al cliente (IVA incluido)* | | *3.737,53 €* |
 
-**Historial:** D-13 (30/09) 4.935,59 € → D-17 (06/10, salarios verificados) 4.460,33 € → D-21 (07/10, 6 h/semana sobre horas nominales) 5.307,88 € → **D-26 (15/10, horas asignadas) 3.737,53 €**.
+**Historial:** D-13 (30/09) 4.935,59 € → D-17 (06/10, salarios verificados) 4.460,33 € → D-21 (07/10, 6 h/semana sobre horas nominales) 5.307,88 € → **D-26 (14/10, horas asignadas) 3.737,53 €**.

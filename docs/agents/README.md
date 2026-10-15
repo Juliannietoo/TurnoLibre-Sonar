@@ -1,6 +1,6 @@
 # Agentes de IA de TurnoLibre
 
-Decisión D-20 (07/10/2026); el agente auditor del H4 se añade con D-26 (15/10/2026). El profesorado proporcionó dos plantillas para GitHub Copilot. El equipo no usa Copilot, así que las plantillas se han adaptado a TurnoLibre y se ejecutan con las herramientas de cada miembro. Las instrucciones son las mismas para todos; solo cambia cómo se cargan.
+Decisión D-20 (07/10/2026); el agente auditor del H4 se añade con D-26 (14/10/2026). El profesorado proporcionó dos plantillas para GitHub Copilot. El equipo no usa Copilot, así que las plantillas se han adaptado a TurnoLibre y se ejecutan con las herramientas de cada miembro. Las instrucciones son las mismas para todos; solo cambia cómo se cargan.
 
 | ID | Agente | Instrucciones de referencia | Informes |
 |---|---|---|---|
