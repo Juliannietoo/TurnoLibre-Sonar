@@ -36,7 +36,7 @@ git config merge.ff false
 Cada commit lleva en **una sola línea** la clave de Jira y los comandos:
 
 ```text
-<CLAVE> #time <tiempo> #comment <qué se ha hecho> #done
+<CLAVE> #time <tiempo> #comment <qué se ha hecho> #listo
 ```
 
 | Parte | Regla |
@@ -44,17 +44,28 @@ Cada commit lleva en **una sola línea** la clave de Jira y los comandos:
 | `<CLAVE>` | La de la **subtarea** en Jira (`GC02-NN`), no la de la historia. |
 | `#time` | Tiempo real dedicado: `1h 30m`, `45m`, `2h`. Solo en commits de trabajo, **nunca en merges**. |
 | `#comment` | Qué se ha hecho, en español y en una frase. |
-| `#done` | Solo si la subtarea está terminada. Mueve la incidencia a *Done*. |
+| `#listo` | Solo si la subtarea está terminada. Ejecuta la transición «Listo» y la incidencia pasa a *Finalizada*. Jira busca la transición por su nombre, así que `#done` no funciona en este proyecto. |
 
 Ejemplos:
 
 ```text
-GC02-61 #time 1h 30m #comment Proyecto Django con la aplicación de cuentas y configuración de pytest #done
-GC02-62 #time 45m #comment Primera versión del flujo de GitHub Actions
-GC02-62 #time 45m #comment Flujo de CI con Ruff, migraciones y pytest; bloquea si falla #done
+GC02-178 #time 1h 30m #comment Proyecto Django con la aplicación core y configuración de pytest #listo
+GC02-179 #time 45m #comment Primera versión del flujo de GitHub Actions
+GC02-179 #time 45m #comment Flujo de CI con Ruff, migraciones y pytest; bloquea si falla #listo
 ```
 
 El agente [`jira-smartcommit-generator`](../../.github/agents/jira-smartcommit-generator.agent.md) genera el mensaje a partir de una descripción (ver [docs/agents/README.md](../agents/README.md)).
+
+### Claves de Jira de IT-1 e IT-2
+
+| Historia | Clave | Subtareas (clave · responsable) |
+|---|---|---|
+| US-001. Preparar el entorno base | GC02-171 | TK-001 GC02-178 · Marcelino · TK-002 GC02-179 · Julián · TK-003 GC02-180 · Julián · TK-004 GC02-181 · Marcelino |
+| US-003. Cargar los datos de demostración | GC02-173 | TK-005 GC02-184 · Luis · TK-006 GC02-185 · Paula · TK-007 GC02-186 · Luis |
+| US-002. Iniciar sesión con rol | GC02-172 | Autenticación y roles GC02-182 · Marcelino · Pruebas de acceso GC02-183 · Julián |
+| US-005. Consultar mi calendario de turnos | GC02-42 | Revisión del PO GC02-49 · Luis · Pantalla GC02-50 · Paula · Pruebas y accesibilidad GC02-51 · Julián |
+
+Ramas: `feature/GC02-171-entorno-base`, `feature/GC02-173-datos-demo`, `feature/GC02-172-inicio-sesion` y `feature/GC02-42-calendario`.
 
 ## 4. Al empezar cada sprint (planning del miércoles)
 
@@ -69,7 +80,7 @@ El agente [`jira-smartcommit-generator`](../../.github/agents/jira-smartcommit-g
 
 ## 5. Por cada subtarea (cada desarrollador)
 
-1. En Jira, pasar la subtarea a **In Progress**.
+1. En Jira, pasar la subtarea a **En curso** (o con un commit `GC02-NN #en-curso`).
 2. Ponerse en la rama de la historia y traer lo último:
 
    ```bash
@@ -83,17 +94,17 @@ El agente [`jira-smartcommit-generator`](../../.github/agents/jira-smartcommit-g
 
    ```bash
    git add .
-   git commit -m "GC02-NN #time 1h 15m #comment Lo que se ha hecho #done"
+   git commit -m "GC02-NN #time 1h 15m #comment Lo que se ha hecho #listo"
    git push
    ```
 
-5. Comprobar en Jira que la subtarea tiene el tiempo, el comentario y el estado *Done*, y en GitHub que la integración continua está en verde.
+5. Comprobar en Jira que la subtarea tiene el tiempo, el comentario y el estado *Finalizada*, y en GitHub que la integración continua está en verde.
 
 **Si una historia tiene subtareas de varias personas, se trabaja por turnos.** Cada uno hace `git pull` antes de empezar y avisa por Discord cuando ha subido lo suyo, para no pisarse.
 
 ## 6. Integrar una historia en `develop`
 
-Cuando todas las subtareas de la historia están en *Done*, uno de sus responsables:
+Cuando todas las subtareas de la historia están en *Finalizada*, uno de sus responsables:
 
 ```bash
 # 1. Traer develop a la rama de la historia y probar
@@ -107,11 +118,11 @@ git push
 # 2. Integrar la historia en develop
 git checkout develop
 git pull
-git merge --no-ff feature/GC02-XX-nombre-corto -m "GC02-XX #comment Requisito integrado en develop #done"
+git merge --no-ff feature/GC02-XX-nombre-corto -m "GC02-XX #comment Requisito integrado en develop #listo"
 git push
 ```
 
-- Aquí `GC02-XX` es la clave de la **historia**. El `#done` del segundo merge cierra la historia en Jira.
+- Aquí `GC02-XX` es la clave de la **historia**. El `#listo` del segundo merge cierra la historia en Jira.
 - **Si hay conflictos:** se resuelven en la rama de la historia, en el paso 1, nunca en `develop`.
 - **Con ramas protegidas (opcional, +1 punto):** el paso 2 se hace con una *pull request* de la rama a `develop`. La revisa otro miembro y se integra con **«Create a merge commit»**, con el mensaje anterior.
 
@@ -133,7 +144,7 @@ La integración continua construye `main` y se comprueba el despliegue de demost
 | Problema | Solución |
 |---|---|
 | El commit no aparece en Jira | El correo de `git config user.email` no es el de Jira, o la clave está mal escrita (`GC02-NN`, en mayúsculas). |
-| La subtarea no cambia de estado | Falta `#done`, o el estado final del flujo no se llama *Done*. Hay que usar el nombre de la transición. |
+| La subtarea no cambia de estado | Falta `#listo` o está mal escrito. Jira usa el nombre de la transición («Listo»), no el del estado. |
 | `git push` rechazado | Otra persona subió antes: `git pull`, resolver los conflictos si los hay y repetir `git push`. |
 | Me he equivocado en el mensaje y aún no he hecho push | `git commit --amend -m "mensaje correcto"`. Si ya está subido, no se reescribe: se registra el tiempo a mano en Jira. |
 | Commit en la rama equivocada sin push | `git reset --soft HEAD~1`, cambiar de rama y repetir el commit. |

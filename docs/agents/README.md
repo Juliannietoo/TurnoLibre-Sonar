@@ -50,7 +50,7 @@ Los ficheros de `.claude/agents/` solo adaptan las herramientas. Las instruccion
 
 No revisa documentos ni guarda informes: a partir de la clave de Jira, el tiempo y lo que se ha hecho devuelve el mensaje del commit, que cada uno copia en `git commit -m "…"` o en GitHub Desktop. Formato y reglas en [docs/git/README.md](../git/README.md#3-smart-commits).
 
-- **Claude Code:** `Usa el agente jira-smartcommit-generator: GC02-61, 1h 30m, he creado el proyecto Django con la app de cuentas, terminada.`
+- **Claude Code:** `Usa el agente jira-smartcommit-generator: GC02-178, 1h 30m, he creado el proyecto Django con la app core, terminada.`
 - **ChatGPT o Antigravity:** pegar o cargar `.github/agents/jira-smartcommit-generator.agent.md` como en los otros agentes y escribir la misma petición.
 
 Revisa siempre la clave y el tiempo antes de hacer el commit. Su uso no se registra en *Uso de agentes*, porque no hace propuestas que decida el equipo.
