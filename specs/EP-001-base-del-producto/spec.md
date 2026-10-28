@@ -22,8 +22,8 @@ Cualquier persona puede instalar el producto, entrar con una cuenta ficticia de 
 - **Objetivo:** G04
 - **Prioridad:** Must — *valor:* habilita todas las demás historias; *riesgo:* alto si se retrasa, porque bloquea el resto; *dependencias:* es la raíz del grafo.
 - **Estimación:** consenso del 06/10/2026: **5 h-p** (individuales: PO 6 · SM 5 · TL 5 · QA 5).
-- **Incertidumbre:** Media (tecnologías pendientes de confirmar)
-- **Predecesoras:** —; externa: confirmación de tecnologías autorizadas
+- **Incertidumbre:** Media (tecnologías fijadas el 28/10/2026, D-29)
+- **Predecesoras:** — (la dependencia externa de las tecnologías quedó resuelta con D-29)
 - **Plan inicial:** IT-001 · R1
 
 **Criterios de aceptación**
@@ -33,7 +33,7 @@ Cualquier persona puede instalar el producto, entrar con una cuenta ficticia de 
 
 **Verificación y restricciones**
 - NFR: NFR-008 (instalabilidad y reproducibilidad del entorno en < 10 min).
-- Restricción: uso de las tecnologías autorizadas para el proyecto.
+- Restricción: uso de las tecnologías del proyecto (D-29): Python 3.12 con Django 5, plantillas HTML y CSS, SQLite, pytest con pytest-django, Ruff y GitHub Actions.
 
 - **Reglas y límites:** Sin regla de negocio propia; se aplican los límites de la épica. Se aplican los límites comunes de la épica.
 

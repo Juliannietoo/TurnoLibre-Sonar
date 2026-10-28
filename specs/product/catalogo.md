@@ -156,7 +156,7 @@ Primera planificación humana a nivel de historia, con la primera iteración det
 - **Sin sobrecargas:** ninguna persona supera su capacidad efectiva en ninguna iteración, y no queda trabajo Must sin asignar.
 - **US-018 y US-023 (excepción explícita a «cabe en un sprint», D-24):** la parte de IT-005 es preparación. El TL diseña la transacción y la revalidación de US-018 (incertidumbre alta) dentro de sus 8 h-p, y QA redacta el guion de instalación de US-023. Las dos historias se cierran en IT-006. La dependencia US-023 → US-018 se aplica a la parte 2.
 - **Should, Could y Won't:** sin compromiso. US-011 entra solo si el equipo va adelantado; el margen de IT-005 se reserva para el riesgo de US-018.
-- **Pendientes externos:** las tecnologías autorizadas (TK-001 condicionada) y el evaluador externo de US-023.
+- **Pendientes externos:** el evaluador externo de US-023. Las tecnologías quedaron fijadas el 28/10/2026 (D-29) y TK-001 ya no está condicionada.
 
 ### Revisión D-21 · 07/10/2026 (sustituida por el plan del H3)
 
@@ -188,7 +188,7 @@ Registro histórico: los recortes de D-18 sustituyen las decisiones de alcance a
 
 ## 6. Pendientes para cerrar la planificación
 
-- **Tecnologías autorizadas por la asignatura** sin confirmar (dependencia externa de US-001; TK-001 condicionada). El TL lo pregunta en la sesión del 21/10/2026; riesgo RT-04.
+- ~~Tecnologías autorizadas por la asignatura~~: resuelto el 28/10/2026 (D-29): Python 3.12 con Django 5, plantillas HTML y CSS, SQLite, pytest con pytest-django, Ruff y GitHub Actions. RT-04 cerrado.
 - **Evaluador externo de US-023:** lo identifican PO y QA antes de planificar IT-005 (18/11/2026).
 
 El reparto de IT-002 e IT-006 quedó resuelto en el plan del H3 (apartado 4, D-24). **Decisión del TL (D-21):** US-009 y US-018 (8 h-p) no se dividen en nuevas historias; se descomponen en tareas al planificar cada iteración. US-018 y US-023 tienen una excepción explícita a «cabe en un sprint» (D-24).
@@ -203,3 +203,4 @@ El reparto de IT-002 e IT-006 quedó resuelto en el plan del H3 (apartado 4, D-2
 | requisitos-v1-revisado (plan H3) | 14/10/2026 | D-24; informe v01 del Planning Agent | Plan del H3 en el apartado 4 y en la columna Plan; nota de la dependencia US-023 → US-018 (parte 2). US-005-AC-03 se traslada a US-009 como US-009-AC-09 (IPR-v01-010) y US-009 añade US-005 como predecesora. Sin cambios de alcance, prioridad ni estimación. |
 | requisitos-v1-revisado (RECHECK del plan) | 14/10/2026 | D-25; informe v02 del Planning Agent | Pendientes del apartado 6 actualizados; arista US-005 → US-009 en el diagrama; cabeceras de las fichas a 14/10. El TL confirma que US-009-AC-09 cabe en las 8 h-p de US-009. |
 | requisitos-v1-revisado (auditoría H4) | 15/10/2026 | D-27 y D-28; informes v01 y v02 del agente auditor | US-023: el paso «aceptar» pasa a la parte 2 y las predecesoras se indican por partes (parte 1: US-001, US-002, US-003 y US-009; parte 2: US-010 y US-018). Sin cambios de alcance, prioridad ni estimación. |
+| requisitos-v1-revisado (tecnologías) | 28/10/2026 | D-29 | Tecnologías del proyecto fijadas (Python 3.12 con Django 5, plantillas HTML y CSS, SQLite, pytest con pytest-django, Ruff y GitHub Actions); se cierra la dependencia externa de US-001 y RT-04. Sin cambios de alcance, prioridad ni estimación. |

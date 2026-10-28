@@ -1,12 +1,13 @@
 # Agentes de IA de TurnoLibre
 
-Decisión D-20 (07/10/2026); el agente auditor del H4 se añade con D-26 (14/10/2026). El profesorado proporcionó dos plantillas para GitHub Copilot. El equipo no usa Copilot, así que las plantillas se han adaptado a TurnoLibre y se ejecutan con las herramientas de cada miembro. Las instrucciones son las mismas para todos; solo cambia cómo se cargan.
+Decisión D-20 (07/10/2026); el agente auditor del H4 se añade con D-26 (14/10/2026) y el generador de smart commits de la Práctica 3 con D-29 (28/10/2026). El profesorado proporcionó dos plantillas para GitHub Copilot. El equipo no usa Copilot, así que las plantillas se han adaptado a TurnoLibre y se ejecutan con las herramientas de cada miembro. Las instrucciones son las mismas para todos; solo cambia cómo se cargan.
 
 | ID | Agente | Instrucciones de referencia | Informes |
 |---|---|---|---|
 | AG-01 | Requirements Agent | [`.github/agents/requirements-reviewer.agent.md`](../../.github/agents/requirements-reviewer.agent.md) | `docs/reviews/requirements/requirements-report-vNN.md` |
 | AG-03 | Planning Agent | [`.github/agents/initial-planning-reviewer.agent.md`](../../.github/agents/initial-planning-reviewer.agent.md) | `docs/reviews/initial-planning/initial-planning-review-vNN.md` |
 | AG-02 | Agente auditor (H4, opcional) | [`.github/agents/project-auditor.agent.md`](../../.github/agents/project-auditor.agent.md) | `docs/reviews/audit/audit-report-vNN.md` |
+| AG-04 | Generador de smart commits (Práctica 3, D-29) | [`.github/agents/jira-smartcommit-generator.agent.md`](../../.github/agents/jira-smartcommit-generator.agent.md) | No guarda informe: devuelve el mensaje de commit |
 
 Los agentes **revisan y proponen**. No cambian requisitos, estimaciones, capacidad ni planes, y no aprueban nada. Cada propuesta se registra y la decide el equipo en la página *Uso de agentes* de la Wiki.
 
@@ -44,6 +45,15 @@ Los ficheros de `.claude/agents/` solo adaptan las herramientas. Las instruccion
 1. Abrir el repositorio actualizado en Antigravity.
 2. Escribir en el chat del agente: `Lee .github/agents/requirements-reviewer.agent.md y sigue sus instrucciones. Modo INITIAL. Commit revisado: <hash>.`
 3. No permitir la ejecución de comandos. Antes de aceptar los cambios, comprobar que solo se crea el informe en `docs/reviews/…`; cualquier otro cambio se rechaza.
+
+## Generador de smart commits (AG-04)
+
+No revisa documentos ni guarda informes: a partir de la clave de Jira, el tiempo y lo que se ha hecho devuelve el mensaje del commit, que cada uno copia en `git commit -m "…"` o en GitHub Desktop. Formato y reglas en [docs/git/README.md](../git/README.md#3-smart-commits).
+
+- **Claude Code:** `Usa el agente jira-smartcommit-generator: GC02-61, 1h 30m, he creado el proyecto Django con la app de cuentas, terminada.`
+- **ChatGPT o Antigravity:** pegar o cargar `.github/agents/jira-smartcommit-generator.agent.md` como en los otros agentes y escribir la misma petición.
+
+Revisa siempre la clave y el tiempo antes de hacer el commit. Su uso no se registra en *Uso de agentes*, porque no hace propuestas que decida el equipo.
 
 ## Después de cada ejecución
 

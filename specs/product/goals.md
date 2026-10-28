@@ -48,7 +48,7 @@ Precisiones de G01, G02 y M01–M05 propuestas el 24/09/2026 y validadas por el 
 - Prohibido usar datos personales, laborales o sanitarios reales.
 - Ejecución de **6 semanas** (del 21/10/2026 al 01/12/2026), en **3 releases de 2 semanas**, con sprints de **1 semana que comienzan en miércoles**.
 - Equipo de **4 personas** a 6 h/semana cada una; coste de personal de **1.996,88 €** (Σ horas asignadas × tarifa: 46 h de historias y 54 h de gestión, D-26) y precio al cliente de **3.737,53 € IVA incluido** (cálculo en `docs/organization/company.md`).
-- Uso de las tecnologías y convenciones aprobadas por la asignatura (se definirán más adelante).
+- Tecnologías del proyecto (D-29, 28/10/2026): Python 3.12 con Django 5, plantillas HTML y CSS, SQLite, pytest con pytest-django, Ruff y GitHub Actions. Ramas con GitFlow y commits con smart commits de Jira.
 
 ## Trazabilidad
 Misión → objetivos → épicas → historias → tareas → código y pruebas → evidencias.
