@@ -252,7 +252,8 @@ def markdown_report(result: dict) -> str:
             (
                 "Esta evidencia valida el JSON de diseño. TK-007 continúa pendiente de comprobar "
                 "que el comando de Django de TK-006 carga y restablece esos mismos datos "
-                "sin pérdidas ni duplicados. No acredita US-003-AC-03 ni completa la historia US-003."
+                "sin pérdidas ni duplicados. No acredita US-003-AC-03 ni completa la "
+                "historia US-003."
             ),
             "",
         ]
