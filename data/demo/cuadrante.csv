@@ -1,0 +1,17 @@
+empleado_id,nombre,categoria_id,servicio_id,2026-11-01,2026-11-02,2026-11-03,2026-11-04,2026-11-05,2026-11-06,2026-11-07,2026-11-08,2026-11-09,2026-11-10,2026-11-11,2026-11-12,2026-11-13,2026-11-14,2026-11-15,2026-11-16,2026-11-17,2026-11-18,2026-11-19,2026-11-20,2026-11-21,2026-11-22,2026-11-23,2026-11-24,2026-11-25,2026-11-26,2026-11-27,2026-11-28,2026-11-29,2026-11-30
+empleado01,Ana Vega,enfermeria,urgencias,M,L,M,L,M,L,M,L,M,L,M,L,M,L,M,L,M,L,M,L,M,L,M,L,M,L,M,L,M,L
+empleado02,Berta Prado,enfermeria,urgencias,M,L,M,L,M,L,M,L,M,L,M,L,M,L,M,L,M,L,M,L,M,L,M,L,M,L,M,L,M,L
+empleado03,Carla Lago,auxiliar,urgencias,M,L,M,L,M,L,M,L,M,L,M,L,M,L,M,L,M,L,M,L,M,L,M,L,M,L,M,L,M,L
+empleado04,Diego Alba,enfermeria,urgencias,L,M,L,M,L,M,L,M,L,M,L,M,L,M,L,M,L,M,L,M,L,M,L,M,L,M,L,M,L,M
+empleado05,Elena Rios,enfermeria,urgencias,L,M,L,M,L,M,L,M,L,M,L,M,L,M,L,M,L,M,L,M,L,M,L,M,L,M,L,M,L,M
+empleado06,Fabio Sol,auxiliar,urgencias,L,M,L,M,L,M,L,M,L,M,L,M,L,M,L,M,L,M,L,M,L,M,L,M,L,M,L,M,L,M
+empleado07,Gala Roble,enfermeria,urgencias,T,L,T,L,T,L,T,L,T,L,T,L,T,L,T,L,T,L,T,L,T,L,T,L,T,L,T,L,T,L
+empleado08,Hugo Sierra,enfermeria,urgencias,T,L,T,L,T,L,T,L,T,L,T,L,T,L,T,L,T,L,T,L,T,L,T,L,T,L,T,L,T,L
+empleado09,Ines Luna,auxiliar,urgencias,T,L,T,L,T,L,T,L,T,L,T,L,T,L,T,L,T,L,T,L,T,L,T,L,T,L,T,L,T,L
+empleado10,Jaime Valle,enfermeria,urgencias,L,T,L,T,L,T,L,T,L,T,L,T,L,T,L,T,L,T,L,T,L,T,L,T,L,T,L,T,L,T
+empleado11,Kira Mar,enfermeria,urgencias,L,T,L,T,L,T,L,T,L,T,L,T,L,T,L,T,L,T,L,T,L,T,L,T,L,T,L,T,L,T
+empleado12,Leo Pino,auxiliar,urgencias,L,T,L,T,L,T,L,T,L,T,L,T,L,T,L,T,L,T,L,T,L,T,L,T,L,T,L,T,L,T
+empleado13,Mara Nube,enfermeria,urgencias,N,L,N,L,N,L,N,L,N,L,N,L,N,L,N,L,N,L,N,L,N,L,N,L,N,L,N,L,N,L
+empleado14,Nico Campo,auxiliar,urgencias,N,L,N,L,N,L,N,L,N,L,N,L,N,L,N,L,N,L,N,L,N,L,N,L,N,L,N,L,N,L
+empleado15,Olga Monte,enfermeria,urgencias,L,N,L,N,L,N,L,N,L,N,L,N,L,N,L,N,L,N,L,N,L,N,L,N,L,N,L,N,L,N
+empleado16,Pablo Brisa,auxiliar,urgencias,L,N,L,N,L,N,L,N,L,N,L,N,L,N,L,N,L,N,L,N,L,N,L,N,L,N,L,N,L,N
