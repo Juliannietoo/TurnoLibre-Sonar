@@ -65,3 +65,17 @@ td {
   padding: 0.25rem 0.5rem;
   text-align: left;
 }
+
+.meses {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.oculto {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}

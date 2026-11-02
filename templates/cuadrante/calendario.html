@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block title %}Mi calendario{% endblock %}
+
+{% block content %}
+<h1>Mi calendario</h1>
+
+<nav aria-label="Cambiar de mes" class="meses">
+  <a href="?mes={{ anterior|date:'Y-m' }}">← Mes anterior<span class="oculto">: {{ anterior|date:'F Y' }}</span></a>
+  <a href="?mes={{ siguiente|date:'Y-m' }}">Mes siguiente<span class="oculto">: {{ siguiente|date:'F Y' }}</span> →</a>
+</nav>
+
+{% if turnos %}
+<table>
+  <caption>Turnos de {{ mes|date:'F \d\e Y' }}</caption>
+  <thead>
+    <tr>
+      <th scope="col">Fecha</th>
+      <th scope="col">Franja</th>
+      <th scope="col">Horario</th>
+      <th scope="col">Servicio</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for turno in turnos %}
+    <tr>
+      <td>{{ turno.fecha|date:'l j \d\e F' }}</td>
+      <td>{{ turno.get_franja_display }} ({{ turno.franja }})</td>
+      <td>{{ turno.inicio|time:'H:i' }}–{{ turno.fin|time:'H:i' }}{% if turno.franja == 'N' %} del día siguiente{% endif %}</td>
+      <td>{{ turno.empleado.servicio }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% elif empleado and empleado.es_responsable %}
+<p>Como responsable del servicio no tienes turnos asignados.</p>
+{% else %}
+<p>No tienes turnos en {{ mes|date:'F \d\e Y' }}.</p>
+{% endif %}
+{% endblock %}
