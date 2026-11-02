@@ -1,0 +1,33 @@
+{% load static %}<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}TurnoLibre{% endblock %} · TurnoLibre</title>
+  <link rel="stylesheet" href="{% static 'css/turnolibre.css' %}">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <header>
+    <p class="marca"><a href="{% url 'inicio' %}">TurnoLibre</a></p>
+    {% if user.is_authenticated %}
+    <nav aria-label="Principal">
+      <ul>
+        <li><a href="{% url 'inicio' %}">Inicio</a></li>
+        {% block navegacion %}{% endblock %}
+      </ul>
+    </nav>
+    <form method="post" action="{% url 'salir' %}">
+      {% csrf_token %}
+      <button type="submit">Cerrar sesión</button>
+    </form>
+    {% endif %}
+  </header>
+  <main id="contenido">
+    {% block content %}{% endblock %}
+  </main>
+  <footer>
+    <p>Hospital Comarcal Vega Alta · datos ficticios de demostración</p>
+  </footer>
+</body>
+</html>
