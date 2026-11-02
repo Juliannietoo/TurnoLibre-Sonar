@@ -1,0 +1,1344 @@
+{
+  "schema_version": 1,
+  "timezone": "Europe/Madrid",
+  "periodo": {
+    "inicio": "2026-11-02",
+    "fin": "2026-11-29"
+  },
+  "servicio": {
+    "id": "urgencias",
+    "nombre": "Urgencias"
+  },
+  "categorias": [
+    {
+      "id": "enfermeria",
+      "nombre": "Enfermería"
+    },
+    {
+      "id": "auxiliar",
+      "nombre": "Auxiliar de enfermería"
+    }
+  ],
+  "responsable": {
+    "id": "responsable01",
+    "nombre": "Rosa Horizonte",
+    "servicio_id": "urgencias"
+  },
+  "empleados": [
+    {
+      "id": "empleado01",
+      "nombre": "Ana Vega",
+      "servicio_id": "urgencias",
+      "categoria_id": "enfermeria"
+    },
+    {
+      "id": "empleado02",
+      "nombre": "Berta Prado",
+      "servicio_id": "urgencias",
+      "categoria_id": "enfermeria"
+    },
+    {
+      "id": "empleado03",
+      "nombre": "Carla Lago",
+      "servicio_id": "urgencias",
+      "categoria_id": "auxiliar"
+    },
+    {
+      "id": "empleado04",
+      "nombre": "Diego Alba",
+      "servicio_id": "urgencias",
+      "categoria_id": "enfermeria"
+    },
+    {
+      "id": "empleado05",
+      "nombre": "Elena Rios",
+      "servicio_id": "urgencias",
+      "categoria_id": "enfermeria"
+    },
+    {
+      "id": "empleado06",
+      "nombre": "Fabio Sol",
+      "servicio_id": "urgencias",
+      "categoria_id": "auxiliar"
+    },
+    {
+      "id": "empleado07",
+      "nombre": "Gala Roble",
+      "servicio_id": "urgencias",
+      "categoria_id": "enfermeria"
+    },
+    {
+      "id": "empleado08",
+      "nombre": "Hugo Sierra",
+      "servicio_id": "urgencias",
+      "categoria_id": "enfermeria"
+    },
+    {
+      "id": "empleado09",
+      "nombre": "Ines Luna",
+      "servicio_id": "urgencias",
+      "categoria_id": "auxiliar"
+    },
+    {
+      "id": "empleado10",
+      "nombre": "Jaime Valle",
+      "servicio_id": "urgencias",
+      "categoria_id": "enfermeria"
+    },
+    {
+      "id": "empleado11",
+      "nombre": "Kira Mar",
+      "servicio_id": "urgencias",
+      "categoria_id": "enfermeria"
+    },
+    {
+      "id": "empleado12",
+      "nombre": "Leo Pino",
+      "servicio_id": "urgencias",
+      "categoria_id": "auxiliar"
+    },
+    {
+      "id": "empleado13",
+      "nombre": "Mara Nube",
+      "servicio_id": "urgencias",
+      "categoria_id": "enfermeria"
+    },
+    {
+      "id": "empleado14",
+      "nombre": "Nico Campo",
+      "servicio_id": "urgencias",
+      "categoria_id": "auxiliar"
+    },
+    {
+      "id": "empleado15",
+      "nombre": "Olga Monte",
+      "servicio_id": "urgencias",
+      "categoria_id": "enfermeria"
+    },
+    {
+      "id": "empleado16",
+      "nombre": "Pablo Brisa",
+      "servicio_id": "urgencias",
+      "categoria_id": "auxiliar"
+    }
+  ],
+  "turnos": {
+    "M": {
+      "inicio": "08:00",
+      "fin": "15:00",
+      "horas": 7
+    },
+    "T": {
+      "inicio": "15:00",
+      "fin": "22:00",
+      "horas": 7
+    },
+    "N": {
+      "inicio": "22:00",
+      "fin": "08:00",
+      "horas": 10
+    }
+  },
+  "asignaciones": [
+    {
+      "empleado_id": "empleado01",
+      "fecha": "2026-11-01",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado02",
+      "fecha": "2026-11-01",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado03",
+      "fecha": "2026-11-01",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado07",
+      "fecha": "2026-11-01",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado08",
+      "fecha": "2026-11-01",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado09",
+      "fecha": "2026-11-01",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado13",
+      "fecha": "2026-11-01",
+      "turno": "N"
+    },
+    {
+      "empleado_id": "empleado14",
+      "fecha": "2026-11-01",
+      "turno": "N"
+    },
+    {
+      "empleado_id": "empleado04",
+      "fecha": "2026-11-02",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado05",
+      "fecha": "2026-11-02",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado06",
+      "fecha": "2026-11-02",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado10",
+      "fecha": "2026-11-02",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado11",
+      "fecha": "2026-11-02",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado12",
+      "fecha": "2026-11-02",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado15",
+      "fecha": "2026-11-02",
+      "turno": "N"
+    },
+    {
+      "empleado_id": "empleado16",
+      "fecha": "2026-11-02",
+      "turno": "N"
+    },
+    {
+      "empleado_id": "empleado01",
+      "fecha": "2026-11-03",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado02",
+      "fecha": "2026-11-03",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado03",
+      "fecha": "2026-11-03",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado07",
+      "fecha": "2026-11-03",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado08",
+      "fecha": "2026-11-03",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado09",
+      "fecha": "2026-11-03",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado13",
+      "fecha": "2026-11-03",
+      "turno": "N"
+    },
+    {
+      "empleado_id": "empleado14",
+      "fecha": "2026-11-03",
+      "turno": "N"
+    },
+    {
+      "empleado_id": "empleado04",
+      "fecha": "2026-11-04",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado05",
+      "fecha": "2026-11-04",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado06",
+      "fecha": "2026-11-04",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado10",
+      "fecha": "2026-11-04",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado11",
+      "fecha": "2026-11-04",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado12",
+      "fecha": "2026-11-04",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado15",
+      "fecha": "2026-11-04",
+      "turno": "N"
+    },
+    {
+      "empleado_id": "empleado16",
+      "fecha": "2026-11-04",
+      "turno": "N"
+    },
+    {
+      "empleado_id": "empleado01",
+      "fecha": "2026-11-05",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado02",
+      "fecha": "2026-11-05",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado03",
+      "fecha": "2026-11-05",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado07",
+      "fecha": "2026-11-05",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado08",
+      "fecha": "2026-11-05",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado09",
+      "fecha": "2026-11-05",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado13",
+      "fecha": "2026-11-05",
+      "turno": "N"
+    },
+    {
+      "empleado_id": "empleado14",
+      "fecha": "2026-11-05",
+      "turno": "N"
+    },
+    {
+      "empleado_id": "empleado04",
+      "fecha": "2026-11-06",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado05",
+      "fecha": "2026-11-06",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado06",
+      "fecha": "2026-11-06",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado10",
+      "fecha": "2026-11-06",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado11",
+      "fecha": "2026-11-06",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado12",
+      "fecha": "2026-11-06",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado15",
+      "fecha": "2026-11-06",
+      "turno": "N"
+    },
+    {
+      "empleado_id": "empleado16",
+      "fecha": "2026-11-06",
+      "turno": "N"
+    },
+    {
+      "empleado_id": "empleado01",
+      "fecha": "2026-11-07",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado02",
+      "fecha": "2026-11-07",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado03",
+      "fecha": "2026-11-07",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado07",
+      "fecha": "2026-11-07",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado08",
+      "fecha": "2026-11-07",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado09",
+      "fecha": "2026-11-07",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado13",
+      "fecha": "2026-11-07",
+      "turno": "N"
+    },
+    {
+      "empleado_id": "empleado14",
+      "fecha": "2026-11-07",
+      "turno": "N"
+    },
+    {
+      "empleado_id": "empleado04",
+      "fecha": "2026-11-08",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado05",
+      "fecha": "2026-11-08",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado06",
+      "fecha": "2026-11-08",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado10",
+      "fecha": "2026-11-08",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado11",
+      "fecha": "2026-11-08",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado12",
+      "fecha": "2026-11-08",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado15",
+      "fecha": "2026-11-08",
+      "turno": "N"
+    },
+    {
+      "empleado_id": "empleado16",
+      "fecha": "2026-11-08",
+      "turno": "N"
+    },
+    {
+      "empleado_id": "empleado01",
+      "fecha": "2026-11-09",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado02",
+      "fecha": "2026-11-09",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado03",
+      "fecha": "2026-11-09",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado07",
+      "fecha": "2026-11-09",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado08",
+      "fecha": "2026-11-09",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado09",
+      "fecha": "2026-11-09",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado13",
+      "fecha": "2026-11-09",
+      "turno": "N"
+    },
+    {
+      "empleado_id": "empleado14",
+      "fecha": "2026-11-09",
+      "turno": "N"
+    },
+    {
+      "empleado_id": "empleado04",
+      "fecha": "2026-11-10",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado05",
+      "fecha": "2026-11-10",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado06",
+      "fecha": "2026-11-10",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado10",
+      "fecha": "2026-11-10",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado11",
+      "fecha": "2026-11-10",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado12",
+      "fecha": "2026-11-10",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado15",
+      "fecha": "2026-11-10",
+      "turno": "N"
+    },
+    {
+      "empleado_id": "empleado16",
+      "fecha": "2026-11-10",
+      "turno": "N"
+    },
+    {
+      "empleado_id": "empleado01",
+      "fecha": "2026-11-11",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado02",
+      "fecha": "2026-11-11",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado03",
+      "fecha": "2026-11-11",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado07",
+      "fecha": "2026-11-11",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado08",
+      "fecha": "2026-11-11",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado09",
+      "fecha": "2026-11-11",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado13",
+      "fecha": "2026-11-11",
+      "turno": "N"
+    },
+    {
+      "empleado_id": "empleado14",
+      "fecha": "2026-11-11",
+      "turno": "N"
+    },
+    {
+      "empleado_id": "empleado04",
+      "fecha": "2026-11-12",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado05",
+      "fecha": "2026-11-12",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado06",
+      "fecha": "2026-11-12",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado10",
+      "fecha": "2026-11-12",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado11",
+      "fecha": "2026-11-12",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado12",
+      "fecha": "2026-11-12",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado15",
+      "fecha": "2026-11-12",
+      "turno": "N"
+    },
+    {
+      "empleado_id": "empleado16",
+      "fecha": "2026-11-12",
+      "turno": "N"
+    },
+    {
+      "empleado_id": "empleado01",
+      "fecha": "2026-11-13",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado02",
+      "fecha": "2026-11-13",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado03",
+      "fecha": "2026-11-13",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado07",
+      "fecha": "2026-11-13",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado08",
+      "fecha": "2026-11-13",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado09",
+      "fecha": "2026-11-13",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado13",
+      "fecha": "2026-11-13",
+      "turno": "N"
+    },
+    {
+      "empleado_id": "empleado14",
+      "fecha": "2026-11-13",
+      "turno": "N"
+    },
+    {
+      "empleado_id": "empleado04",
+      "fecha": "2026-11-14",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado05",
+      "fecha": "2026-11-14",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado06",
+      "fecha": "2026-11-14",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado10",
+      "fecha": "2026-11-14",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado11",
+      "fecha": "2026-11-14",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado12",
+      "fecha": "2026-11-14",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado15",
+      "fecha": "2026-11-14",
+      "turno": "N"
+    },
+    {
+      "empleado_id": "empleado16",
+      "fecha": "2026-11-14",
+      "turno": "N"
+    },
+    {
+      "empleado_id": "empleado01",
+      "fecha": "2026-11-15",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado02",
+      "fecha": "2026-11-15",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado03",
+      "fecha": "2026-11-15",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado07",
+      "fecha": "2026-11-15",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado08",
+      "fecha": "2026-11-15",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado09",
+      "fecha": "2026-11-15",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado13",
+      "fecha": "2026-11-15",
+      "turno": "N"
+    },
+    {
+      "empleado_id": "empleado14",
+      "fecha": "2026-11-15",
+      "turno": "N"
+    },
+    {
+      "empleado_id": "empleado04",
+      "fecha": "2026-11-16",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado05",
+      "fecha": "2026-11-16",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado06",
+      "fecha": "2026-11-16",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado10",
+      "fecha": "2026-11-16",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado11",
+      "fecha": "2026-11-16",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado12",
+      "fecha": "2026-11-16",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado15",
+      "fecha": "2026-11-16",
+      "turno": "N"
+    },
+    {
+      "empleado_id": "empleado16",
+      "fecha": "2026-11-16",
+      "turno": "N"
+    },
+    {
+      "empleado_id": "empleado01",
+      "fecha": "2026-11-17",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado02",
+      "fecha": "2026-11-17",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado03",
+      "fecha": "2026-11-17",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado07",
+      "fecha": "2026-11-17",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado08",
+      "fecha": "2026-11-17",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado09",
+      "fecha": "2026-11-17",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado13",
+      "fecha": "2026-11-17",
+      "turno": "N"
+    },
+    {
+      "empleado_id": "empleado14",
+      "fecha": "2026-11-17",
+      "turno": "N"
+    },
+    {
+      "empleado_id": "empleado04",
+      "fecha": "2026-11-18",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado05",
+      "fecha": "2026-11-18",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado06",
+      "fecha": "2026-11-18",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado10",
+      "fecha": "2026-11-18",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado11",
+      "fecha": "2026-11-18",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado12",
+      "fecha": "2026-11-18",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado15",
+      "fecha": "2026-11-18",
+      "turno": "N"
+    },
+    {
+      "empleado_id": "empleado16",
+      "fecha": "2026-11-18",
+      "turno": "N"
+    },
+    {
+      "empleado_id": "empleado01",
+      "fecha": "2026-11-19",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado02",
+      "fecha": "2026-11-19",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado03",
+      "fecha": "2026-11-19",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado07",
+      "fecha": "2026-11-19",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado08",
+      "fecha": "2026-11-19",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado09",
+      "fecha": "2026-11-19",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado13",
+      "fecha": "2026-11-19",
+      "turno": "N"
+    },
+    {
+      "empleado_id": "empleado14",
+      "fecha": "2026-11-19",
+      "turno": "N"
+    },
+    {
+      "empleado_id": "empleado04",
+      "fecha": "2026-11-20",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado05",
+      "fecha": "2026-11-20",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado06",
+      "fecha": "2026-11-20",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado10",
+      "fecha": "2026-11-20",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado11",
+      "fecha": "2026-11-20",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado12",
+      "fecha": "2026-11-20",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado15",
+      "fecha": "2026-11-20",
+      "turno": "N"
+    },
+    {
+      "empleado_id": "empleado16",
+      "fecha": "2026-11-20",
+      "turno": "N"
+    },
+    {
+      "empleado_id": "empleado01",
+      "fecha": "2026-11-21",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado02",
+      "fecha": "2026-11-21",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado03",
+      "fecha": "2026-11-21",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado07",
+      "fecha": "2026-11-21",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado08",
+      "fecha": "2026-11-21",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado09",
+      "fecha": "2026-11-21",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado13",
+      "fecha": "2026-11-21",
+      "turno": "N"
+    },
+    {
+      "empleado_id": "empleado14",
+      "fecha": "2026-11-21",
+      "turno": "N"
+    },
+    {
+      "empleado_id": "empleado04",
+      "fecha": "2026-11-22",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado05",
+      "fecha": "2026-11-22",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado06",
+      "fecha": "2026-11-22",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado10",
+      "fecha": "2026-11-22",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado11",
+      "fecha": "2026-11-22",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado12",
+      "fecha": "2026-11-22",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado15",
+      "fecha": "2026-11-22",
+      "turno": "N"
+    },
+    {
+      "empleado_id": "empleado16",
+      "fecha": "2026-11-22",
+      "turno": "N"
+    },
+    {
+      "empleado_id": "empleado01",
+      "fecha": "2026-11-23",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado02",
+      "fecha": "2026-11-23",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado03",
+      "fecha": "2026-11-23",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado07",
+      "fecha": "2026-11-23",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado08",
+      "fecha": "2026-11-23",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado09",
+      "fecha": "2026-11-23",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado13",
+      "fecha": "2026-11-23",
+      "turno": "N"
+    },
+    {
+      "empleado_id": "empleado14",
+      "fecha": "2026-11-23",
+      "turno": "N"
+    },
+    {
+      "empleado_id": "empleado04",
+      "fecha": "2026-11-24",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado05",
+      "fecha": "2026-11-24",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado06",
+      "fecha": "2026-11-24",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado10",
+      "fecha": "2026-11-24",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado11",
+      "fecha": "2026-11-24",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado12",
+      "fecha": "2026-11-24",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado15",
+      "fecha": "2026-11-24",
+      "turno": "N"
+    },
+    {
+      "empleado_id": "empleado16",
+      "fecha": "2026-11-24",
+      "turno": "N"
+    },
+    {
+      "empleado_id": "empleado01",
+      "fecha": "2026-11-25",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado02",
+      "fecha": "2026-11-25",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado03",
+      "fecha": "2026-11-25",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado07",
+      "fecha": "2026-11-25",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado08",
+      "fecha": "2026-11-25",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado09",
+      "fecha": "2026-11-25",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado13",
+      "fecha": "2026-11-25",
+      "turno": "N"
+    },
+    {
+      "empleado_id": "empleado14",
+      "fecha": "2026-11-25",
+      "turno": "N"
+    },
+    {
+      "empleado_id": "empleado04",
+      "fecha": "2026-11-26",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado05",
+      "fecha": "2026-11-26",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado06",
+      "fecha": "2026-11-26",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado10",
+      "fecha": "2026-11-26",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado11",
+      "fecha": "2026-11-26",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado12",
+      "fecha": "2026-11-26",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado15",
+      "fecha": "2026-11-26",
+      "turno": "N"
+    },
+    {
+      "empleado_id": "empleado16",
+      "fecha": "2026-11-26",
+      "turno": "N"
+    },
+    {
+      "empleado_id": "empleado01",
+      "fecha": "2026-11-27",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado02",
+      "fecha": "2026-11-27",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado03",
+      "fecha": "2026-11-27",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado07",
+      "fecha": "2026-11-27",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado08",
+      "fecha": "2026-11-27",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado09",
+      "fecha": "2026-11-27",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado13",
+      "fecha": "2026-11-27",
+      "turno": "N"
+    },
+    {
+      "empleado_id": "empleado14",
+      "fecha": "2026-11-27",
+      "turno": "N"
+    },
+    {
+      "empleado_id": "empleado04",
+      "fecha": "2026-11-28",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado05",
+      "fecha": "2026-11-28",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado06",
+      "fecha": "2026-11-28",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado10",
+      "fecha": "2026-11-28",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado11",
+      "fecha": "2026-11-28",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado12",
+      "fecha": "2026-11-28",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado15",
+      "fecha": "2026-11-28",
+      "turno": "N"
+    },
+    {
+      "empleado_id": "empleado16",
+      "fecha": "2026-11-28",
+      "turno": "N"
+    },
+    {
+      "empleado_id": "empleado01",
+      "fecha": "2026-11-29",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado02",
+      "fecha": "2026-11-29",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado03",
+      "fecha": "2026-11-29",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado07",
+      "fecha": "2026-11-29",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado08",
+      "fecha": "2026-11-29",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado09",
+      "fecha": "2026-11-29",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado13",
+      "fecha": "2026-11-29",
+      "turno": "N"
+    },
+    {
+      "empleado_id": "empleado14",
+      "fecha": "2026-11-29",
+      "turno": "N"
+    },
+    {
+      "empleado_id": "empleado04",
+      "fecha": "2026-11-30",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado05",
+      "fecha": "2026-11-30",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado06",
+      "fecha": "2026-11-30",
+      "turno": "M"
+    },
+    {
+      "empleado_id": "empleado10",
+      "fecha": "2026-11-30",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado11",
+      "fecha": "2026-11-30",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado12",
+      "fecha": "2026-11-30",
+      "turno": "T"
+    },
+    {
+      "empleado_id": "empleado15",
+      "fecha": "2026-11-30",
+      "turno": "N"
+    },
+    {
+      "empleado_id": "empleado16",
+      "fecha": "2026-11-30",
+      "turno": "N"
+    }
+  ]
+}

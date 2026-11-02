@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}Inicio{% endblock %}
+
+{% block navegacion %}
+{% if responsable %}<li><a href="{% url 'panel_responsable' %}">Panel del responsable</a></li>{% endif %}
+{% endblock %}
+
+{% block content %}
+<h1>Hola, {{ empleado.nombre|default:user.username }}</h1>
+{% if responsable %}
+<p>Has entrado como <strong>responsable</strong> del servicio de {{ empleado.servicio }}.</p>
+{% elif empleado %}
+<p>Has entrado como <strong>empleado</strong>: {{ empleado.categoria }}, servicio de {{ empleado.servicio }}.</p>
+{% else %}
+<p>Tu cuenta no está asociada a ningún empleado del cuadrante.</p>
+{% endif %}
+{% endblock %}
