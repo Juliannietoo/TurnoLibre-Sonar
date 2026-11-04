@@ -1,9 +1,10 @@
-from datetime import date
+from datetime import date, datetime, time
 
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render
 from django.utils import timezone
 
+from .compatibles import ConsultaNoDisponible, turnos_compatibles
 from .models import Turno
 
 
@@ -43,5 +44,38 @@ def calendario(request):
             "anterior": desplazar(primero, -1),
             "siguiente": siguiente,
             "turnos": turnos,
+        },
+    )
+
+
+def comienzo(dia):
+    return datetime.combine(dia, time.min, timezone.get_current_timezone())
+
+
+@login_required
+def compatibles(request):
+    """Turnos futuros de compañeros de la misma categoría y servicio (US-006, RN-03)."""
+    primero = mes_pedido(request.GET.get("mes"))
+    siguiente = desplazar(primero, 1)
+    empleado = getattr(request.user, "empleado", None)
+    turnos, error = [], None
+    sin_perfil = empleado is None or empleado.es_responsable or empleado.categoria_id is None
+    if not sin_perfil:
+        desde = max(comienzo(primero), timezone.now())
+        try:
+            turnos = turnos_compatibles(empleado, desde, comienzo(siguiente))
+        except ConsultaNoDisponible as fallo:
+            error = str(fallo)
+    return render(
+        request,
+        "cuadrante/compatibles.html",
+        {
+            "empleado": empleado,
+            "sin_perfil": sin_perfil,
+            "mes": primero,
+            "anterior": desplazar(primero, -1),
+            "siguiente": siguiente,
+            "turnos": turnos,
+            "error": error,
         },
     )
