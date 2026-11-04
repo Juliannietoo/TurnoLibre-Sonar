@@ -12,6 +12,8 @@ Cómo trabajamos con el repositorio a partir de IT-002 (D-29). Tecnologías en [
 
 Nunca se programa directamente en `main` ni en `develop`. Todas las integraciones son **merge sin fast-forward** (`--no-ff`). No se usa *squash* ni *rebase*.
 
+`main` y `develop` están protegidas en GitHub (*Settings → Rules → Rulesets*, regla «Proteger main y develop», D-31): no se pueden borrar ni recibir *force push*. Las fusiones y los push normales desde GitHub Desktop siguen funcionando.
+
 ## 2. Preparación (una vez por persona)
 
 ```bash
