@@ -1,9 +1,21 @@
+# Entorno virtual
 .venv/
 
+# Python
 __pycache__/
 *.py[cod]
 
+# Cachés de herramientas
 .pytest_cache/
 .ruff_cache/
+.coverage
+htmlcov/
 
+# Base de datos local de la demostración (se crea con migrate y cargar_demo)
 db.sqlite3
+
+# Editores y sistema
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
