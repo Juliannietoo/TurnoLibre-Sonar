@@ -54,7 +54,7 @@
   <dt>Acción</dt>
   <dd>{{ ultima_accion }}</dd>
   <dt>Quién</dt>
-  <dd>{{ solicitud.autor_ultima_accion.nombre }}</dd>
+  <dd>{% if por_el_sistema %}TurnoLibre, automáticamente{% else %}{{ solicitud.autor_ultima_accion.nombre }}{% endif %}</dd>
   <dt>Cuándo</dt>
   <dd>{{ solicitud.fecha_ultima_accion|date:'j \d\e F \d\e Y, H:i' }}</dd>
   {% if solicitud.motivo_ultima_accion %}

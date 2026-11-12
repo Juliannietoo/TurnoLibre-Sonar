@@ -10,6 +10,7 @@ from cuadrante.models import Turno
 from cuentas.roles import es_responsable, solo_empleado
 from reglas.compatibilidad import validar_rn03
 
+from .caducidad import caducar_vencidas
 from .models import ReservaTurno, SolicitudIntercambio
 from .propuestas import (
     IncompatibilidadRN03Error,
@@ -54,6 +55,7 @@ def proponer(request, turno_id):
     empleado = getattr(request.user, "empleado", None)
     if empleado is None or empleado.categoria_id is None:
         raise PermissionDenied
+    caducar_vencidas()  # libera los turnos de solicitudes vencidas antes de comprobarlos (AC-08)
     turno = get_object_or_404(
         Turno.objects.select_related("empleado__categoria"),
         pk=turno_id,
@@ -127,7 +129,8 @@ def siguiente_accion(solicitud, empleado):
 
 @login_required
 def detalle(request, pk):
-    """Detalle de la solicitud, también cuando ha terminado (US-009-AC-02 y AC-07)."""
+    """Detalle de la solicitud, también cuando ha terminado (US-009-AC-02, AC-07 y AC-08)."""
+    caducar_vencidas()
     solicitud = get_object_or_404(
         SolicitudIntercambio.objects.select_related(
             "turno_ofrecido",
@@ -150,5 +153,7 @@ def detalle(request, pk):
             "ultima_accion": ACCIONES.get(
                 solicitud.ultima_accion, solicitud.ultima_accion.capitalize()
             ),
+            # La caducidad la aplica el sistema, no la persona guardada como autora.
+            "por_el_sistema": solicitud.estado == SolicitudIntercambio.Estado.CADUCADA,
         },
     )

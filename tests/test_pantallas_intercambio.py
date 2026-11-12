@@ -265,6 +265,33 @@ def test_ac09_sin_marca_cuando_la_solicitud_termina(client, solicitud):
     assert "Solicitud pendiente" not in contenido
 
 
+# --- Caducidad al abrir las pantallas (AC-08) ---
+
+
+def despues_del_primer_turno(solicitud):
+    primero = min(solicitud.turno_ofrecido.inicio, solicitud.turno_solicitado.inicio)
+    return mock.patch("django.utils.timezone.now", return_value=primero)
+
+
+def test_ac08_el_detalle_muestra_caducada_al_empezar_el_primer_turno(client, solicitud):
+    entrar(client, "empleado01")
+    with despues_del_primer_turno(solicitud):
+        contenido = client.get(reverse("detalle_solicitud", args=[solicitud.pk])).content.decode()
+    assert "Caducada" in contenido
+    assert "Ninguna: la solicitud ha terminado." in contenido
+    assert "TurnoLibre, automáticamente" in contenido
+    assert not ReservaTurno.objects.exists()
+
+
+def test_ac08_el_calendario_deja_de_marcar_una_solicitud_caducada(client, solicitud):
+    entrar(client, "empleado02")
+    with despues_del_primer_turno(solicitud):
+        contenido = client.get(reverse("calendario"), NOVIEMBRE).content.decode()
+    assert "Solicitud pendiente" not in contenido
+    solicitud.refresh_from_db()
+    assert solicitud.estado == SolicitudIntercambio.Estado.CADUCADA
+
+
 # --- Teclado (NFR-004) ---
 
 

@@ -4,6 +4,7 @@ from django.contrib.auth.decorators import login_required
 from django.shortcuts import render
 from django.utils import timezone
 
+from intercambios.caducidad import caducar_vencidas
 from intercambios.models import ReservaTurno, SolicitudIntercambio
 
 from .compatibles import ConsultaNoDisponible, turnos_compatibles
@@ -25,7 +26,11 @@ def desplazar(primero, meses):
 
 
 def marcar_solicitudes_pendientes(turnos):
-    """Añade a cada turno la solicitud activa en la que está reservado, si la hay (US-009-AC-09)."""
+    """Añade a cada turno la solicitud activa en la que está reservado, si la hay (US-009-AC-09).
+
+    Antes se caducan las vencidas, para no marcar turnos de solicitudes ya caducadas (AC-08).
+    """
+    caducar_vencidas()
     activas = (SolicitudIntercambio.Estado.PROPUESTA, SolicitudIntercambio.Estado.ACEPTADA)
     reservas = dict(
         ReservaTurno.objects.filter(
