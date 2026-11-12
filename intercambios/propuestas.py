@@ -1,11 +1,14 @@
 """Creación de propuestas de intercambio (US-009)."""
 
+import time
+
 from django.db import IntegrityError, OperationalError, transaction
 from django.utils import timezone
 
 from cuadrante.models import Empleado, Turno
 from reglas.compatibilidad import validar_rn03
 
+from .caducidad import caducar_vencidas
 from .models import ReservaTurno, SolicitudIntercambio
 
 
@@ -110,8 +113,9 @@ def proponer_intercambio(
             Si persiste un conflicto de base de datos.
     """
     _validar_propuesta(empleado, turno_propio, turno_companero)
+    caducar_vencidas()
 
-    for intento in range(2):
+    for intento in range(5):
         try:
             return _crear_propuesta(
                 empleado,
@@ -136,11 +140,12 @@ def proponer_intercambio(
             except OperationalError:
                 pass
 
-            if intento == 1:
+            if intento == 4:
                 raise ConflictoConcurrenciaError(
                     "No se ha podido completar la propuesta "
                     "por un conflicto concurrente."
                 ) from error
+            time.sleep(0.02)
 
     raise ConflictoConcurrenciaError(
         "No se ha podido completar la propuesta."
