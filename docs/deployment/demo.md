@@ -50,6 +50,55 @@ Las reglas RN-01, RN-03 y RN-06 (US-012 y US-014) se validan en el servidor y se
 
 Para volver a los datos de partida en cualquier momento: `python manage.py cargar_demo`.
 
+## Revisión de US-009 en IT-4 (rama de trabajo)
+
+Esta sección corresponde a `feature/GC02-46-proponer-intercambio`. La entrega del
+13/11 conserva IT-1 a IT-3 en `main`; no hay que fusionar IT-4 para hacer esta revisión.
+Hacer `git fetch`, cambiar a la rama y `git pull --ff-only` antes de comenzar.
+Usar una base de datos de prueba separada si se van a preparar estados terminales
+o cambiar los instantes de los turnos. Ejecutar `migrate` y `cargar_demo` en esa base.
+
+1. Entrar con `empleado01`, abrir «Turnos compatibles» y elegir «Proponer intercambio»
+   sobre un turno futuro de la misma categoría y servicio. Elegir un turno propio y confirmar.
+2. Comprobar el detalle en Propuesta y la marca «Solicitud pendiente» en «Mi calendario».
+3. Entrar con la cuenta de la persona destinataria: su calendario debe enlazar al mismo
+   detalle y explicar que le toca responder. US-010 todavía no incorpora los botones de respuesta.
+4. `responsable01` puede consultar el detalle del servicio; otro empleado recibe 403.
+   Sin sesión se solicita iniciar sesión. La responsable no puede crear propuestas.
+5. Comprobar los rechazos por turno propio, categoría distinta y turno ya reservado,
+   y repetir el recorrido con Tab, flechas y Enter.
+
+Los datos y casos reproducibles están en [los casos de US-009](../reviews/casos/US-009.md)
+y los resultados en [la revisión del PO](../reviews/aceptacion/US-009.md).
+Los turnos de noviembre dejan de ser seleccionables cuando empiezan; elegir siempre
+dos turnos futuros respecto de la hora del servidor.
+
+### Ejecutor de caducidad sin visitas a la aplicación
+
+`python manage.py caducar_solicitudes` procesa las solicitudes vencidas **una sola vez**.
+`runserver` no programa ese comando. Para la demostración de AC-08 hay que mantener
+un ejecutor independiente activo, además del servidor web. En una segunda terminal
+PowerShell, en la raíz del repositorio y con la misma configuración de base de datos:
+
+```powershell
+while ($true) {
+    .\.venv\Scripts\python.exe manage.py caducar_solicitudes
+    if ($LASTEXITCODE -ne 0) { throw "Ha fallado el proceso de caducidad" }
+    Start-Sleep -Seconds 1
+}
+```
+
+Si se utiliza un módulo de ajustes para una base aislada, pasar también
+`--settings=<modulo_de_ajustes>` en cada invocación. Detener el ejecutor con Ctrl+C
+al acabar la revisión. En un despliegue persistente debe gestionarlo el planificador
+del entorno; este bucle es el procedimiento local de demostración.
+
+Para verificarlo, mantener cerradas las pantallas durante el primer inicio de una
+solicitud de prueba y comprobar la base antes de volver al navegador: estado Caducada
+y cero reservas de esa solicitud. Después, el detalle conserva ambos turnos, el motivo
+y la acción del sistema, y el calendario deja de marcarla como pendiente. El ejecutor
+es periódico; la operación y las vistas comprueban además el límite con la hora del servidor.
+
 ## Comprobación
 
 ```bash
