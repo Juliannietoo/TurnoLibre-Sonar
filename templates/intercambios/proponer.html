@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block title %}Proponer intercambio{% endblock %}
+
+{% block content %}
+<h1>Proponer intercambio</h1>
+
+<h2>Turno que pides</h2>
+<p>
+  {{ turno.empleado.nombre }}:
+  {{ turno.fecha|date:'l j \d\e F' }}, {{ turno.get_franja_display }} ({{ turno.franja }}),
+  {{ turno.inicio|time:'H:i' }}–{{ turno.fin|time:'H:i' }}{% if turno.franja == 'N' %} del día siguiente{% endif %}.
+</p>
+
+{% if errores %}
+<div class="error" role="alert">
+  <p>No se ha podido registrar la propuesta:</p>
+  <ul>
+    {% for error in errores %}<li>{{ error }}</li>{% endfor %}
+  </ul>
+</div>
+{% endif %}
+
+{% if puede_proponer %}
+{% if mis_turnos %}
+<form method="post">
+  {% csrf_token %}
+  <fieldset>
+    <legend>Elige el turno que ofreces a cambio</legend>
+    {% for propio in mis_turnos %}
+    <p>
+      <input type="radio" name="turno_propio" id="turno-{{ propio.pk }}" value="{{ propio.pk }}"{% if elegido.pk == propio.pk or not elegido and forloop.first %} checked{% endif %}>
+      <label for="turno-{{ propio.pk }}">{{ propio.fecha|date:'l j \d\e F' }}, {{ propio.get_franja_display }} ({{ propio.franja }}), {{ propio.inicio|time:'H:i' }}–{{ propio.fin|time:'H:i' }}{% if propio.franja == 'N' %} del día siguiente{% endif %}</label>
+    </p>
+    {% endfor %}
+  </fieldset>
+  <p>Al confirmar, los dos turnos quedan reservados hasta que la solicitud termine.</p>
+  <button type="submit">Confirmar propuesta</button>
+</form>
+{% else %}
+<p>No tienes turnos futuros libres que ofrecer a cambio.</p>
+{% endif %}
+{% endif %}
+
+<p><a href="{% url 'compatibles' %}">Volver a turnos compatibles</a></p>
+{% endblock %}

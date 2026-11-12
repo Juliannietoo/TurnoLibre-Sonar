@@ -19,6 +19,7 @@
       <th scope="col">Franja</th>
       <th scope="col">Horario</th>
       <th scope="col">Servicio</th>
+      <th scope="col">Intercambio</th>
     </tr>
   </thead>
   <tbody>
@@ -28,6 +29,7 @@
       <td>{{ turno.get_franja_display }} ({{ turno.franja }})</td>
       <td>{{ turno.inicio|time:'H:i' }}–{{ turno.fin|time:'H:i' }}{% if turno.franja == 'N' %} del día siguiente{% endif %}</td>
       <td>{{ turno.empleado.servicio }}</td>
+      <td>{% if turno.solicitud_pendiente %}<a href="{% url 'detalle_solicitud' turno.solicitud_pendiente %}">Solicitud pendiente<span class="oculto"> del {{ turno.fecha|date:'j \d\e F' }}</span></a>{% else %}—{% endif %}</td>
     </tr>
     {% endfor %}
   </tbody>

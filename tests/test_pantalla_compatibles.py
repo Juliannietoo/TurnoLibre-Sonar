@@ -47,7 +47,8 @@ def test_ac01_lista_de_companeros_compatibles(client):
 
 def test_ac02_solo_nombre_y_turno(client):
     contenido = entrar(client, "empleado01").get(reverse("compatibles"), NOVIEMBRE).content.decode()
-    assert contenido.count('<th scope="col">') == 4
+    # Cuatro columnas de datos y la del enlace para proponer (US-009-AC-01).
+    assert contenido.count('<th scope="col">') == 5
     assert "empleado02" not in contenido  # ni el usuario ni otros datos del compañero
 
 

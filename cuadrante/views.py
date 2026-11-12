@@ -4,6 +4,8 @@ from django.contrib.auth.decorators import login_required
 from django.shortcuts import render
 from django.utils import timezone
 
+from intercambios.models import ReservaTurno, SolicitudIntercambio
+
 from .compatibles import ConsultaNoDisponible, turnos_compatibles
 from .models import Turno
 
@@ -22,19 +24,32 @@ def desplazar(primero, meses):
     return date(indice // 12, indice % 12 + 1, 1)
 
 
+def marcar_solicitudes_pendientes(turnos):
+    """Añade a cada turno la solicitud activa en la que está reservado, si la hay (US-009-AC-09)."""
+    activas = (SolicitudIntercambio.Estado.PROPUESTA, SolicitudIntercambio.Estado.ACEPTADA)
+    reservas = dict(
+        ReservaTurno.objects.filter(
+            turno__in=turnos, solicitud__estado__in=activas
+        ).values_list("turno_id", "solicitud_id")
+    )
+    for turno in turnos:
+        turno.solicitud_pendiente = reservas.get(turno.pk)
+
+
 @login_required
 def calendario(request):
     """Turnos propios del mes en formato lista (US-005, D-18)."""
     primero = mes_pedido(request.GET.get("mes"))
     siguiente = desplazar(primero, 1)
     empleado = getattr(request.user, "empleado", None)
-    turnos = Turno.objects.none()
+    turnos = []
     if empleado is not None:
-        turnos = (
+        turnos = list(
             Turno.objects.filter(empleado=empleado, fecha__gte=primero, fecha__lt=siguiente)
             .select_related("empleado__servicio")
             .order_by("fecha")
         )
+        marcar_solicitudes_pendientes(turnos)
     return render(
         request,
         "cuadrante/calendario.html",

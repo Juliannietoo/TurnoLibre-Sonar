@@ -84,7 +84,8 @@ def test_mes_no_valido_muestra_el_mes_actual(empleado01):
 def test_accesibilidad_tabla_con_titulo_y_cabeceras(empleado01):
     contenido = empleado01.get(reverse("calendario"), NOVIEMBRE).content.decode()
     assert "<caption>Turnos de noviembre de 2026</caption>" in contenido
-    assert contenido.count('<th scope="col">') == 4
+    # Fecha, franja, horario, servicio e intercambio (US-009-AC-09).
+    assert contenido.count('<th scope="col">') == 5
     assert 'aria-label="Cambiar de mes"' in contenido
 
 

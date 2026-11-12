@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+
+{% block title %}Solicitud de intercambio{% endblock %}
+
+{% block content %}
+<h1>Solicitud de intercambio</h1>
+
+{% for mensaje in messages %}
+<p class="aviso" role="status">{{ mensaje }}</p>
+{% endfor %}
+
+<dl class="ficha">
+  <dt>Estado</dt>
+  <dd>{{ solicitud.get_estado_display }}</dd>
+  <dt>Siguiente acción</dt>
+  <dd>{{ siguiente }}</dd>
+</dl>
+
+<table>
+  <caption>Turnos del intercambio</caption>
+  <thead>
+    <tr>
+      <th scope="col">Turno</th>
+      <th scope="col">Empleado</th>
+      <th scope="col">Fecha</th>
+      <th scope="col">Franja</th>
+      <th scope="col">Horario</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% with t=solicitud.turno_ofrecido %}
+    <tr>
+      <th scope="row">Ofrecido</th>
+      <td>{{ solicitud.empleado_proponente.nombre }}</td>
+      <td>{{ t.fecha|date:'l j \d\e F' }}</td>
+      <td>{{ t.get_franja_display }} ({{ t.franja }})</td>
+      <td>{{ t.inicio|time:'H:i' }}–{{ t.fin|time:'H:i' }}{% if t.franja == 'N' %} del día siguiente{% endif %}</td>
+    </tr>
+    {% endwith %}
+    {% with t=solicitud.turno_solicitado %}
+    <tr>
+      <th scope="row">Solicitado</th>
+      <td>{{ solicitud.empleado_solicitado.nombre }}</td>
+      <td>{{ t.fecha|date:'l j \d\e F' }}</td>
+      <td>{{ t.get_franja_display }} ({{ t.franja }})</td>
+      <td>{{ t.inicio|time:'H:i' }}–{{ t.fin|time:'H:i' }}{% if t.franja == 'N' %} del día siguiente{% endif %}</td>
+    </tr>
+    {% endwith %}
+  </tbody>
+</table>
+
+<h2>Última acción</h2>
+<dl class="ficha">
+  <dt>Acción</dt>
+  <dd>{{ ultima_accion }}</dd>
+  <dt>Quién</dt>
+  <dd>{{ solicitud.autor_ultima_accion.nombre }}</dd>
+  <dt>Cuándo</dt>
+  <dd>{{ solicitud.fecha_ultima_accion|date:'j \d\e F \d\e Y, H:i' }}</dd>
+  {% if solicitud.motivo_ultima_accion %}
+  <dt>Motivo</dt>
+  <dd>{{ solicitud.motivo_ultima_accion }}</dd>
+  {% endif %}
+</dl>
+
+<p><a href="{% url 'calendario' %}?mes={{ solicitud.turno_ofrecido.fecha|date:'Y-m' }}">Ir a mi calendario</a></p>
+{% endblock %}

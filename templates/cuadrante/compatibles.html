@@ -24,6 +24,7 @@
       <th scope="col">Franja</th>
       <th scope="col">Horario</th>
       <th scope="col">Compañero o compañera</th>
+      <th scope="col">Intercambio</th>
     </tr>
   </thead>
   <tbody>
@@ -33,6 +34,7 @@
       <td>{{ turno.get_franja_display }} ({{ turno.franja }})</td>
       <td>{{ turno.inicio|time:'H:i' }}–{{ turno.fin|time:'H:i' }}{% if turno.franja == 'N' %} del día siguiente{% endif %}</td>
       <td>{{ turno.empleado.nombre }}</td>
+      <td><a href="{% url 'proponer_intercambio' turno.pk %}">Proponer intercambio<span class="oculto"> por el turno de {{ turno.empleado.nombre }} del {{ turno.fecha|date:'j \d\e F' }}</span></a></td>
     </tr>
     {% endfor %}
   </tbody>
