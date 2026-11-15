@@ -54,6 +54,26 @@ input:focus-visible {
   background: #fdecee;
 }
 
+.aviso {
+  border-left: 4px solid #1e6b2f;
+  padding: 0.25rem 1rem;
+  background: #e8f4ea;
+}
+
+.ficha {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.25rem 1rem;
+}
+
+.ficha dt {
+  font-weight: bold;
+}
+
+.ficha dd {
+  margin: 0;
+}
+
 table {
   border-collapse: collapse;
   width: 100%;
