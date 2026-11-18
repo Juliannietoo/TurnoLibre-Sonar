@@ -22,10 +22,13 @@ cd TurnoLibre_GC02
 git config user.name "Nombre Apellido"
 git config user.email "correo-de-tu-cuenta-de-Jira"
 git config merge.ff false
+git config pull.ff only
 ```
 
 - **El correo de Git tiene que ser el de tu usuario de Jira.** Si no coincide, Jira no asocia el commit a nadie y no registra ni el tiempo ni el cambio de estado.
-- En GitHub Desktop el correo está en *File → Options → Git*; `merge.ff` hay que fijarlo en la terminal de todas formas.
+- `merge.ff false` hace que los merges de integración creen siempre un commit de merge. `pull.ff only` evita que `git pull` cree también commits de merge vacíos («Merge branch … of https://…») al traer los cambios de los compañeros.
+- **Si `git pull` falla con «Not possible to fast-forward»**, alguien subió a la rama mientras tenías commits sin subir: `git pull --rebase` coloca tus commits encima y después `git push`. Solo se usa para tus commits locales sin subir; las integraciones siguen siendo merges `--no-ff`.
+- En GitHub Desktop el correo está en *File → Options → Git*; `merge.ff` y `pull.ff` hay que fijarlos en la terminal de todas formas.
 - Instalación del entorno de Python: [technology-stack.md](../architecture/technology-stack.md#puesta-en-marcha-en-local).
 
 **Una sola vez para todo el equipo:**
