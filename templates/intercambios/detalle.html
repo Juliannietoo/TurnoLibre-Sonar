@@ -6,7 +6,11 @@
 <h1>Solicitud de intercambio</h1>
 
 {% for mensaje in messages %}
+{% if mensaje.level_tag == "error" %}
+<p class="error" role="alert">{{ mensaje }}</p>
+{% else %}
 <p class="aviso" role="status">{{ mensaje }}</p>
+{% endif %}
 {% endfor %}
 
 <dl class="ficha">
@@ -15,6 +19,22 @@
   <dt>Siguiente acción</dt>
   <dd>{{ siguiente }}</dd>
 </dl>
+
+{% if puede_responder %}
+<form method="post" action="{% url 'responder_solicitud' solicitud.pk %}">
+  {% csrf_token %}
+  <fieldset>
+    <legend>Responder a la propuesta</legend>
+    <p>
+      <label for="motivo">Motivo (opcional)</label><br>
+      <textarea name="motivo" id="motivo" rows="2" cols="40" maxlength="500"></textarea>
+    </p>
+    <p>Si aceptas, la solicitud pasa al responsable del servicio. Si rechazas, los dos turnos vuelven a estar disponibles.</p>
+    <button type="submit" name="respuesta" value="aceptar">Aceptar intercambio</button>
+    <button type="submit" name="respuesta" value="rechazar">Rechazar</button>
+  </fieldset>
+</form>
+{% endif %}
 
 <table>
   <caption>Turnos del intercambio</caption>
