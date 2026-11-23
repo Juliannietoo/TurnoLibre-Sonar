@@ -34,6 +34,7 @@ Contraseña de todas: `demo-turnolibre` (se puede cambiar con `python manage.py 
 | Usuario | Rol | Qué tiene |
 |---|---|---|
 | `empleado01` | Empleado · Enfermería | Mañanas de noviembre |
+| `empleado02` | Empleado · Enfermería | Mañanas de noviembre. Cuenta destinataria para la demo de US-010 |
 | `empleado03` | Empleado · Auxiliar de enfermería | Turnos de otra categoría (para comprobar RN-03) |
 | `empleado15` | Empleado · Enfermería | Noches de noviembre |
 | `responsable01` | Responsable del servicio | Sin turnos; acceso al panel del responsable |
@@ -48,7 +49,9 @@ Contraseña de todas: `demo-turnolibre` (se puede cambiar con `python manage.py 
 
 Las reglas RN-01, RN-03 y RN-06 (US-012 y US-014) se validan en el servidor y se comprueban con las pruebas automáticas; se usarán en pantalla al proponer un intercambio (US-009, IT-4).
 
-Para volver a los datos de partida en cualquier momento: `python manage.py cargar_demo`.
+Para cargar los datos de partida, ejecutar `python manage.py cargar_demo` en una base
+migrada. Si una versión anterior a GC02-108 devuelve `ProtectedError` al recargar
+una base con solicitudes, usar una base SQLite de prueba recién migrada.
 
 ## Revisión de US-009 en IT-4 (rama de trabajo)
 
@@ -98,6 +101,33 @@ solicitud de prueba y comprobar la base antes de volver al navegador: estado Cad
 y cero reservas de esa solicitud. Después, el detalle conserva ambos turnos, el motivo
 y la acción del sistema, y el calendario deja de marcarla como pendiente. El ejecutor
 es periódico; la operación y las vistas comprueban además el límite con la hora del servidor.
+
+## Demostración de US-010 en IT-5
+
+Usar una versión que incluya US-010. Antes de integrarla en `develop`, se puede
+probar en `feature/GC02-47-responder-propuesta`. Los siguientes pasos usan las
+cuentas de demostración y dos propuestas distintas con turnos futuros y libres.
+
+1. Con `empleado01`, ir a «Turnos compatibles» y proponer dos intercambios a
+   `empleado02`. Guardar la dirección de cada detalle. Por ejemplo, ofrecer la
+   mañana del 25/11 por la del 27/11 y la del 27/11 por la del 29/11.
+2. Entrar con `empleado02`. Desde «Mi calendario» abrir la primera propuesta
+   y pulsar «Aceptar intercambio». Debe aparecer Aceptada, pendiente de aprobación
+   del responsable, y ambos turnos deben seguir reservados.
+3. Con la misma cuenta, abrir la segunda, escribir un motivo opcional y pulsar
+   «Rechazar». Debe aparecer Rechazada, con el motivo y los dos turnos libres.
+4. Entrar de nuevo con `empleado01` y abrir los detalles guardados. Deben mostrar
+   la respuesta, quién la dio y cuándo. Si desaparece la marca del calendario
+   tras rechazar o caducar, abrir el detalle por su dirección.
+5. Para comprobar la caducidad, usar otra propuesta en una base de prueba.
+   Abrirla antes del primer inicio, dejar que llegue ese instante e intentar
+   aceptar desde la pantalla que quedó abierta. Deben aparecer el aviso y el
+   estado Caducada, con ambos turnos liberados. Para que caduque aunque nadie
+   abra una pantalla ni envíe el formulario, iniciar el ejecutor periódico
+   descrito arriba.
+
+Los [casos de US-010](../reviews/casos/US-010.md) incluyen los datos del ejemplo
+y el [registro del PO](../reviews/aceptacion/US-010.md) recoge los resultados.
 
 ## Comprobación
 
