@@ -10,6 +10,8 @@ from django.contrib.auth import get_user_model
 from django.contrib.auth.models import Group
 from django.db import transaction
 
+from intercambios.models import SolicitudIntercambio
+
 from .models import Categoria, Empleado, Servicio, Turno
 
 FUENTE = Path(settings.BASE_DIR) / "data" / "demo" / "cuadrante.json"
@@ -42,6 +44,7 @@ def cargar(datos, password):
     personas = [responsable, *datos["empleados"]]
     usuarios = get_user_model()
 
+    SolicitudIntercambio.objects.all().delete()
     Turno.objects.all().delete()
     Empleado.objects.all().delete()
     Categoria.objects.all().delete()

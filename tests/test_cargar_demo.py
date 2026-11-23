@@ -9,6 +9,7 @@ from django.contrib.auth import get_user_model
 from django.core.management import call_command
 
 from cuadrante.models import Empleado, Turno
+from intercambios.models import ReservaTurno, SolicitudIntercambio
 
 pytestmark = pytest.mark.django_db
 MADRID = ZoneInfo("Europe/Madrid")
@@ -55,3 +56,31 @@ def test_restablecer_deja_los_datos_como_la_fuente_sin_duplicados():
     assert Turno.objects.count() == 240
     assert Empleado.objects.get(codigo="empleado16").nombre == "Pablo Brisa"
     assert get_user_model().objects.filter(username__startswith="empleado").count() == 16
+
+
+def test_restablecer_con_solicitudes_y_reservas_existentes_limpia_intercambios():
+    call_command("cargar_demo")
+    ana = Empleado.objects.get(codigo="empleado01")
+    berta = Empleado.objects.get(codigo="empleado02")
+    turno_ana = Turno.objects.filter(empleado=ana).order_by("inicio").first()
+    turno_berta = Turno.objects.filter(empleado=berta).order_by("inicio").first()
+
+    solicitud = SolicitudIntercambio.objects.create(
+        turno_ofrecido=turno_ana,
+        turno_solicitado=turno_berta,
+        empleado_proponente=ana,
+        empleado_solicitado=berta,
+        estado=SolicitudIntercambio.Estado.PROPUESTA,
+        ultima_accion="PROPUESTA",
+        autor_ultima_accion=ana,
+    )
+    ReservaTurno.objects.create(solicitud=solicitud, turno=turno_ana)
+    ReservaTurno.objects.create(solicitud=solicitud, turno=turno_berta)
+
+    call_command("cargar_demo")
+
+    assert not SolicitudIntercambio.objects.exists()
+    assert not ReservaTurno.objects.exists()
+    assert Turno.objects.count() == 240
+    assert Empleado.objects.filter(es_responsable=False).count() == 16
+    assert Empleado.objects.filter(es_responsable=True).count() == 1
