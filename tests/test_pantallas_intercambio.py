@@ -1,4 +1,7 @@
-"""Pruebas de las pantallas de propuesta, detalle y marca en el calendario (US-009, GC02-57)."""
+"""Pruebas de las pantallas de propuesta, detalle, respuesta y marca en el calendario.
+
+US-009 (GC02-57) y US-010 (GC02-59).
+"""
 
 from datetime import datetime
 from unittest import mock
@@ -302,3 +305,135 @@ def test_formulario_usable_con_teclado(client):
     assert 'tabindex="-1"' not in contenido
     assert contenido.count("<label for=\"turno-") == contenido.count('type="radio"')
     assert '<button type="submit">Confirmar propuesta</button>' in contenido
+
+
+# --- Respuesta del compañero (US-010, GC02-59) ---
+
+
+def detalle_de(client, solicitud):
+    return client.get(reverse("detalle_solicitud", args=[solicitud.pk])).content.decode()
+
+
+def responder(client, solicitud, respuesta, motivo=""):
+    return client.post(
+        reverse("responder_solicitud", args=[solicitud.pk]),
+        {"respuesta": respuesta, "motivo": motivo},
+    )
+
+
+def test_us010_la_destinataria_ve_el_formulario_de_respuesta(client, solicitud):
+    contenido = detalle_de(entrar(client, "empleado02"), solicitud)
+    assert reverse("responder_solicitud", args=[solicitud.pk]) in contenido
+    assert '<legend>Responder a la propuesta</legend>' in contenido
+    assert '<label for="motivo">Motivo (opcional)</label>' in contenido
+    assert 'value="aceptar">Aceptar intercambio</button>' in contenido
+    assert 'value="rechazar">Rechazar</button>' in contenido
+
+
+@pytest.mark.parametrize("usuario", ["empleado01", "responsable01"])
+def test_us010_ac04_solo_la_destinataria_ve_el_formulario(client, solicitud, usuario):
+    contenido = detalle_de(entrar(client, usuario), solicitud)
+    assert "Responder a la propuesta" not in contenido
+    assert reverse("responder_solicitud", args=[solicitud.pk]) not in contenido
+
+
+def test_us010_ac01_aceptar_deja_la_solicitud_pendiente_de_aprobacion(client, solicitud):
+    entrar(client, "empleado02")
+    respuesta = responder(client, solicitud, "aceptar")
+    assert respuesta.status_code == 302
+    assert respuesta.url == reverse("detalle_solicitud", args=[solicitud.pk])
+    solicitud.refresh_from_db()
+    assert solicitud.estado == SolicitudIntercambio.Estado.ACEPTADA
+    assert solicitud.reservas.count() == 2
+    contenido = detalle_de(client, solicitud)
+    assert 'role="status"' in contenido
+    assert "Has aceptado el intercambio" in contenido
+    assert "Pendiente de la aprobación del responsable del servicio." in contenido
+    assert "Responder a la propuesta" not in contenido
+
+
+def test_us010_ac02_rechazar_libera_los_turnos_y_guarda_el_motivo(client, solicitud):
+    entrar(client, "empleado02")
+    responder(client, solicitud, "rechazar", "  Esa semana no puedo.  ")
+    solicitud.refresh_from_db()
+    assert solicitud.estado == SolicitudIntercambio.Estado.RECHAZADA
+    assert not ReservaTurno.objects.exists()
+    contenido = detalle_de(client, solicitud)
+    assert "Has rechazado el intercambio" in contenido
+    assert "Rechazo" in contenido
+    assert "Esa semana no puedo." in contenido
+
+
+def test_us010_ac04_el_proponente_ve_quien_respondio_y_cuando(client, solicitud):
+    responder(entrar(client, "empleado02"), solicitud, "aceptar")
+    client.logout()
+    contenido = detalle_de(entrar(client, "empleado01"), solicitud)
+    assert "Aceptada" in contenido
+    assert "Aceptación" in contenido
+    assert "Berta Prado" in contenido
+    assert "1 de noviembre de 2026, 09:00" in contenido
+
+
+@pytest.mark.parametrize("usuario", ["empleado01", "empleado04"])
+def test_us010_ac04_solo_responde_la_destinataria(client, solicitud, usuario):
+    respuesta = responder(entrar(client, usuario), solicitud, "aceptar")
+    assert respuesta.status_code == 403
+    solicitud.refresh_from_db()
+    assert solicitud.estado == SolicitudIntercambio.Estado.PROPUESTA
+
+
+def test_us010_el_responsable_no_responde(client, solicitud):
+    respuesta = responder(entrar(client, "responsable01"), solicitud, "aceptar")
+    assert respuesta.status_code == 403
+    solicitud.refresh_from_db()
+    assert solicitud.estado == SolicitudIntercambio.Estado.PROPUESTA
+
+
+def test_us010_ac03_ac05_no_se_responde_una_solicitud_caducada(client, solicitud):
+    entrar(client, "empleado02")
+    with despues_del_primer_turno(solicitud):
+        respuesta = responder(client, solicitud, "aceptar")
+        contenido = client.get(respuesta.url).content.decode()
+    solicitud.refresh_from_db()
+    assert solicitud.estado == SolicitudIntercambio.Estado.CADUCADA
+    assert 'role="alert"' in contenido
+    assert "ya no admite respuesta: está caducada" in contenido
+    assert "Responder a la propuesta" not in contenido
+
+
+def test_us010_ac04_responder_dos_veces_no_cambia_dos_veces(client, solicitud):
+    entrar(client, "empleado02")
+    responder(client, solicitud, "aceptar")
+    solicitud.refresh_from_db()
+    fecha = solicitud.fecha_ultima_accion
+    responder(client, solicitud, "aceptar")
+    solicitud.refresh_from_db()
+    assert solicitud.estado == SolicitudIntercambio.Estado.ACEPTADA
+    assert solicitud.fecha_ultima_accion == fecha
+    responder(client, solicitud, "rechazar")
+    solicitud.refresh_from_db()
+    assert solicitud.estado == SolicitudIntercambio.Estado.ACEPTADA
+    assert solicitud.reservas.count() == 2
+    assert "ya no admite respuesta: está aceptada" in detalle_de(client, solicitud)
+
+
+def test_us010_responder_solo_por_post(client, solicitud):
+    respuesta = entrar(client, "empleado02").get(
+        reverse("responder_solicitud", args=[solicitud.pk])
+    )
+    assert respuesta.status_code == 405
+
+
+def test_us010_respuesta_desconocida_no_cambia_nada(client, solicitud):
+    respuesta = responder(entrar(client, "empleado02"), solicitud, "quizas")
+    assert respuesta.status_code == 400
+    solicitud.refresh_from_db()
+    assert solicitud.estado == SolicitudIntercambio.Estado.PROPUESTA
+
+
+def test_us010_responder_sin_sesion_redirige(client, solicitud):
+    respuesta = responder(client, solicitud, "aceptar")
+    assert respuesta.status_code == 302
+    assert respuesta.url.startswith(reverse("entrar"))
+    solicitud.refresh_from_db()
+    assert solicitud.estado == SolicitudIntercambio.Estado.PROPUESTA

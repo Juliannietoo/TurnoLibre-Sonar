@@ -131,6 +131,45 @@ git push
 - **Si hay conflictos:** se resuelven en la rama de la historia, en el paso 1, nunca en `develop`.
 - **Con ramas protegidas (opcional, +1 punto):** el paso 2 se hace con una *pull request* de la rama a `develop`. La revisa otro miembro y se integra con **«Create a merge commit»**, con el mensaje anterior.
 
+### Integración final desde terminal
+
+La integración final de una rama `feature` en `develop` se realiza desde la terminal para poder ejecutar explícitamente `--no-ff` y fijar el mensaje del commit de merge.
+
+Antes de integrar, `develop` debe estar actualizado:
+
+```bash
+git switch develop
+git pull --ff-only origin develop
+```
+
+Después se integra cada rama terminada:
+
+```bash
+git merge --no-ff feature/GC02-XX-nombre-corto -m "GC02-XX #comment Requisito integrado en develop #listo"
+```
+Si se integran varias ramas antes de publicar `develop`, se realizan todos los merges previstos y se valida el estado combinado antes de hacer `push`.
+
+La comprobación final incluye:
+
+```bash
+ruff check .
+python manage.py check
+python manage.py makemigrations --check --dry-run
+python -m pytest -q
+```
+
+Solo si todas las comprobaciones son correctas:
+
+```bash
+git push origin develop
+```
+
+Después del `push` se comprueba que GitHub Actions finaliza en verde.
+
+Los commits de merge no llevan `#time`. Si el `#listo` no cambia el estado en Jira, la incidencia se pasa a `Finalizada` manualmente.
+
+Si aparece un conflicto durante el merge, no se resuelve directamente en `develop`: se corrige primero en la rama `feature`, se vuelve a validar y después se repite la integración.
+
 ## 7. Cerrar el sprint: `develop` → `main`
 
 Tras la review, con todas las historias del sprint integradas y la integración continua en verde, la SM o DevOps:
