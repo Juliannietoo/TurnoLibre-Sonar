@@ -74,6 +74,7 @@ def comienzo(dia):
     return datetime.combine(dia, time.min, timezone.get_current_timezone())
 
 
+@require_safe
 @login_required
 def compatibles(request):
     """Turnos futuros de compañeros de la misma categoría y servicio (US-006, RN-03)."""
