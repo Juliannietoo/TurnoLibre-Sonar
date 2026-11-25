@@ -3,6 +3,7 @@ from datetime import date, datetime, time
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render
 from django.utils import timezone
+from django.views.decorators.http import require_safe
 
 from intercambios.caducidad import caducar_vencidas
 from intercambios.models import ReservaTurno, SolicitudIntercambio
@@ -41,6 +42,7 @@ def marcar_solicitudes_pendientes(turnos):
         turno.solicitud_pendiente = reservas.get(turno.pk)
 
 
+@require_safe
 @login_required
 def calendario(request):
     """Turnos propios del mes en formato lista (US-005, D-18)."""
