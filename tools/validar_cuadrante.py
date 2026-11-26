@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 from collections import Counter, defaultdict
 from datetime import UTC, date, datetime, time, timedelta
 from itertools import pairwise
@@ -261,6 +262,14 @@ def markdown_report(result: dict) -> str:
     return "\n".join(lines)
 
 
+def safe_path(path: Path) -> Path:
+    resolved = os.path.realpath(path)
+    base_dir = os.path.realpath(ROOT)
+    if resolved != base_dir and not resolved.startswith(base_dir + os.sep):
+        raise ValueError(f"path {str(path)!r} is outside the allowed directory")
+    return Path(resolved)
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
@@ -271,8 +280,9 @@ def main() -> int:
     )
     args = parser.parse_args()
     try:
-        result = validate(json.loads(args.archivo.read_text(encoding="utf-8")))
-    except (OSError, json.JSONDecodeError) as exc:
+        archivo = safe_path(args.archivo)
+        result = validate(json.loads(archivo.read_text(encoding="utf-8")))
+    except (OSError, ValueError, json.JSONDecodeError) as exc:
         print(f"FORMATO: {exc}")
         return 1
     if args.report:
