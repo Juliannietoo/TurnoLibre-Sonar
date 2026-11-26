@@ -286,8 +286,9 @@ def main() -> int:
         print(f"FORMATO: {exc}")
         return 1
     if args.report:
-        safe_path(args.report).parent.mkdir(parents=True, exist_ok=True)
-        args.report.write_text(markdown_report(result), encoding="utf-8")
+        report_path = safe_path(args.report)
+        report_path.parent.mkdir(parents=True, exist_ok=True)
+        report_path.write_text(markdown_report(result), encoding="utf-8")
     print(
         f"{'CORRECTO' if result['ok'] else 'ERROR'}: {result['employees']} empleados, "
         f"{result['assignments']} asignaciones, {result['days']} fechas"
