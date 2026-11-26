@@ -286,7 +286,7 @@ def main() -> int:
         print(f"FORMATO: {exc}")
         return 1
     if args.report:
-        args.report.parent.mkdir(parents=True, exist_ok=True)
+        safe_path(args.report).parent.mkdir(parents=True, exist_ok=True)
         args.report.write_text(markdown_report(result), encoding="utf-8")
     print(
         f"{'CORRECTO' if result['ok'] else 'ERROR'}: {result['employees']} empleados, "
